@@ -1,0 +1,26 @@
+DreamBench-SWE v2 confirmatory completion audit
+PASS results root exists: experiments/results/v2-confirmatory-20260706T074759Z
+PASS log root exists: logs/grid/v2-confirmatory-20260706T074759Z
+PASS sequence records sha256 matches expected: experiments/env/sequences_confirmatory_v2.jsonl sha256=4966bad1e535aaa0165c8aa7f2cb6fefd1d4e4afca78accfd868591a40448743
+PASS condition-level results count is 1890 using experiments/results/v2-confirmatory-20260706T074759Z/*/*/results.json
+PASS NONLIVE.driver.log contains NONLIVE_GRID_DONE rc=0
+PASS LIVE.driver.log contains LIVE_GRID_DONE rc=0
+PASS GRID_DONE markers scanned=2; no nonzero rc found
+PASS RUN_GRID FINISH lines have no rc=[1-9]: logs/grid/v2-confirmatory-20260706T074759Z/RUN_GRID.log
+PASS dry-plan has zero RUN lines: analysis/fold/v2_completion_nonlive.txt
+PASS dry-plan has zero RUN lines: analysis/fold/v2_completion_live.txt
+PASS analyzer output is fresh: analysis/fold/v2_fold.json
+PASS analyzer output is fresh: analysis/fold/v2_confirmatory_clustered.json
+PASS analyzer output is fresh: analysis/fold/v2_confirmatory_clustered.stdout.json
+PASS analyzer output is fresh: analysis/fold/v2_hygiene_oracle.json
+PASS analyzer output is fresh: analysis/fold/v2_hygiene_oracle.tex
+PASS analyzer output is fresh: analysis/fold/v2_cost_frontier.json
+PASS analyzer output is fresh: analysis/fold/v2_cost_frontier.tex
+PASS analyzer output is fresh: analysis/fold/admission_funnel.json
+PASS analyzer output is fresh: analysis/fold/admission_funnel.md
+PASS analyzer output is fresh: analysis/fold/admission_funnel.tex
+PASS analyzer output is fresh: analysis/fold/v2_tables.tex
+PASS analyzer output is fresh: paper/figures/v2_construct_coverage.pdf
+PASS analyzer output is fresh: paper/figures/v2_ladder.pdf
+PASS analyzer output is fresh: paper/figures/v2_verbatim_vs_synthesis.pdf
+STATUS PASS failures=0

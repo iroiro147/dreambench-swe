@@ -16,9 +16,6 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 from scripts import make_v2_figures  # noqa: E402
 
 
-PENDING_MARKER = "[" + "V2-" + "PENDING]"
-
-
 def assert_pdf(path: Path) -> None:
     assert path.exists()
     assert path.read_bytes().startswith(b"%PDF")
@@ -48,6 +45,8 @@ def test_default_construct_coverage_uses_final_frozen_quota() -> None:
     assert sum(item["anti_hoarding"] for item in coverage.values()) == 30
     assert coverage["C1"] == {"total": 18, "anti_hoarding": 0}
     assert coverage["C10"] == {"total": 2, "anti_hoarding": 2}
+    assert make_v2_figures.ANTI_HOARDING_LABEL == "preregistered anti-hoarding-design quota"
+    assert "C9 and C10 fail post-fold B0 headroom" in make_v2_figures.ANTI_HOARDING_NOTE
 
 
 def test_ladder_plot_renders_from_fold_fixture(tmp_path: Path) -> None:
@@ -86,22 +85,11 @@ def test_ladder_plot_renders_from_fold_fixture(tmp_path: Path) -> None:
     assert_pdf(ladder)
 
 
-def test_verbatim_synthesis_note_uses_fold_headroom_without_pending(tmp_path: Path) -> None:
-    fold = {
-        "conditions": {
-            "B0": {
-                "s3_cells": {
-                    "seed1:v2-c9-example": {"sequence_id": "v2-c9-example", "passed": True},
-                    "seed2:v2-c9-example": {"sequence_id": "v2-c9-example", "passed": False},
-                    "seed1:v2-c10-example": {"sequence_id": "v2-c10-example", "passed": True},
-                }
-            }
-        }
-    }
-    fold_path = tmp_path / "fold.json"
-    fold_path.write_text(json.dumps(fold), encoding="utf-8")
+def test_v1_b5_stratum_points_use_one_coherent_fold() -> None:
+    points = make_v2_figures.b5_v1_stratum_points()
 
-    note = make_v2_figures.verbatim_synthesis_note(fold_path)
-    assert PENDING_MARKER not in note
-    assert "C9 B0 1/2" in note
-    assert "C10 B0 1/1" in note
+    assert points == [
+        {"label": "B5 recall-verbatim", "passed": 48, "n": 54, "rate": 48 / 54},
+        {"label": "B5 synthesis/apply", "passed": 0, "n": 12, "rate": 0.0},
+    ]
+    assert "not a powered comparison" in make_v2_figures.V1_STRATUM_NOTE

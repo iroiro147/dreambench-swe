@@ -63,6 +63,22 @@ def test_arxiv_source_packaging_requires_main_bbl(tmp_path: Path) -> None:
         package_arxiv_source.collect_members(source)
 
 
+def test_arxiv_source_rejects_hidden_file_in_included_directory(tmp_path: Path) -> None:
+    source = build_arxiv_source_fixture(tmp_path / "paper_arxiv")
+    (source / "sections/.DS_Store").write_bytes(b"finder metadata")
+
+    with pytest.raises(SystemExit, match="hidden arXiv source file is forbidden"):
+        package_arxiv_source.collect_members(source)
+
+
+def test_arxiv_source_rejects_unexpected_suffix(tmp_path: Path) -> None:
+    source = build_arxiv_source_fixture(tmp_path / "paper_arxiv")
+    (source / "figures/notes.txt").write_text("not upload material\n", encoding="utf-8")
+
+    with pytest.raises(SystemExit, match="unexpected arXiv source suffix"):
+        package_arxiv_source.collect_members(source)
+
+
 def build_arxiv_source_fixture(source: Path) -> Path:
     for rel in REQUIRED_MEMBERS:
         path = source / rel

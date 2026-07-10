@@ -25,6 +25,13 @@ INCLUDE_DIRS = (
     "figures",
 )
 
+ALLOWED_DIRECTORY_SUFFIXES = {
+    "sections": {".tex"},
+    "figures": {".jpeg", ".jpg", ".pdf", ".png", ".tex"},
+}
+
+FORBIDDEN_SOURCE_SUFFIXES = {".bak", ".orig", ".swp", ".tmp"}
+
 FORBIDDEN_UPLOAD_FILES = {
     "main.pdf",
     "main.log",
@@ -68,9 +75,22 @@ def collect_members(source: Path) -> list[Path]:
         path = source / rel_dir
         if not path.is_dir():
             raise SystemExit(f"required arXiv source directory missing: {rel_dir}")
-        for child in path.rglob("*"):
-            if child.is_file():
-                members.add(child.relative_to(source))
+        for child in sorted(path.rglob("*")):
+            child_rel = child.relative_to(source)
+            if child.is_symlink():
+                raise SystemExit(f"refusing to package symlink: {child_rel.as_posix()}")
+            if not child.is_file():
+                continue
+            if any(part.startswith(".") for part in child_rel.parts):
+                raise SystemExit(f"hidden arXiv source file is forbidden: {child_rel.as_posix()}")
+            if child.name.endswith("~") or child.suffix.lower() in FORBIDDEN_SOURCE_SUFFIXES:
+                raise SystemExit(f"editor/backup arXiv source file is forbidden: {child_rel.as_posix()}")
+            allowed = ALLOWED_DIRECTORY_SUFFIXES[rel_dir]
+            if child.suffix.lower() not in allowed:
+                raise SystemExit(
+                    f"unexpected arXiv source suffix under {rel_dir}: {child_rel.as_posix()}"
+                )
+            members.add(child_rel)
     forbidden_present = sorted(
         rel.as_posix()
         for rel in members

@@ -1,0 +1,948 @@
+[
+  {
+    "leakage": {
+      "1": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "2": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "3": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      }
+    },
+    "outcomes": {
+      "1": {
+        "B5": true,
+        "B5_err": null,
+        "DF": true,
+        "DF_err": null
+      },
+      "2": {
+        "B5": true,
+        "B5_err": null,
+        "DF": true,
+        "DF_err": null
+      },
+      "3": {
+        "B5": true,
+        "B5_err": null,
+        "DF": true,
+        "DF_err": null
+      }
+    },
+    "seq": "config-convention-sections"
+  },
+  {
+    "leakage": {
+      "1": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "2": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "3": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      }
+    },
+    "outcomes": {
+      "1": {
+        "B5": true,
+        "B5_err": null,
+        "DF": true,
+        "DF_err": null
+      },
+      "2": {
+        "B5": true,
+        "B5_err": null,
+        "DF": true,
+        "DF_err": null
+      },
+      "3": {
+        "B5": true,
+        "B5_err": null,
+        "DF": false,
+        "DF_err": "oracle_failed"
+      }
+    },
+    "seq": "config-freeze-provenance"
+  },
+  {
+    "leakage": {
+      "1": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "2": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "3": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      }
+    },
+    "outcomes": {
+      "1": {
+        "B5": false,
+        "B5_err": "oracle_failed",
+        "DF": false,
+        "DF_err": "oracle_failed"
+      },
+      "2": {
+        "B5": false,
+        "B5_err": "oracle_failed",
+        "DF": false,
+        "DF_err": "oracle_failed"
+      },
+      "3": {
+        "B5": false,
+        "B5_err": "oracle_failed",
+        "DF": true,
+        "DF_err": null
+      }
+    },
+    "seq": "config-reviewer-coerce-tag"
+  },
+  {
+    "leakage": {
+      "1": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "2": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "3": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      }
+    },
+    "outcomes": {
+      "1": {
+        "B5": true,
+        "B5_err": null,
+        "DF": true,
+        "DF_err": null
+      },
+      "2": {
+        "B5": true,
+        "B5_err": null,
+        "DF": true,
+        "DF_err": null
+      },
+      "3": {
+        "B5": true,
+        "B5_err": null,
+        "DF": true,
+        "DF_err": null
+      }
+    },
+    "seq": "config-reviewer-dupkey"
+  },
+  {
+    "leakage": {
+      "1": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "2": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "3": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      }
+    },
+    "outcomes": {
+      "1": {
+        "B5": true,
+        "B5_err": null,
+        "DF": true,
+        "DF_err": null
+      },
+      "2": {
+        "B5": true,
+        "B5_err": null,
+        "DF": true,
+        "DF_err": null
+      },
+      "3": {
+        "B5": true,
+        "B5_err": null,
+        "DF": true,
+        "DF_err": null
+      }
+    },
+    "seq": "config-reviewer-strict-csv"
+  },
+  {
+    "leakage": {
+      "1": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "2": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "3": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      }
+    },
+    "outcomes": {
+      "1": {
+        "B5": true,
+        "B5_err": null,
+        "DF": false,
+        "DF_err": "oracle_failed"
+      },
+      "2": {
+        "B5": true,
+        "B5_err": null,
+        "DF": true,
+        "DF_err": null
+      },
+      "3": {
+        "B5": true,
+        "B5_err": null,
+        "DF": true,
+        "DF_err": null
+      }
+    },
+    "seq": "config-stale-merge"
+  },
+  {
+    "leakage": {
+      "1": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "2": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "3": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      }
+    },
+    "outcomes": {
+      "1": {
+        "B5": true,
+        "B5_err": null,
+        "DF": false,
+        "DF_err": "oracle_failed"
+      },
+      "2": {
+        "B5": true,
+        "B5_err": null,
+        "DF": true,
+        "DF_err": null
+      },
+      "3": {
+        "B5": true,
+        "B5_err": null,
+        "DF": true,
+        "DF_err": null
+      }
+    },
+    "seq": "config-stale-schema-id"
+  },
+  {
+    "leakage": {
+      "1": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "2": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "3": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      }
+    },
+    "outcomes": {
+      "1": {
+        "B5": true,
+        "B5_err": null,
+        "DF": true,
+        "DF_err": null
+      },
+      "2": {
+        "B5": true,
+        "B5_err": null,
+        "DF": false,
+        "DF_err": "oracle_failed"
+      },
+      "3": {
+        "B5": true,
+        "B5_err": null,
+        "DF": true,
+        "DF_err": null
+      }
+    },
+    "seq": "expr-arity-contract"
+  },
+  {
+    "leakage": {
+      "1": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "2": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "3": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      }
+    },
+    "outcomes": {
+      "1": {
+        "B5": false,
+        "B5_err": "oracle_failed",
+        "DF": false,
+        "DF_err": "oracle_failed"
+      },
+      "2": {
+        "B5": false,
+        "B5_err": "oracle_failed",
+        "DF": false,
+        "DF_err": "oracle_failed"
+      },
+      "3": {
+        "B5": false,
+        "B5_err": "oracle_failed",
+        "DF": false,
+        "DF_err": "oracle_failed"
+      }
+    },
+    "seq": "expr-convention-opnaming"
+  },
+  {
+    "leakage": {
+      "1": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "2": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "3": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      }
+    },
+    "outcomes": {
+      "1": {
+        "B5": false,
+        "B5_err": "oracle_failed",
+        "DF": true,
+        "DF_err": null
+      },
+      "2": {
+        "B5": false,
+        "B5_err": "oracle_failed",
+        "DF": true,
+        "DF_err": null
+      },
+      "3": {
+        "B5": false,
+        "B5_err": "oracle_failed",
+        "DF": true,
+        "DF_err": null
+      }
+    },
+    "seq": "expr-floordiv-category"
+  },
+  {
+    "leakage": {
+      "1": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "2": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "3": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      }
+    },
+    "outcomes": {
+      "1": {
+        "B5": false,
+        "B5_err": "oracle_failed",
+        "DF": false,
+        "DF_err": "oracle_failed"
+      },
+      "2": {
+        "B5": false,
+        "B5_err": "oracle_failed",
+        "DF": false,
+        "DF_err": "oracle_failed"
+      },
+      "3": {
+        "B5": false,
+        "B5_err": "oracle_failed",
+        "DF": false,
+        "DF_err": "oracle_failed"
+      }
+    },
+    "seq": "expr-generated-category"
+  },
+  {
+    "leakage": {
+      "1": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "2": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "3": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      }
+    },
+    "outcomes": {
+      "1": {
+        "B5": false,
+        "B5_err": "oracle_failed",
+        "DF": false,
+        "DF_err": "oracle_failed"
+      },
+      "2": {
+        "B5": false,
+        "B5_err": "oracle_failed",
+        "DF": false,
+        "DF_err": "oracle_failed"
+      },
+      "3": {
+        "B5": false,
+        "B5_err": "oracle_failed",
+        "DF": true,
+        "DF_err": null
+      }
+    },
+    "seq": "expr-generated-precgroup"
+  },
+  {
+    "leakage": {
+      "1": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "2": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "3": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      }
+    },
+    "outcomes": {
+      "1": {
+        "B5": true,
+        "B5_err": null,
+        "DF": true,
+        "DF_err": null
+      },
+      "2": {
+        "B5": true,
+        "B5_err": null,
+        "DF": false,
+        "DF_err": "oracle_failed"
+      },
+      "3": {
+        "B5": true,
+        "B5_err": null,
+        "DF": false,
+        "DF_err": "oracle_failed"
+      }
+    },
+    "seq": "expr-reviewer-divzero"
+  },
+  {
+    "leakage": {
+      "1": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "2": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "3": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      }
+    },
+    "outcomes": {
+      "1": {
+        "B5": false,
+        "B5_err": "oracle_failed",
+        "DF": false,
+        "DF_err": "oracle_failed"
+      },
+      "2": {
+        "B5": false,
+        "B5_err": "oracle_failed",
+        "DF": false,
+        "DF_err": "oracle_failed"
+      },
+      "3": {
+        "B5": false,
+        "B5_err": "oracle_failed",
+        "DF": false,
+        "DF_err": "codex_exec_failed"
+      }
+    },
+    "seq": "expr-stale-registry-stability"
+  },
+  {
+    "leakage": {
+      "1": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "2": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "3": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      }
+    },
+    "outcomes": {
+      "1": {
+        "B5": true,
+        "B5_err": null,
+        "DF": true,
+        "DF_err": null
+      },
+      "2": {
+        "B5": true,
+        "B5_err": null,
+        "DF": true,
+        "DF_err": null
+      },
+      "3": {
+        "B5": true,
+        "B5_err": null,
+        "DF": true,
+        "DF_err": null
+      }
+    },
+    "seq": "todo-archive-bucket"
+  },
+  {
+    "leakage": {
+      "1": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "2": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "3": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      }
+    },
+    "outcomes": {
+      "1": {
+        "B5": true,
+        "B5_err": null,
+        "DF": true,
+        "DF_err": null
+      },
+      "2": {
+        "B5": true,
+        "B5_err": null,
+        "DF": true,
+        "DF_err": null
+      },
+      "3": {
+        "B5": true,
+        "B5_err": null,
+        "DF": true,
+        "DF_err": null
+      }
+    },
+    "seq": "todo-convention-aggregate"
+  },
+  {
+    "leakage": {
+      "1": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "2": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "3": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      }
+    },
+    "outcomes": {
+      "1": {
+        "B5": true,
+        "B5_err": null,
+        "DF": false,
+        "DF_err": "oracle_failed"
+      },
+      "2": {
+        "B5": true,
+        "B5_err": null,
+        "DF": true,
+        "DF_err": null
+      },
+      "3": {
+        "B5": true,
+        "B5_err": null,
+        "DF": true,
+        "DF_err": null
+      }
+    },
+    "seq": "todo-convention-summary"
+  },
+  {
+    "leakage": {
+      "1": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "2": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "3": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      }
+    },
+    "outcomes": {
+      "1": {
+        "B5": true,
+        "B5_err": null,
+        "DF": false,
+        "DF_err": "oracle_failed"
+      },
+      "2": {
+        "B5": true,
+        "B5_err": null,
+        "DF": false,
+        "DF_err": "oracle_failed"
+      },
+      "3": {
+        "B5": true,
+        "B5_err": null,
+        "DF": true,
+        "DF_err": null
+      }
+    },
+    "seq": "todo-dedupe-keeplowest"
+  },
+  {
+    "leakage": {
+      "1": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "2": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "3": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      }
+    },
+    "outcomes": {
+      "1": {
+        "B5": true,
+        "B5_err": null,
+        "DF": true,
+        "DF_err": null
+      },
+      "2": {
+        "B5": true,
+        "B5_err": null,
+        "DF": true,
+        "DF_err": null
+      },
+      "3": {
+        "B5": true,
+        "B5_err": null,
+        "DF": true,
+        "DF_err": null
+      }
+    },
+    "seq": "todo-flaky-duetiebreak"
+  },
+  {
+    "leakage": {
+      "1": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "2": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "3": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      }
+    },
+    "outcomes": {
+      "1": {
+        "B5": true,
+        "B5_err": null,
+        "DF": true,
+        "DF_err": null
+      },
+      "2": {
+        "B5": true,
+        "B5_err": null,
+        "DF": true,
+        "DF_err": null
+      },
+      "3": {
+        "B5": true,
+        "B5_err": null,
+        "DF": true,
+        "DF_err": null
+      }
+    },
+    "seq": "todo-flaky-monotonic-ids"
+  },
+  {
+    "leakage": {
+      "1": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "2": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "3": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      }
+    },
+    "outcomes": {
+      "1": {
+        "B5": true,
+        "B5_err": null,
+        "DF": true,
+        "DF_err": null
+      },
+      "2": {
+        "B5": true,
+        "B5_err": null,
+        "DF": true,
+        "DF_err": null
+      },
+      "3": {
+        "B5": true,
+        "B5_err": null,
+        "DF": true,
+        "DF_err": null
+      }
+    },
+    "seq": "todo-reviewer-export-dialect"
+  },
+  {
+    "leakage": {
+      "1": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "2": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      },
+      "3": {
+        "answer_tokens": 0,
+        "examples": [],
+        "frac": 0.0,
+        "verbatim_in_B5_mem": 0
+      }
+    },
+    "outcomes": {
+      "1": {
+        "B5": true,
+        "B5_err": null,
+        "DF": true,
+        "DF_err": null
+      },
+      "2": {
+        "B5": true,
+        "B5_err": null,
+        "DF": true,
+        "DF_err": null
+      },
+      "3": {
+        "B5": true,
+        "B5_err": null,
+        "DF": true,
+        "DF_err": null
+      }
+    },
+    "seq": "todo-reviewer-idformat"
+  }
+]

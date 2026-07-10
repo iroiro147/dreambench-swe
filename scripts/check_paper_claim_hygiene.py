@@ -22,6 +22,10 @@ DEFAULT_SCAN_GLOBS = ("paper/main.tex", "paper/sections/*.tex")
 V2_PENDING_RE = re.compile(r"\b" + "V2-" + r"PENDING\b")
 MEM0_RE = re.compile(r"\bB5-MEM0(?:-LIT)?\b")
 PAPER_B_RE = re.compile(r"\bDreaming Agents\b|<LOCAL_PROJECT>|\bPaper B\b", re.IGNORECASE)
+INVALID_CONSTRUCT_GUARANTEE_RE = re.compile(
+    r"\b(?:effective\s+)?(?:anti[- ]hoarding|abstention)\s+guarantee\b",
+    re.IGNORECASE,
+)
 
 COST_VALUE_RE = re.compile(
     r"\b("
@@ -217,6 +221,17 @@ def audit_file(
 
         if PAPER_B_RE.search(line):
             findings.append(Finding("PAPER_B_TERM", path, index, "Paper B term is forbidden in Paper A", line))
+
+        if INVALID_CONSTRUCT_GUARANTEE_RE.search(line):
+            findings.append(
+                Finding(
+                    "INVALID_CONSTRUCT_GUARANTEE",
+                    path,
+                    index,
+                    "C9/C10 construct-validity failure forbids anti-hoarding or abstention guarantee claims",
+                    line,
+                )
+            )
 
         if MEM0_RE.search(line) and mem0_is_headline_surface(repo_root, path, index, line, window):
             if not (allow_supplemental_mem0 and SUPPLEMENTAL_MEM0_RE.search(window)):

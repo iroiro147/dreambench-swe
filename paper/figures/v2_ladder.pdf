@@ -12,12 +12,13 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 5 0 obj
-<< /Length 3232 >>
+<< /Length 3363 >>
 stream
-0.067 0.094 0.153 rg BT /F1 14.0 Tf 60.0 334.0 Td (v2 pass@1 ladder from fold JSON) Tj ET
+0.067 0.094 0.153 rg BT /F1 14.0 Tf 60.0 334.0 Td (Descriptive v2 S3 pass@1 ladder) Tj ET
 0.067 0.094 0.153 rg BT /F1 9.0 Tf 20.0 190.0 Td (pass@1) Tj ET
 0.200 0.200 0.200 RG 0.80 w 60.0 80.0 m 567.0 80.0 l S
 0.200 0.200 0.200 RG 0.80 w 60.0 80.0 m 60.0 300.0 l S
+0.067 0.094 0.153 rg BT /F1 7.0 Tf 60.0 28.0 Td (95% Wilson intervals; inferential results use the trap-clustered P-family.) Tj ET
 0.898 0.906 0.922 RG 0.35 w 60.0 80.0 m 567.0 80.0 l S
 0.067 0.094 0.153 rg BT /F1 7.0 Tf 32.0 77.0 Td (0.0) Tj ET
 0.898 0.906 0.922 RG 0.35 w 60.0 124.0 m 567.0 124.0 l S
@@ -70,5 +71,5 @@ xref
 trailer
 << /Size 6 /Root 1 0 R >>
 startxref
-3599
+3730
 %%EOF

@@ -12,7 +12,7 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 5 0 obj
-<< /Length 9174 >>
+<< /Length 9302 >>
 stream
 0.067 0.094 0.153 rg BT /F1 14.0 Tf 58.0 322.0 Td (v2 construct quota for final 60-trap fold) Tj ET
 0.067 0.094 0.153 rg BT /F1 9.0 Tf 18.0 180.0 Td (trap count) Tj ET
@@ -20,8 +20,9 @@ stream
 0.200 0.200 0.200 RG 0.80 w 58.0 62.0 m 58.0 282.0 l S
 0.067 0.094 0.153 rg BT /F1 8.0 Tf 430.0 323.0 Td (final 60-trap quota) Tj ET
 0.847 0.867 0.902 rg 0.302 0.333 0.396 RG 0.70 w 410.0 317.0 14.0 8.0 re B
-0.067 0.094 0.153 rg BT /F1 8.0 Tf 430.0 305.0 Td (guaranteed anti-hoarding quota) Tj ET
+0.067 0.094 0.153 rg BT /F1 8.0 Tf 430.0 305.0 Td (preregistered anti-hoarding-design quota) Tj ET
 0.949 0.663 0.000 rg 0.247 0.204 0.125 RG 0.70 w 410.0 299.0 14.0 8.0 re B
+0.067 0.094 0.153 rg BT /F1 7.0 Tf 58.0 20.0 Td (Quota allocation only; C9 and C10 fail post-fold B0 headroom.) Tj ET
 0.898 0.906 0.922 RG 0.35 w 58.0 62.0 m 548.0 62.0 l S
 0.067 0.094 0.153 rg BT /F1 7.0 Tf 40.0 59.0 Td (0) Tj ET
 0.898 0.906 0.922 RG 0.35 w 58.0 73.6 m 548.0 73.6 l S
@@ -179,5 +180,5 @@ xref
 trailer
 << /Size 6 /Root 1 0 R >>
 startxref
-9541
+9669
 %%EOF

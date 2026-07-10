@@ -15,20 +15,26 @@ ln -sf "$(basename "$LOG")" logs/grid/SYNTH-latest.log
 echo "[synth start $(date -u +%FT%TZ)]" | tee -a "$LOG"
 
 run_cond () {
-  local conds="$1" mp="$2" t=0
-  while [ "$t" -lt 100 ]; do t=$((t+1))
+  local conds="$1" mp="$2" t=0 rc=1
+  local max_attempts="${DREAMBENCH_MAX_ATTEMPTS:-100}"
+  local retry_delay="${DREAMBENCH_RETRY_DELAY_SECONDS:-30}"
+  while [ "$t" -lt "$max_attempts" ]; do t=$((t+1))
     PYTHONPATH=src python3 scripts/run_grid.py --conditions "$conds" --seeds 1,2,3 \
       --group-size 2 --max-parallel "$mp" --judge-model codex-gpt-5.5 \
       --sequence-records experiments/env/sequences_synth.jsonl >>"$LOG" 2>&1
     rc=$?; echo "[$conds rc=$rc try=$t $(date -u +%FT%TZ)]" | tee -a "$LOG"
-    [ "$rc" -eq 0 ] && break
-    echo "[resume 30s]" | tee -a "$LOG"; sleep 30
+    [ "$rc" -eq 0 ] && return 0
+    if [ "$t" -lt "$max_attempts" ]; then
+      echo "[resume ${retry_delay}s]" | tee -a "$LOG"; sleep "$retry_delay"
+    fi
   done
+  echo "[$conds RETRY_EXHAUSTED rc=$rc tries=$t $(date -u +%FT%TZ)]" | tee -a "$LOG"
+  return "$rc"
 }
 
 # mp=16 hermetic synth batch: prereg B0/B1/B3/B5 plus the ablation ladder.
 # VALID_CONDITIONS spells the prereg DF-typed-only arm as DF.
-run_cond "B0,B1,B3,B5,DF,DF-raw-only,DF-hybrid" 16
+run_cond "B0,B1,B3,B5,DF,DF-raw-only,DF-hybrid" 16 || exit $?
 # mp=4: real Mem0 baseline at low concurrency (async-indexing fairness).
-run_cond "B5-MEM0" 4
+run_cond "B5-MEM0" 4 || exit $?
 echo "[SYNTH_COMPLETE $(date -u +%FT%TZ)]" | tee -a "$LOG"

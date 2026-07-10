@@ -124,6 +124,18 @@ def test_fails_on_paper_b_terms(tmp_path: Path) -> None:
     assert "PAPER_B_TERM" in finding_codes(report)
 
 
+def test_fails_on_invalid_construct_guarantee(tmp_path: Path) -> None:
+    make_clean_manuscript(tmp_path)
+    write(
+        tmp_path / "paper" / "sections" / "07_results.tex",
+        "The retained strata establish an effective anti-hoarding guarantee.\n",
+    )
+
+    report = audit(tmp_path)
+
+    assert "INVALID_CONSTRUCT_GUARANTEE" in finding_codes(report)
+
+
 def test_cli_prints_machine_readable_failures(tmp_path: Path, capsys) -> None:  # type: ignore[no-untyped-def]
     make_clean_manuscript(tmp_path)
     write(tmp_path / "paper" / "sections" / "10_conclusion.tex", f"Remaining {PENDING_TOKEN} marker.\n")

@@ -29,7 +29,8 @@ FIGURES_DIR = ROOT / "paper" / "figures"
 V2_TRAP_ROOT = ROOT / "experiments" / "env" / "v2-traps"
 
 CONSTRUCTS = tuple(f"C{index}" for index in range(1, 11))
-ANTI_HOARDING_LABEL = "guaranteed anti-hoarding quota"
+ANTI_HOARDING_LABEL = "preregistered anti-hoarding-design quota"
+ANTI_HOARDING_NOTE = "Quota allocation only; C9 and C10 fail post-fold B0 headroom."
 FINAL_V2_CONSTRUCT_COUNTS = {
     "C1": {"total": 18, "anti_hoarding": 0},
     "C2": {"total": 6, "anti_hoarding": 6},
@@ -42,10 +43,15 @@ FINAL_V2_CONSTRUCT_COUNTS = {
     "C9": {"total": 4, "anti_hoarding": 4},
     "C10": {"total": 2, "anti_hoarding": 2},
 }
-V1_VERBATIM_SYNTHESIS = (
-    ("B5 verbatim", 0.727),
-    ("B5 synthesis", 0.250),
+V1_B5_EVIDENCE_LOCATION = (
+    {"label": "B5 recall-verbatim", "passed": 48, "n": 54},
+    {"label": "B5 synthesis/apply", "passed": 0, "n": 12},
 )
+V1_STRATUM_NOTE = (
+    "Descriptive v1 evidence-location strata (18 vs 4 traps); not a powered comparison."
+)
+LADDER_TITLE = "Descriptive v2 S3 pass@1 ladder"
+LADDER_NOTE = "95% Wilson intervals; inferential results use the trap-clustered P-family."
 CONDITION_LABELS = {
     "B0": "B0 no memory",
     "B1": "B1 raw episodic",
@@ -98,7 +104,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     construct_counts = collect_construct_counts(trap_root) if args.use_trap_root_counts else None
     paths = [
         render_construct_coverage(output_dir=output_dir, trap_root=trap_root, counts=construct_counts),
-        render_verbatim_vs_synthesis(output_dir=output_dir, fold_json=args.fold_json),
+        render_verbatim_vs_synthesis(output_dir=output_dir),
     ]
     if args.fold_json:
         paths.insert(1, render_ladder_plot(args.fold_json, output_dir=output_dir))
@@ -217,14 +223,15 @@ def render_ladder_plot(
             fontsize=8,
         )
 
-    ax.set_title("v2 pass@1 ladder from fold JSON")
+    ax.set_title(LADDER_TITLE)
     ax.set_ylabel("pass@1")
     ax.set_xticks(x_values)
     ax.set_xticklabels(labels, rotation=25, ha="right")
     ax.set_ylim(0, 1.08)
     ax.grid(axis="y", color="#e5e7eb", linewidth=0.7)
     ax.set_axisbelow(True)
-    fig.tight_layout()
+    fig.text(0.5, 0.01, LADDER_NOTE, ha="center", va="bottom", fontsize=8, color="#555")
+    fig.tight_layout(rect=(0, 0.06, 1, 1))
     return save_pdf(fig, path)
 
 
@@ -260,25 +267,25 @@ def render_verbatim_vs_synthesis(
     *,
     output_dir: Path = FIGURES_DIR,
     filename: str = "v2_verbatim_vs_synthesis.pdf",
-    fold_json: Path | None = None,
 ) -> Path:
-    """Render the real v1 B5 verbatim-vs-synthesis contrast."""
+    """Render the within-fold B5 contrast for the historical v1 evidence-location strata."""
 
-    labels = [label for label, _rate in V1_VERBATIM_SYNTHESIS]
-    rates = [rate for _label, rate in V1_VERBATIM_SYNTHESIS]
+    points = b5_v1_stratum_points()
+    labels = [point["label"] for point in points]
+    rates = [point["rate"] for point in points]
+    value_labels = [f"{point['passed']}/{point['n']} ({point['rate']:.3f})" for point in points]
     colors = ["#5b677a", "#d4772f"]
     path = output_dir / filename
-    note = verbatim_synthesis_note(fold_json)
     if plt is None:
-        return save_verbatim_synthesis_fallback(path, labels, rates, note)
+        return save_verbatim_synthesis_fallback(path, labels, rates, value_labels, V1_STRATUM_NOTE)
 
     fig, ax = plt.subplots(figsize=(5.2, 3.6))
     x_values = list(range(len(labels)))
     ax.bar(x_values, rates, width=0.58, color=colors, edgecolor="#2d2f33", linewidth=0.9)
-    for x_value, rate in zip(x_values, rates):
-        ax.text(x_value, rate + 0.025, f"{rate:.3f}", ha="center", va="bottom", fontsize=9)
+    for x_value, rate, value_label in zip(x_values, rates, value_labels):
+        ax.text(x_value, rate + 0.025, value_label, ha="center", va="bottom", fontsize=9)
 
-    ax.set_title("B5 stratum contrast, v1 fold")
+    ax.set_title("B5 by historical v1 evidence-location stratum")
     ax.set_ylabel("pass@1")
     ax.set_xticks(x_values)
     ax.set_xticklabels(labels)
@@ -286,7 +293,7 @@ def render_verbatim_vs_synthesis(
     ax.text(
         0.5,
         -0.23,
-        note,
+        V1_STRATUM_NOTE,
         transform=ax.transAxes,
         ha="center",
         va="top",
@@ -299,37 +306,22 @@ def render_verbatim_vs_synthesis(
     return save_pdf(fig, path)
 
 
-def verbatim_synthesis_note(fold_json: Path | None = None) -> str:
-    if fold_json is None:
-        return "v1 observed rates; v2 stratum validity is reported from the fold JSON"
-    try:
-        payload = read_json(fold_json)
-    except (OSError, json.JSONDecodeError):
-        return "v1 observed rates; v2 stratum validity unavailable from supplied fold JSON"
-    cells = (
-        payload.get("conditions", {})
-        .get("B0", {})
-        .get("s3_cells", {})
-        if isinstance(payload.get("conditions"), Mapping)
-        else {}
-    )
-    if not isinstance(cells, Mapping):
-        return "v1 observed rates; v2 stratum validity unavailable from supplied fold JSON"
-    headroom = []
-    for stratum in ("c9", "c10"):
-        stratum_cells = [
-            item
-            for item in cells.values()
-            if isinstance(item, Mapping)
-            and str(item.get("sequence_id") or "").lower().startswith(f"v2-{stratum}-")
-        ]
-        if not stratum_cells:
-            continue
-        passed = sum(1 for item in stratum_cells if bool(item.get("passed")))
-        headroom.append(f"{stratum.upper()} B0 {passed}/{len(stratum_cells)}")
-    if not headroom:
-        return "v1 observed rates; v2 stratum validity is reported from the fold JSON"
-    return "v1 observed rates; v2 headroom: " + ", ".join(headroom)
+def b5_v1_stratum_points() -> list[dict[str, Any]]:
+    points: list[dict[str, Any]] = []
+    for item in V1_B5_EVIDENCE_LOCATION:
+        passed = int(item["passed"])
+        n = int(item["n"])
+        if n <= 0 or passed < 0 or passed > n:
+            raise ValueError(f"invalid historical B5 stratum count: {item!r}")
+        points.append(
+            {
+                "label": str(item["label"]),
+                "passed": passed,
+                "n": n,
+                "rate": passed / n,
+            }
+        )
+    return points
 
 
 def fold_condition_entries(payload: Mapping[str, Any]) -> list[tuple[str, Mapping[str, Any]]]:
@@ -459,6 +451,7 @@ def save_construct_coverage_fallback(path: Path, labels: Sequence[str], totals: 
         rect_command(410, 317, 14, 8, "#d8dde6", "#4d5565"),
         text_command(ANTI_HOARDING_LABEL, 430, 305, 8),
         rect_command(410, 299, 14, 8, "#f2a900", "#3f3420"),
+        text_command(ANTI_HOARDING_NOTE, 58, 20, 7),
     ]
     for tick in range(max_y + 1):
         y = bottom + plot_height * tick / max_y
@@ -490,10 +483,11 @@ def save_ladder_fallback(
     width, height = max(612.0, 86.0 * len(labels)), 372.0
     left, bottom, plot_width, plot_height = 60.0, 80.0, width - 105.0, 220.0
     commands: list[str] = [
-        text_command("v2 pass@1 ladder from fold JSON", left, 334, 14),
+        text_command(LADDER_TITLE, left, 334, 14),
         text_command("pass@1", 20, 190, 9),
         line_command(left, bottom, left + plot_width, bottom, "#333333", 0.8),
         line_command(left, bottom, left, bottom + plot_height, "#333333", 0.8),
+        text_command(LADDER_NOTE, left, 28, 7),
     ]
     for tick in range(6):
         value = tick / 5
@@ -538,6 +532,7 @@ def save_verbatim_synthesis_fallback(
     path: Path,
     labels: Sequence[str],
     rates: Sequence[float],
+    value_labels: Sequence[str],
     note: str,
 ) -> Path:
     width, height = 468.0, 330.0
@@ -545,7 +540,7 @@ def save_verbatim_synthesis_fallback(
     bar_width = 72.0
     colors = ("#5b677a", "#d4772f")
     commands: list[str] = [
-        text_command("B5 stratum contrast, v1 fold", 70, 296, 14),
+        text_command("B5 by historical v1 evidence-location stratum", 70, 296, 14),
         text_command("pass@1", 27, 180, 9),
         line_command(left, bottom, left + plot_width, bottom, "#333333", 0.8),
         line_command(left, bottom, left, bottom + plot_height, "#333333", 0.8),
@@ -557,13 +552,13 @@ def save_verbatim_synthesis_fallback(
         commands.append(line_command(left, y, left + plot_width, y, "#e5e7eb", 0.35))
         commands.append(text_command(f"{value:.1f}", left - 28, y - 3, 7))
 
-    for index, (label, rate) in enumerate(zip(labels, rates)):
+    for index, (label, rate, value_label) in enumerate(zip(labels, rates, value_labels)):
         center = left + (index + 1) * plot_width / 3
         height_value = plot_height * rate
         commands.append(
             rect_command(center - bar_width / 2, bottom, bar_width, height_value, colors[index], "#2d2f33")
         )
-        commands.append(text_command(f"{rate:.3f}", center - 15, bottom + height_value + 12, 9))
+        commands.append(text_command(value_label, center - 31, bottom + height_value + 12, 9))
         commands.append(text_command(label, center - 42, bottom - 25, 8))
     return write_basic_pdf(path, "\n".join(commands), width=width, height=height)
 

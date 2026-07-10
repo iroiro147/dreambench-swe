@@ -30,6 +30,37 @@ def test_valid_synthetic_dist_package_passes(tmp_path: Path) -> None:
     assert summary.checksum_file_count == summary.manifest_file_count + 1
 
 
+def test_missing_release_version_fails(tmp_path: Path) -> None:
+    package_dir = tmp_path / PACKAGE_NAME
+    build_synthetic_package_dir(package_dir)
+    manifest_path = package_dir / "MANIFEST.json"
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    del manifest["release_version"]
+    manifest_path.write_text(json.dumps(manifest, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+
+    with pytest.raises(validator.PackageValidationError) as exc_info:
+        validator.validate_package_directory(package_dir, mode="public")
+
+    assert "package MANIFEST.json field 'release_version' must be a non-empty string" in exc_info.value.errors
+
+
+def test_wrong_release_version_fails(tmp_path: Path) -> None:
+    package_dir = tmp_path / PACKAGE_NAME
+    build_synthetic_package_dir(package_dir)
+    manifest_path = package_dir / "MANIFEST.json"
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    manifest["release_version"] = "v2.0.4"
+    manifest_path.write_text(json.dumps(manifest, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+
+    with pytest.raises(validator.PackageValidationError) as exc_info:
+        validator.validate_package_directory(package_dir, mode="public")
+
+    assert (
+        "package MANIFEST.json release_version is 'v2.0.4', expected 'v2.0.5'"
+        in exc_info.value.errors
+    )
+
+
 def test_missing_required_v2_artifact_fails(tmp_path: Path) -> None:
     missing = "analysis/fold/v2_hygiene_oracle.tex"
     dist = build_synthetic_dist(tmp_path, omit={missing})
@@ -278,6 +309,7 @@ def build_synthetic_package_dir(
             ".artifactignore",
             "Makefile",
             "artifact/README.md",
+            "requirements-artifact.txt",
             "experiments/env/tasks.jsonl",
         )
     )
@@ -295,6 +327,7 @@ def build_synthetic_package_dir(
 
     manifest = {
         "package": PACKAGE_NAME,
+        "release_version": validator.RELEASE_VERSION,
         "mode": mode,
         "archive": validator.PRIVATE_ARCHIVE if mode == "private" else validator.PUBLIC_ARCHIVE,
         "generated_at_utc": "2026-07-06T14:50:00Z",

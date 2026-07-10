@@ -20,11 +20,13 @@ from typing import Any, Mapping
 
 
 PACKAGE_NAME = "dreambench-swe-artifact"
+RELEASE_VERSION = "v2.0.5"
 PUBLIC_ARCHIVE = "dreambench-swe-artifact.tar.gz"
 PRIVATE_ARCHIVE = "dreambench-swe-artifact-reviewer-private.tar.gz"
 VALID_MODES = {"public", "private"}
 
 REQUIRED_V2_ANALYSIS_ARTIFACTS = (
+    "analysis/fold/confirmatory.json",
     "analysis/fold/v2_fold.json",
     "analysis/fold/v2_confirmatory_clustered.json",
     "analysis/fold/v2_confirmatory_clustered.stdout.json",
@@ -63,6 +65,10 @@ REQUIRED_V2_SCRIPTS = (
     "scripts/check_v2_artifact_freshness.py",
     "scripts/check_v2_confirmatory_completion.py",
     "scripts/check_paper_claim_hygiene.py",
+    "scripts/check_arxiv_abstract.py",
+    "scripts/check_paper_public_evidence.py",
+    "scripts/check_release_coherence.py",
+    "scripts/audit_public_tree.py",
     "scripts/inject_secrets.py",
     "scripts/Dockerfile.api-agent",
     "scripts/package_arxiv_source.py",
@@ -72,16 +78,23 @@ REQUIRED_V2_SCRIPTS = (
 REQUIRED_PACKAGE_PROOFS = (
     "LICENSE",
     "README.md",
+    "requirements-artifact.txt",
     "docs/DATASHEET.md",
     "docs/trap_skeleton_spec.md",
     "analysis/fold/HERMETICITY-MANIFEST.md",
     "analysis/fold/CANARY-PROOF.txt",
     "analysis/fold/REPRO-MANIFEST.md",
+    "analysis/fold/v2_post_analyzer_completion_check.txt",
     "analysis/investigation-evidence/PREREGISTRATION-V2.md",
     "analysis/investigation-evidence/V2-ANALYSIS-20260708T065236Z.md",
     "analysis/investigation-evidence/FABLE-CONSTRUCTS.md",
     "analysis/investigation-evidence/AUTHORING-WORKLIST.md",
     "analysis/investigation-evidence/SCALE1-FREEZE-DECISIONS.md",
+    "analysis/investigation-evidence/CLUSTERED-STATS.md",
+    "analysis/investigation-evidence/CONFIRMATORY-FOLD.md",
+    "analysis/investigation-evidence/MEM0-ROW-FOLD-REPORT.md",
+    "analysis/investigation-evidence/REPORT-Q-BENCH.md",
+    "analysis/investigation-evidence/per_trap_matrix_and_leakage.json",
 )
 
 GENERATED_PACKAGE_FILES = {"MANIFEST.json", "CHECKSUMS.sha256"}
@@ -214,6 +227,7 @@ def validate_dist_package(
 
     manifest = _load_json_object(manifest_path, "dist MANIFEST.json", errors)
     package_name = _string_field(manifest, "package", "dist MANIFEST.json", errors) or PACKAGE_NAME
+    _validate_release_version(manifest, "dist MANIFEST.json", errors)
     manifest_mode = _string_field(manifest, "mode", "dist MANIFEST.json", errors) or ""
     _validate_manifest_mode(manifest_mode, "dist MANIFEST.json", errors)
     archive_name = _string_field(manifest, "archive", "dist MANIFEST.json", errors)
@@ -284,6 +298,7 @@ def _validate_package_directory(
     checksums_path = package_dir / "CHECKSUMS.sha256"
     manifest = _load_json_object(manifest_path, "package MANIFEST.json", errors)
     package_name = _string_field(manifest, "package", "package MANIFEST.json", errors) or PACKAGE_NAME
+    _validate_release_version(manifest, "package MANIFEST.json", errors)
     manifest_mode = _string_field(manifest, "mode", "package MANIFEST.json", errors) or ""
     _validate_manifest_mode(manifest_mode, "package MANIFEST.json", errors)
     if package_dir.name != package_name:
@@ -354,6 +369,14 @@ def _manifest_file_entries(manifest: Mapping[str, Any], errors: list[str]) -> di
             errors.append(f"MANIFEST.json entry {rel} missing non-empty role")
         entries[rel] = item
     return entries
+
+
+def _validate_release_version(manifest: Mapping[str, Any], label: str, errors: list[str]) -> None:
+    release_version = _string_field(manifest, "release_version", label, errors)
+    if release_version is not None and release_version != RELEASE_VERSION:
+        errors.append(
+            f"{label} release_version is {release_version!r}, expected {RELEASE_VERSION!r}"
+        )
 
 
 def _validate_manifest_against_files(

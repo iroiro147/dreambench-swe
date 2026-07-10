@@ -26,6 +26,7 @@ from typing import Iterable
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_DIST = ROOT / "dist"
 PACKAGE_NAME = "dreambench-swe-artifact"
+RELEASE_VERSION = "v2.0.5"
 PUBLIC_ARCHIVE = "dreambench-swe-artifact.tar.gz"
 PRIVATE_ARCHIVE = "dreambench-swe-artifact-reviewer-private.tar.gz"
 
@@ -120,6 +121,7 @@ INCLUDE_FILES = (
     ".artifactignore",
     "LICENSE",
     "README.md",
+    "requirements-artifact.txt",
     "Makefile",
     "pytest.ini",
     "artifact/README.md",
@@ -156,6 +158,7 @@ INCLUDE_FILES = (
     "analysis/fold/HERMETICITY-MANIFEST.md",
     "analysis/fold/CANARY-PROOF.txt",
     "analysis/fold/REPRO-MANIFEST.md",
+    "analysis/fold/v2_post_analyzer_completion_check.txt",
     "analysis/investigation-evidence/CONFIRMATORY-FOLD.md",
     "analysis/investigation-evidence/CLUSTERED-STATS.md",
     "analysis/investigation-evidence/CONFIRMATORY-COST.md",
@@ -167,6 +170,8 @@ INCLUDE_FILES = (
     "analysis/investigation-evidence/SCALE1-FREEZE-DECISIONS.md",
     "analysis/investigation-evidence/XMODEL-glm.md",
     "analysis/investigation-evidence/MEM0-ROW-FOLD-REPORT.md",
+    "analysis/investigation-evidence/REPORT-Q-BENCH.md",
+    "analysis/investigation-evidence/per_trap_matrix_and_leakage.json",
 )
 
 INCLUDE_DIRS = (
@@ -197,6 +202,10 @@ SCRIPT_FILES = (
     "scripts/check_v2_artifact_freshness.py",
     "scripts/check_v2_confirmatory_completion.py",
     "scripts/check_paper_claim_hygiene.py",
+    "scripts/check_arxiv_abstract.py",
+    "scripts/check_paper_public_evidence.py",
+    "scripts/check_release_coherence.py",
+    "scripts/audit_public_tree.py",
     "scripts/analyze_results.py",
     "scripts/barrier2_rescore.py",
     "scripts/check_synth_no_single_event.py",
@@ -221,6 +230,7 @@ PRIVATE_INCLUDE_DIRS = (
 REQUIRED_EXPLICIT_FILES = {
     "LICENSE",
     "README.md",
+    "requirements-artifact.txt",
     "analysis/fold/v2_fold.json",
     "analysis/fold/v2_confirmatory_clustered.json",
     "analysis/fold/v2_confirmatory_clustered.stdout.json",
@@ -238,6 +248,8 @@ REQUIRED_EXPLICIT_FILES = {
     "analysis/fold/HERMETICITY-MANIFEST.md",
     "analysis/fold/CANARY-PROOF.txt",
     "analysis/fold/REPRO-MANIFEST.md",
+    "analysis/fold/confirmatory.json",
+    "analysis/fold/v2_post_analyzer_completion_check.txt",
     "docs/DATASHEET.md",
     "docs/trap_skeleton_spec.md",
     "experiments/env/sequences_confirmatory_v2.jsonl",
@@ -247,6 +259,11 @@ REQUIRED_EXPLICIT_FILES = {
     "analysis/investigation-evidence/FABLE-CONSTRUCTS.md",
     "analysis/investigation-evidence/AUTHORING-WORKLIST.md",
     "analysis/investigation-evidence/SCALE1-FREEZE-DECISIONS.md",
+    "analysis/investigation-evidence/CLUSTERED-STATS.md",
+    "analysis/investigation-evidence/CONFIRMATORY-FOLD.md",
+    "analysis/investigation-evidence/MEM0-ROW-FOLD-REPORT.md",
+    "analysis/investigation-evidence/REPORT-Q-BENCH.md",
+    "analysis/investigation-evidence/per_trap_matrix_and_leakage.json",
     "scripts/construct_validity.py",
     "scripts/analyze_confirmatory_v2.py",
     "scripts/admission_funnel.py",
@@ -259,6 +276,10 @@ REQUIRED_EXPLICIT_FILES = {
     "scripts/check_v2_artifact_freshness.py",
     "scripts/check_v2_confirmatory_completion.py",
     "scripts/check_paper_claim_hygiene.py",
+    "scripts/check_arxiv_abstract.py",
+    "scripts/check_paper_public_evidence.py",
+    "scripts/check_release_coherence.py",
+    "scripts/audit_public_tree.py",
     "scripts/batch_validate.py",
     "scripts/inject_secrets.py",
     "scripts/Dockerfile.api-agent",
@@ -327,7 +348,12 @@ def build_package(*, private: bool, dist_dir: Path) -> dict[str, object]:
         package_root.mkdir()
 
         copy_package_files(package_root, ignore_patterns=ignore_patterns, private=private)
-        staged_files = collect_staged_files(package_root, private=private)
+        inherited_scrubbed = load_inherited_scrubbed_files()
+        staged_files = collect_staged_files(
+            package_root,
+            private=private,
+            inherited_scrubbed=inherited_scrubbed,
+        )
         manifest = build_manifest(mode=mode, archive_name=archive_name, staged_files=staged_files)
         manifest_path = package_root / "MANIFEST.json"
         manifest_path.write_text(json.dumps(manifest, indent=2, sort_keys=True) + "\n", encoding="utf-8")
@@ -528,21 +554,55 @@ def scrub_json_value(value: object, rel: str, *, private: bool = False) -> objec
     return value
 
 
-def collect_staged_files(package_root: Path, *, private: bool) -> list[StagedFile]:
+def load_inherited_scrubbed_files() -> dict[str, str]:
+    manifest_value = os.environ.get("DREAMBENCH_RELEASE_MANIFEST")
+    if not manifest_value:
+        return {}
+    manifest_path = Path(manifest_value)
+    if not manifest_path.is_absolute():
+        manifest_path = ROOT / manifest_path
+    try:
+        payload = json.loads(manifest_path.read_text(encoding="utf-8"))
+        entries = payload["files"]
+    except (OSError, KeyError, TypeError, json.JSONDecodeError) as exc:
+        raise RuntimeError(f"cannot inherit scrub metadata from {manifest_path}: {exc}") from exc
+    if not isinstance(entries, list):
+        raise RuntimeError(f"cannot inherit scrub metadata from {manifest_path}: files must be a list")
+
+    inherited: dict[str, str] = {}
+    for entry in entries:
+        if not isinstance(entry, dict) or entry.get("scrubbed") is not True:
+            continue
+        path = entry.get("path")
+        sha256 = entry.get("sha256")
+        if isinstance(path, str) and isinstance(sha256, str):
+            inherited[path] = sha256
+    return inherited
+
+
+def collect_staged_files(
+    package_root: Path,
+    *,
+    private: bool,
+    inherited_scrubbed: dict[str, str] | None = None,
+) -> list[StagedFile]:
     files: list[StagedFile] = []
+    inherited_scrubbed = inherited_scrubbed or {}
     for path in sorted(item for item in package_root.rglob("*") if item.is_file()):
         rel = path.relative_to(package_root).as_posix()
         if rel in {"MANIFEST.json", "CHECKSUMS.sha256"}:
             continue
         source = "generated" if rel in {"MANIFEST.json", "CHECKSUMS.sha256"} else rel
+        sha256 = sha256_file(path)
         files.append(
             StagedFile(
                 path=rel,
                 source=source,
                 size=path.stat().st_size,
-                sha256=sha256_file(path),
+                sha256=sha256,
                 role=role_for_path(rel, private=private),
-                scrubbed=was_scrubbed(ROOT / rel, path),
+                scrubbed=was_scrubbed(ROOT / rel, path)
+                or inherited_scrubbed.get(rel) == sha256,
             )
         )
     return files
@@ -585,6 +645,7 @@ def build_manifest(*, mode: str, archive_name: str, staged_files: list[StagedFil
     generated_at = package_source_timestamp(staged_files)
     return {
         "package": PACKAGE_NAME,
+        "release_version": RELEASE_VERSION,
         "mode": mode,
         "archive": archive_name,
         "generated_at_utc": generated_at,
@@ -605,6 +666,17 @@ def build_manifest(*, mode: str, archive_name: str, staged_files: list[StagedFil
 
 def package_source_timestamp(staged_files: list[StagedFile]) -> str:
     """Return a stable release timestamp derived from the newest packaged input."""
+    source_date_epoch = os.environ.get("SOURCE_DATE_EPOCH")
+    if source_date_epoch is not None:
+        try:
+            epoch = int(source_date_epoch)
+            if epoch < 0:
+                raise ValueError("must be non-negative")
+            timestamp = datetime.fromtimestamp(epoch, timezone.utc)
+        except (OSError, OverflowError, ValueError) as exc:
+            raise RuntimeError(f"invalid SOURCE_DATE_EPOCH {source_date_epoch!r}: {exc}") from exc
+        return timestamp.replace(microsecond=0).isoformat().replace("+00:00", "Z")
+
     mtimes: list[float] = []
     for item in staged_files:
         source = ROOT / item.source

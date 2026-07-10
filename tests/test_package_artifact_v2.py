@@ -11,6 +11,7 @@ from scripts import package_artifact
 
 
 V2_CANONICAL_OUTPUTS = (
+    "analysis/fold/confirmatory.json",
     "analysis/fold/v2_fold.json",
     "analysis/fold/v2_confirmatory_clustered.json",
     "analysis/fold/v2_confirmatory_clustered.stdout.json",
@@ -46,6 +47,10 @@ V2_SCRIPTS = (
     "scripts/check_v2_artifact_freshness.py",
     "scripts/check_v2_confirmatory_completion.py",
     "scripts/check_paper_claim_hygiene.py",
+    "scripts/check_arxiv_abstract.py",
+    "scripts/check_paper_public_evidence.py",
+    "scripts/check_release_coherence.py",
+    "scripts/audit_public_tree.py",
     "scripts/inject_secrets.py",
     "scripts/Dockerfile.api-agent",
     "scripts/package_arxiv_source.py",
@@ -55,16 +60,23 @@ V2_SCRIPTS = (
 PACKAGE_PROOFS = (
     "LICENSE",
     "README.md",
+    "requirements-artifact.txt",
     "docs/DATASHEET.md",
     "docs/trap_skeleton_spec.md",
     "analysis/fold/HERMETICITY-MANIFEST.md",
     "analysis/fold/CANARY-PROOF.txt",
     "analysis/fold/REPRO-MANIFEST.md",
+    "analysis/fold/v2_post_analyzer_completion_check.txt",
     "analysis/investigation-evidence/PREREGISTRATION-V2.md",
     "analysis/investigation-evidence/V2-ANALYSIS-20260708T065236Z.md",
     "analysis/investigation-evidence/FABLE-CONSTRUCTS.md",
     "analysis/investigation-evidence/AUTHORING-WORKLIST.md",
     "analysis/investigation-evidence/SCALE1-FREEZE-DECISIONS.md",
+    "analysis/investigation-evidence/CLUSTERED-STATS.md",
+    "analysis/investigation-evidence/CONFIRMATORY-FOLD.md",
+    "analysis/investigation-evidence/MEM0-ROW-FOLD-REPORT.md",
+    "analysis/investigation-evidence/REPORT-Q-BENCH.md",
+    "analysis/investigation-evidence/per_trap_matrix_and_leakage.json",
 )
 
 HIDDEN_ORACLE_PREFIX = "experiments/env/" + "oracles/"
@@ -113,6 +125,7 @@ def test_public_package_manifest_and_tar_include_v2_outputs_and_scripts(
 
     assert result["mode"] == "public"
     manifest = json.loads((dist / "MANIFEST.json").read_text(encoding="utf-8"))
+    assert manifest["release_version"] == "v2.0.5"
     paths = manifest_paths(manifest)
     expected_public_paths = {*V2_CANONICAL_OUTPUTS, *V2_INPUTS, *V2_SCRIPTS, *PACKAGE_PROOFS}
     assert expected_public_paths <= paths
@@ -153,6 +166,96 @@ def test_public_package_rebuild_is_deterministic(
     ).read_bytes()
     assert (first_dist / "MANIFEST.json").read_bytes() == (second_dist / "MANIFEST.json").read_bytes()
     assert (first_dist / "CHECKSUMS.sha256").read_bytes() == (second_dist / "CHECKSUMS.sha256").read_bytes()
+
+
+def test_source_date_epoch_freezes_manifest_timestamp(
+    tmp_path: Path,
+    monkeypatch,  # type: ignore[no-untyped-def]
+) -> None:
+    root = tmp_path / "repo"
+    dist = tmp_path / "dist"
+    root.mkdir()
+    for rel in (*V2_CANONICAL_OUTPUTS, *V2_INPUTS, *V2_SCRIPTS, *PACKAGE_PROOFS):
+        write_fixture_file(root, rel)
+    monkeypatch.setattr(package_artifact, "ROOT", root)
+    monkeypatch.setenv("SOURCE_DATE_EPOCH", "1700000000")
+
+    package_artifact.build_package(private=False, dist_dir=dist)
+
+    manifest = json.loads((dist / "MANIFEST.json").read_text(encoding="utf-8"))
+    assert manifest["generated_at_utc"] == "2023-11-14T22:13:20Z"
+
+
+def test_invalid_source_date_epoch_fails(
+    tmp_path: Path,
+    monkeypatch,  # type: ignore[no-untyped-def]
+) -> None:
+    root = tmp_path / "repo"
+    dist = tmp_path / "dist"
+    root.mkdir()
+    for rel in (*V2_CANONICAL_OUTPUTS, *V2_INPUTS, *V2_SCRIPTS, *PACKAGE_PROOFS):
+        write_fixture_file(root, rel)
+    monkeypatch.setattr(package_artifact, "ROOT", root)
+    monkeypatch.setenv("SOURCE_DATE_EPOCH", "not-an-epoch")
+
+    with pytest.raises(RuntimeError, match="invalid SOURCE_DATE_EPOCH"):
+        package_artifact.build_package(private=False, dist_dir=dist)
+
+
+def test_rebuild_inherits_matching_scrubbed_provenance(
+    tmp_path: Path,
+    monkeypatch,  # type: ignore[no-untyped-def]
+) -> None:
+    root = tmp_path / "repo"
+    dist = tmp_path / "dist"
+    root.mkdir()
+    for rel in (*V2_CANONICAL_OUTPUTS, *V2_INPUTS, *V2_SCRIPTS, *PACKAGE_PROOFS):
+        write_fixture_file(root, rel)
+    readme = root / "artifact/README.md"
+    readme.parent.mkdir(parents=True, exist_ok=True)
+    readme.write_text("local path: <USER_HOME>/project\n", encoding="utf-8")
+    monkeypatch.setattr(package_artifact, "ROOT", root)
+    monkeypatch.setenv("SOURCE_DATE_EPOCH", "1700000000")
+
+    package_artifact.build_package(private=False, dist_dir=dist)
+    first_manifest = json.loads((dist / "MANIFEST.json").read_text(encoding="utf-8"))
+    readme_entry = next(item for item in first_manifest["files"] if item["path"] == "artifact/README.md")
+    assert readme_entry["scrubbed"] is True
+
+    readme.write_text("local path: <USER_HOME>/project\n", encoding="utf-8")
+    monkeypatch.setenv("DREAMBENCH_RELEASE_MANIFEST", str(dist / "MANIFEST.json"))
+    package_artifact.build_package(private=False, dist_dir=tmp_path / "rebuilt")
+    rebuilt_manifest = json.loads((tmp_path / "rebuilt/MANIFEST.json").read_text(encoding="utf-8"))
+    rebuilt_entry = next(item for item in rebuilt_manifest["files"] if item["path"] == "artifact/README.md")
+
+    assert rebuilt_entry["sha256"] == readme_entry["sha256"]
+    assert rebuilt_entry["scrubbed"] is True
+
+
+def test_rebuild_does_not_inherit_scrubbed_flag_after_payload_change(
+    tmp_path: Path,
+    monkeypatch,  # type: ignore[no-untyped-def]
+) -> None:
+    root = tmp_path / "repo"
+    dist = tmp_path / "dist"
+    root.mkdir()
+    for rel in (*V2_CANONICAL_OUTPUTS, *V2_INPUTS, *V2_SCRIPTS, *PACKAGE_PROOFS):
+        write_fixture_file(root, rel)
+    monkeypatch.setattr(package_artifact, "ROOT", root)
+    package_artifact.build_package(private=False, dist_dir=dist)
+    manifest = json.loads((dist / "MANIFEST.json").read_text(encoding="utf-8"))
+    entry = next(item for item in manifest["files"] if item["path"] == "README.md")
+    entry["scrubbed"] = True
+    (dist / "MANIFEST.json").write_text(json.dumps(manifest), encoding="utf-8")
+
+    (root / "README.md").write_text("changed payload\n", encoding="utf-8")
+    monkeypatch.setenv("DREAMBENCH_RELEASE_MANIFEST", str(dist / "MANIFEST.json"))
+    package_artifact.build_package(private=False, dist_dir=tmp_path / "rebuilt")
+    rebuilt_manifest = json.loads((tmp_path / "rebuilt/MANIFEST.json").read_text(encoding="utf-8"))
+    rebuilt_entry = next(item for item in rebuilt_manifest["files"] if item["path"] == "README.md")
+
+    assert rebuilt_entry["sha256"] != entry["sha256"]
+    assert rebuilt_entry["scrubbed"] is False
 
 
 def test_package_excludes_historical_empty_placeholders(
@@ -335,3 +438,23 @@ def test_private_package_preserves_reviewer_only_reference_text(
 
     assert HIDDEN_ORACLE_PREFIX in packaged
     assert HIDDEN_REFSOL_PREFIX in packaged
+
+
+def test_artifact_runbook_separates_unpacked_and_publisher_only_gates() -> None:
+    runbook = (package_artifact.ROOT / "artifact/README.md").read_text(encoding="utf-8")
+    verify_block = runbook.split("## Verify the package", 1)[1].split(
+        "## Rebuild the package", 1
+    )[0]
+    rebuild_block = runbook.split("## Rebuild the package", 1)[1].split(
+        "## Publisher-only gates", 1
+    )[0]
+
+    assert verify_block.index("scripts/validate_submission_package.py") < verify_block.index(
+        "scripts/run_smoke.py"
+    )
+    assert "integrity checks intentionally run before the smoke" in verify_block
+    assert "scripts/check_v2_artifact_freshness.py" not in rebuild_block
+    assert "scripts/check_paper_public_evidence.py" not in rebuild_block
+    assert "scripts/check_release_coherence.py" not in rebuild_block
+    assert "freshness against raw result/log roots" in runbook
+    assert "requires `pdftotext` from Poppler" in runbook

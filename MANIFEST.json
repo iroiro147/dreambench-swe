@@ -31,8 +31,8 @@
       "path": "README.md",
       "role": "support",
       "scrubbed": false,
-      "sha256": "754aef6dc1c1bbd9edf46e568cfe28a49d8201b46f82909109362a5471e61fd1",
-      "size": 3183,
+      "sha256": "b508a8abad8938d8cc1cd3dc188d5c8827ace6d774762efe13e30a23853c57dd",
+      "size": 5446,
       "source": "README.md"
     },
     {
@@ -180,6 +180,14 @@
       "source": "analysis/fold/v2_hygiene_oracle.tex"
     },
     {
+      "path": "analysis/fold/v2_post_analyzer_completion_check.txt",
+      "role": "frozen-analysis-artifact",
+      "scrubbed": false,
+      "sha256": "2b31bf44c7ecab504e183a942c5e4a10fed7d433b17b0af0d74c7cbd811180aa",
+      "size": 1853,
+      "source": "analysis/fold/v2_post_analyzer_completion_check.txt"
+    },
+    {
       "path": "analysis/fold/v2_tables.tex",
       "role": "frozen-analysis-artifact",
       "scrubbed": false,
@@ -252,6 +260,14 @@
       "source": "analysis/investigation-evidence/PREREGISTRATION.md"
     },
     {
+      "path": "analysis/investigation-evidence/REPORT-Q-BENCH.md",
+      "role": "frozen-analysis-artifact",
+      "scrubbed": false,
+      "sha256": "820af82233714e33debbaca5fe65b8b9eadb6fd763fe140b7c6d2d96142894b7",
+      "size": 6957,
+      "source": "analysis/investigation-evidence/REPORT-Q-BENCH.md"
+    },
+    {
       "path": "analysis/investigation-evidence/SCALE1-FREEZE-DECISIONS.md",
       "role": "frozen-analysis-artifact",
       "scrubbed": false,
@@ -276,11 +292,19 @@
       "source": "analysis/investigation-evidence/XMODEL-glm.md"
     },
     {
+      "path": "analysis/investigation-evidence/per_trap_matrix_and_leakage.json",
+      "role": "frozen-analysis-artifact",
+      "scrubbed": true,
+      "sha256": "dd5cad3889ee01f877e28f9964c54327b1ccf08eacb8f8963e1c26103aeebe1a",
+      "size": 18114,
+      "source": "analysis/investigation-evidence/per_trap_matrix_and_leakage.json"
+    },
+    {
       "path": "artifact/README.md",
       "role": "artifact-runbook",
       "scrubbed": true,
-      "sha256": "e2b9ae0f3c806dd776bfbd70a7153a02aa333ad8df80e260ed49541e27a2f951",
-      "size": 3519,
+      "sha256": "837fb01736e190c9c8c6c5a102319783d1243d2986b0a383cde344d777c9bfc4",
+      "size": 5496,
       "source": "artifact/README.md"
     },
     {
@@ -511,40 +535,40 @@
       "path": "ops/launch_confirmatory.sh",
       "role": "live-rerun-provenance",
       "scrubbed": false,
-      "sha256": "a36ac63c0feaf995a37be78a99cf0c3ae4c6362ef81a47796d5b7cba5630fe03",
-      "size": 1740,
+      "sha256": "e6da11414eab5ae05f7a1b5bdf00b7aa394305ceec776831e97373928363013d",
+      "size": 2072,
       "source": "ops/launch_confirmatory.sh"
     },
     {
       "path": "ops/launch_synth.sh",
       "role": "live-rerun-provenance",
       "scrubbed": false,
-      "sha256": "8ba314b78f40ca1cd76b2b4eef329bde2732bf03e332969de017095aa2f594b6",
-      "size": 1555,
+      "sha256": "a58c88d6c9e330a84589c1a0c036dd6dde938e45b15d02056c0f3669f52ba442",
+      "size": 1887,
       "source": "ops/launch_synth.sh"
     },
     {
       "path": "paper/figures/v2_construct_coverage.pdf",
       "role": "frozen-analysis-artifact",
       "scrubbed": false,
-      "sha256": "6ade2213b5de026f1182ae80d457e4e27e0b2e370c1e7874a76409568b658354",
-      "size": 9725,
+      "sha256": "9414a422cc390fd10029e4a186f1482d2129f1ead4ba821fff4aa1308203d54f",
+      "size": 9853,
       "source": "paper/figures/v2_construct_coverage.pdf"
     },
     {
       "path": "paper/figures/v2_ladder.pdf",
       "role": "frozen-analysis-artifact",
       "scrubbed": false,
-      "sha256": "cbfe3f9e034f844fbbc8ff3b26312fb42068936c27f3887d0df15395b6e4c7da",
-      "size": 3783,
+      "sha256": "7712cb8e258b492e15d4d2b8c8909ffa607004543dda1a7e96afb2044e290699",
+      "size": 3914,
       "source": "paper/figures/v2_ladder.pdf"
     },
     {
       "path": "paper/figures/v2_verbatim_vs_synthesis.pdf",
       "role": "frozen-analysis-artifact",
       "scrubbed": false,
-      "sha256": "a37004e101257ec5fc93dcc476db1389f1fb234aa60931386d8c938705046b36",
-      "size": 2046,
+      "sha256": "86573fc7f8b41bf50f91f377747db1a96226a4d1540441eb41da3e03de3e3a78",
+      "size": 2122,
       "source": "paper/figures/v2_verbatim_vs_synthesis.pdf"
     },
     {
@@ -554,6 +578,14 @@
       "sha256": "eaaa73f3d68513d58a0cbe4f25738074e0e566003b0ce17dc0359ccfcd18d911",
       "size": 121,
       "source": "pytest.ini"
+    },
+    {
+      "path": "requirements-artifact.txt",
+      "role": "support",
+      "scrubbed": false,
+      "sha256": "8afcedd6023fc644643c62584926f941e97429104c50c768510db09b81742c2f",
+      "size": 76,
+      "source": "requirements-artifact.txt"
     },
     {
       "path": "scripts/Dockerfile.api-agent",
@@ -596,6 +628,14 @@
       "source": "scripts/analyze_confirmatory_v2.py"
     },
     {
+      "path": "scripts/audit_public_tree.py",
+      "role": "analysis-or-smoke-script",
+      "scrubbed": false,
+      "sha256": "773a75d8b0264a55a944b5baf711e8ef053f1039b7bc1f3425a1a78f04206b00",
+      "size": 7616,
+      "source": "scripts/audit_public_tree.py"
+    },
+    {
       "path": "scripts/barrier2_rescore.py",
       "role": "analysis-or-smoke-script",
       "scrubbed": false,
@@ -612,6 +652,14 @@
       "source": "scripts/batch_validate.py"
     },
     {
+      "path": "scripts/check_arxiv_abstract.py",
+      "role": "analysis-or-smoke-script",
+      "scrubbed": false,
+      "sha256": "f1992e498c43885cfdcfb5af1742e41054cbf54d7a3b8b8e315ca31c838937f3",
+      "size": 4550,
+      "source": "scripts/check_arxiv_abstract.py"
+    },
+    {
       "path": "scripts/check_paper_a_postfold_preflight.py",
       "role": "analysis-or-smoke-script",
       "scrubbed": true,
@@ -623,9 +671,25 @@
       "path": "scripts/check_paper_claim_hygiene.py",
       "role": "analysis-or-smoke-script",
       "scrubbed": true,
-      "sha256": "4aae7cf318ad55cc48c1733f9650ef306518c7d9a806ed4e164a094e6c44bc99",
-      "size": 9856,
+      "sha256": "77c8c2a478889f0c7ef3581c620609273df835f2f09fbb1d8691f7063d4bd8df",
+      "size": 10378,
       "source": "scripts/check_paper_claim_hygiene.py"
+    },
+    {
+      "path": "scripts/check_paper_public_evidence.py",
+      "role": "analysis-or-smoke-script",
+      "scrubbed": false,
+      "sha256": "f28fa7c1809a469321c89dacdcc22b477ce4208e949a4490e95b3b46bbb948e6",
+      "size": 7285,
+      "source": "scripts/check_paper_public_evidence.py"
+    },
+    {
+      "path": "scripts/check_release_coherence.py",
+      "role": "analysis-or-smoke-script",
+      "scrubbed": false,
+      "sha256": "31ce2e28c5378389df71864d7decb8b343188f493e01159df027077d95bd9110",
+      "size": 9086,
+      "source": "scripts/check_release_coherence.py"
     },
     {
       "path": "scripts/check_synth_no_single_event.py",
@@ -743,24 +807,24 @@
       "path": "scripts/make_v2_figures.py",
       "role": "analysis-or-smoke-script",
       "scrubbed": false,
-      "sha256": "30a8394e961d129a4c3473ff5e4a4fe8835f0addb77f500649497b7df96b9bcd",
-      "size": 27222,
+      "sha256": "bcc0fe9a9ed9ca8677f3aea0743680ffa6dc6009cfbc43b36c0916e537da5ac5",
+      "size": 27185,
       "source": "scripts/make_v2_figures.py"
     },
     {
       "path": "scripts/package_artifact.py",
       "role": "analysis-or-smoke-script",
       "scrubbed": true,
-      "sha256": "eb31b5a4136307be8bc4816c1d3878a16e71c115736062c0802d2f0b191947aa",
-      "size": 26760,
+      "sha256": "e63c4ea074770787bc288be5faffe3710e6b159dfca6009a5c60cf43f24b90b1",
+      "size": 29787,
       "source": "scripts/package_artifact.py"
     },
     {
       "path": "scripts/package_arxiv_source.py",
       "role": "analysis-or-smoke-script",
       "scrubbed": false,
-      "sha256": "d9bad65642bd0597deb7233db5c109e2c0aad21227cb147fcebb23e2ccd3b480",
-      "size": 3977,
+      "sha256": "a32effbfd5b1c3bd55833cef7f86608d4bfef8410d34b2ae50bca191f041eb34",
+      "size": 4974,
       "source": "scripts/package_arxiv_source.py"
     },
     {
@@ -799,8 +863,8 @@
       "path": "scripts/validate_submission_package.py",
       "role": "analysis-or-smoke-script",
       "scrubbed": false,
-      "sha256": "638238dfa58c21a42a19fa68fe3e973e5acc17193b427a37b2046ba37a69d9ee",
-      "size": 28463,
+      "sha256": "74a5bd56593dbf01ffcaef5350673787dc701827cd0319ccdbf31b2ecb7c862d",
+      "size": 29618,
       "source": "scripts/validate_submission_package.py"
     },
     {
@@ -1036,6 +1100,14 @@
       "source": "tests/test_analyze_confirmatory_v2.py"
     },
     {
+      "path": "tests/test_audit_public_tree.py",
+      "role": "test",
+      "scrubbed": false,
+      "sha256": "f5a126df809114ad339278a3498b7f3e52e602f14ed0ae53a38ffe895dc590f7",
+      "size": 3022,
+      "source": "tests/test_audit_public_tree.py"
+    },
+    {
       "path": "tests/test_b7_task_tracker.py",
       "role": "test",
       "scrubbed": false,
@@ -1068,6 +1140,14 @@
       "source": "tests/test_batch_validate.py"
     },
     {
+      "path": "tests/test_check_arxiv_abstract.py",
+      "role": "test",
+      "scrubbed": false,
+      "sha256": "31463e98c616b440481e36adb948e9754571f5671c075fc9d3aba041631b6b96",
+      "size": 3523,
+      "source": "tests/test_check_arxiv_abstract.py"
+    },
+    {
       "path": "tests/test_check_paper_a_postfold_preflight.py",
       "role": "test",
       "scrubbed": false,
@@ -1079,9 +1159,17 @@
       "path": "tests/test_check_paper_claim_hygiene.py",
       "role": "test",
       "scrubbed": false,
-      "sha256": "7ec2ab075540fb1864e8802d3324a950ff49d8db2d1f9759485bf1899ab7003f",
-      "size": 4984,
+      "sha256": "d87fa61085eac35b42a156308ff03bee3b909f553f6a6fba5fc8c1c31d408b51",
+      "size": 5348,
       "source": "tests/test_check_paper_claim_hygiene.py"
+    },
+    {
+      "path": "tests/test_check_release_coherence.py",
+      "role": "test",
+      "scrubbed": false,
+      "sha256": "c4b2c9eff4c28802eb224d25b86c8300e2c90c27e230612702b0b671c8badf4f",
+      "size": 4573,
+      "source": "tests/test_check_release_coherence.py"
     },
     {
       "path": "tests/test_check_v2_artifact_freshness.py",
@@ -1236,6 +1324,14 @@
       "source": "tests/test_inject_secrets.py"
     },
     {
+      "path": "tests/test_launch_retry_exhaustion.py",
+      "role": "test",
+      "scrubbed": false,
+      "sha256": "9dd3f97a8b9f8f8f1e4434993a22a954874d290ee61894a4a767e7b2c72e30da",
+      "size": 2344,
+      "source": "tests/test_launch_retry_exhaustion.py"
+    },
+    {
       "path": "tests/test_llm_judge_fences.py",
       "role": "test",
       "scrubbed": false,
@@ -1247,8 +1343,8 @@
       "path": "tests/test_make_v2_figures.py",
       "role": "test",
       "scrubbed": false,
-      "sha256": "f917294734ddec9c806de18b8dd1077e85e149a6e723b99d570d07f8052ab91a",
-      "size": 3451,
+      "sha256": "3086365e448e35af08c184a6cb205c59e289d3f6cd9f0413a1e4d55725385bb1",
+      "size": 3190,
       "source": "tests/test_make_v2_figures.py"
     },
     {
@@ -1295,17 +1391,25 @@
       "path": "tests/test_package_artifact_v2.py",
       "role": "test",
       "scrubbed": true,
-      "sha256": "488c571b967ebeb23615413ead61c6dbe0a063f3b7dbc5af0c003320b8d47e68",
-      "size": 12462,
+      "sha256": "abdbba04d859e3ae522eeef1b13e6846acdd697255783e6f1e3d5621a9bd4f9e",
+      "size": 18070,
       "source": "tests/test_package_artifact_v2.py"
     },
     {
       "path": "tests/test_package_arxiv_source.py",
       "role": "test",
       "scrubbed": false,
-      "sha256": "ac073dd7df7fa266f21c88ec5f6ce811ddb87a54efd6b94d127f28d3877f3304",
-      "size": 2284,
+      "sha256": "36c6543bc8902de47b125ec2dfa7223750caf10d1782dd4db64ea7d7fe077400",
+      "size": 3006,
       "source": "tests/test_package_arxiv_source.py"
+    },
+    {
+      "path": "tests/test_paper_public_evidence.py",
+      "role": "test",
+      "scrubbed": false,
+      "sha256": "60df0ece30ddc8ae6c0814d96bca4f79c769588b8be1f1c18653a91fdd3f2ecb",
+      "size": 3770,
+      "source": "tests/test_paper_public_evidence.py"
     },
     {
       "path": "tests/test_retrieval.py",
@@ -1364,6 +1468,14 @@
       "source": "tests/test_task_loader.py"
     },
     {
+      "path": "tests/test_v205_science_contract.py",
+      "role": "test",
+      "scrubbed": false,
+      "sha256": "c891ab5f315917aac15a937abbbe2e643ff8399a84f3af0938940909e16bc998",
+      "size": 3043,
+      "source": "tests/test_v205_science_contract.py"
+    },
+    {
       "path": "tests/test_v2_traps_readme.py",
       "role": "test",
       "scrubbed": false,
@@ -1375,8 +1487,8 @@
       "path": "tests/test_validate_submission_package.py",
       "role": "test",
       "scrubbed": true,
-      "sha256": "094356b49a6e9a703999e52d39c8ac80f1e9721b5bb591cedf94fcb6b6fb3dfa",
-      "size": 14847,
+      "sha256": "0bc066cf451a5ff63fb674d17848df83093038eb801a9a78c09f0fde97eef815",
+      "size": 16299,
       "source": "tests/test_validate_submission_package.py"
     },
     {
@@ -1396,7 +1508,7 @@
       "source": "tests/test_vps_confirmatory_status.py"
     }
   ],
-  "generated_at_utc": "2026-07-09T06:50:44Z",
+  "generated_at_utc": "2026-07-10T11:26:49Z",
   "live_rerun_is_new_experiment": true,
   "mode": "public",
   "package": "dreambench-swe-artifact",
@@ -1407,5 +1519,6 @@
     "experiments/env/oracles and experiments/env/refsol in public mode",
     "full raw hosted-model result directories"
   ],
-  "raw_result_records_included": false
+  "raw_result_records_included": false,
+  "release_version": "v2.0.5"
 }

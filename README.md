@@ -1,6 +1,6 @@
 # DreamBench-SWE
 
-This repository contains the DreamBench-SWE v2 Paper A public submission package:
+This repository contains the DreamBench-SWE v2 Paper A `v2.0.5` public submission package:
 the benchmark harness, public fixtures, folded analyzer outputs, publication figures,
 and reference-probe implementation.
 
@@ -18,7 +18,7 @@ admitted v2 traps, and canonical analysis generated from `analysis/fold/`.
 - `analysis/fold/` - canonical folded v1/v2 analyzer outputs, tables, figures, and
   validation manifests.
 - `analysis/investigation-evidence/` - frozen preregistration, fold reports, and
-  evidence notes cited by the paper.
+  every concrete evidence file cited by the manuscript.
 - `scripts/` - packaging, analyzer, table, figure, hygiene, and validation scripts.
 - `artifact/README.md` - public artifact runbook.
 
@@ -32,12 +32,39 @@ the GitHub release assets, not as tracked files in this public artifact tree. Th
 tracked `paper/` directory contains the generated v2 figure PDFs referenced by the
 manuscript.
 
-## Rebuild The Public Artifact
+## Verify An Unpacked Public Artifact
+
+The public tarball is self-contained for smoke tests, package validation,
+public-tree auditing, table regeneration, and the selected public test suite.
+From the unpacked artifact root, run:
 
 ```bash
+python3 -m pip install -r requirements-artifact.txt
+PYTHONPATH=src python3 scripts/validate_submission_package.py --package-dir . --mode public
+python3 scripts/audit_public_tree.py --root .
+PYTHONPATH=src python3 scripts/generate_tables_v2.py \
+  --input analysis/fold/v2_fold.json \
+  --output /tmp/dreambench-swe-v2-tables.tex
+python3 scripts/run_smoke.py
+```
+
+The integrity checks intentionally run before the smoke command because the
+smoke writes local outputs under `experiments/results/smoke/`. The complete
+selected public test command is listed in `artifact/README.md`.
+
+## Rebuild The Public Artifact
+
+Install the verification dependency and reuse the release timestamp recorded in
+the shipped manifest.  Set `DREAMBENCH_RELEASE_MANIFEST=MANIFEST.json` when
+rebuilding from inside the unpacked artifact root.
+
+```bash
+python3 -m pip install -r requirements-artifact.txt
+RELEASE_MANIFEST="${DREAMBENCH_RELEASE_MANIFEST:-dist/MANIFEST.json}"
+export SOURCE_DATE_EPOCH="$(python3 -c 'import datetime,json,sys; value=json.load(open(sys.argv[1]))["generated_at_utc"]; print(int(datetime.datetime.fromisoformat(value.replace("Z", "+00:00")).timestamp()))' "$RELEASE_MANIFEST")"
 PYTHONPATH=src python3 scripts/package_artifact.py --dist-dir dist
 PYTHONPATH=src python3 scripts/validate_submission_package.py --dist-dir dist --mode public
-PYTHONPATH=src python3 scripts/check_v2_artifact_freshness.py
+python3 scripts/audit_public_tree.py --archive dist/dreambench-swe-artifact.tar.gz
 ```
 
 This writes:
@@ -53,6 +80,21 @@ PYTHONPATH=src python3 scripts/package_artifact.py --private --dist-dir dist-pri
 PYTHONPATH=src python3 scripts/validate_submission_package.py --dist-dir dist-private --mode private
 ```
 
+## Publisher-Only Release Gates
+
+The following checks run only in the full source checkout. The freshness guard
+requires the raw result and grid-log roots; the other checks require manuscript
+or release surfaces. Those inputs are intentionally absent from the unpacked
+public artifact. `check_release_coherence.py` requires `pdftotext` from Poppler
+(`brew install poppler` on macOS or install `poppler-utils` on Debian or Ubuntu).
+
+```bash
+PYTHONPATH=src python3 scripts/check_v2_artifact_freshness.py
+python3 scripts/check_arxiv_abstract.py --path paper/sections/01_abstract.tex
+python3 scripts/check_paper_public_evidence.py
+python3 scripts/check_release_coherence.py
+```
+
 ## Canonical Numbers
 
 All paper numbers must come from the canonical analyzer outputs under `analysis/fold/`.
@@ -60,10 +102,12 @@ Do not derive paper claims from partial logs, live progress counters, screenshot
 manual spreadsheet edits. A live rerun with hosted models is a new experiment even when it
 uses the same seeds.
 
-Useful checks:
+Additional full-source-checkout checks:
 
 ```bash
+python3 -m pip install -r requirements-artifact.txt
 PYTHONPATH=src python3 scripts/check_paper_claim_hygiene.py
+python3 scripts/audit_public_tree.py --archive dist/dreambench-swe-artifact.tar.gz
 PYTHONPATH=src python3 scripts/validate_submission_package.py --dist-dir dist --mode public
 PYTHONPATH=src python3 scripts/check_v2_artifact_freshness.py
 python3 -m pytest -q
