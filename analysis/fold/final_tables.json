@@ -1,0 +1,6072 @@
+{
+  "B0": {
+    "excluded_by_reason": {},
+    "excluded_records": 0,
+    "hygiene": {
+      "AdmTok/task": 1.0,
+      "counts_sum": {
+        "contaminated": 1,
+        "retrieved_memories": 0,
+        "sleep_writes": 0
+      },
+      "metrics_mean": {
+        "ContradictionRepairAccuracy": 0.13636363636363635,
+        "HarmfulMemoryRate": 0.0,
+        "HumanFeedbackUseAccuracy": 0.0,
+        "RegressionAfterUpdate": 0.3484848484848485,
+        "RepeatedErrorRate": 0.2878787878787879,
+        "ScopeAccuracy": 0.5,
+        "TransferScore": 0.0,
+        "UsefulMemoryPrecision": null
+      },
+      "source_file_count": 33
+    },
+    "n_S3": 66,
+    "partial": false,
+    "partial_note": "",
+    "pass_at_1_rate": {
+      "bootstrap_ci_95": [
+        0.0,
+        0.10606060606060606
+      ],
+      "denominator": 66,
+      "display_ci_95": [
+        0.015578274334433505,
+        0.1253331411324222
+      ],
+      "display_ci_method": "Wilson score",
+      "exact_binomial_ci_95": [
+        0.009473738563706226,
+        0.1271425059113172
+      ],
+      "numerator": 3,
+      "value": 0.045454545454545456,
+      "wilson_ci_95": [
+        0.015578274334433505,
+        0.1253331411324222
+      ]
+    },
+    "per_seed_s3": {
+      "1": {
+        "bootstrap_ci_95": [
+          0.0,
+          0.13636363636363635
+        ],
+        "denominator": 22,
+        "display_ci_95": [
+          0.00806942762126385,
+          0.21798045838657332
+        ],
+        "display_ci_method": "Wilson score",
+        "exact_binomial_ci_95": [
+          0.0011501475265735766,
+          0.22844439766763341
+        ],
+        "numerator": 1,
+        "value": 0.045454545454545456,
+        "wilson_ci_95": [
+          0.00806942762126385,
+          0.21798045838657332
+        ]
+      },
+      "2": {
+        "bootstrap_ci_95": [
+          0.0,
+          0.13636363636363635
+        ],
+        "denominator": 22,
+        "display_ci_95": [
+          0.00806942762126385,
+          0.21798045838657332
+        ],
+        "display_ci_method": "Wilson score",
+        "exact_binomial_ci_95": [
+          0.0011501475265735766,
+          0.22844439766763341
+        ],
+        "numerator": 1,
+        "value": 0.045454545454545456,
+        "wilson_ci_95": [
+          0.00806942762126385,
+          0.21798045838657332
+        ]
+      },
+      "3": {
+        "bootstrap_ci_95": [
+          0.0,
+          0.13636363636363635
+        ],
+        "denominator": 22,
+        "display_ci_95": [
+          0.00806942762126385,
+          0.21798045838657332
+        ],
+        "display_ci_method": "Wilson score",
+        "exact_binomial_ci_95": [
+          0.0011501475265735766,
+          0.22844439766763341
+        ],
+        "numerator": 1,
+        "value": 0.045454545454545456,
+        "wilson_ci_95": [
+          0.00806942762126385,
+          0.21798045838657332
+        ]
+      }
+    },
+    "warmup_rate": {
+      "bootstrap_ci_95": [
+        0.7272727272727273,
+        0.9090909090909091
+      ],
+      "denominator": 66,
+      "display_ci_95": [
+        0.7085480732292817,
+        0.8928139359439193
+      ],
+      "display_ci_method": "Wilson score",
+      "exact_binomial_ci_95": [
+        0.7039345441700697,
+        0.9023647979841516
+      ],
+      "numerator": 54,
+      "value": 0.8181818181818182,
+      "wilson_ci_95": [
+        0.7085480732292817,
+        0.8928139359439193
+      ]
+    }
+  },
+  "B1": {
+    "excluded_by_reason": {},
+    "excluded_records": 0,
+    "hygiene": {
+      "AdmTok/task": 124.69191919191918,
+      "counts_sum": {
+        "contaminated": 0,
+        "retrieved_memories": 198,
+        "sleep_writes": 0
+      },
+      "metrics_mean": {
+        "ContradictionRepairAccuracy": 0.13636363636363635,
+        "HarmfulMemoryRate": 0.0,
+        "HumanFeedbackUseAccuracy": 0.10606060606060606,
+        "RegressionAfterUpdate": 0.3181818181818182,
+        "RepeatedErrorRate": 0.2727272727272727,
+        "ScopeAccuracy": 0.553030303030303,
+        "TransferScore": 0.0,
+        "UsefulMemoryPrecision": 0.38636363636363635
+      },
+      "source_file_count": 33
+    },
+    "n_S3": 66,
+    "partial": false,
+    "partial_note": "",
+    "pass_at_1_rate": {
+      "bootstrap_ci_95": [
+        0.0,
+        0.10606060606060606
+      ],
+      "denominator": 66,
+      "display_ci_95": [
+        0.015578274334433505,
+        0.1253331411324222
+      ],
+      "display_ci_method": "Wilson score",
+      "exact_binomial_ci_95": [
+        0.009473738563706226,
+        0.1271425059113172
+      ],
+      "numerator": 3,
+      "value": 0.045454545454545456,
+      "wilson_ci_95": [
+        0.015578274334433505,
+        0.1253331411324222
+      ]
+    },
+    "per_seed_s3": {
+      "1": {
+        "bootstrap_ci_95": [
+          0.0,
+          0.13636363636363635
+        ],
+        "denominator": 22,
+        "display_ci_95": [
+          0.00806942762126385,
+          0.21798045838657332
+        ],
+        "display_ci_method": "Wilson score",
+        "exact_binomial_ci_95": [
+          0.0011501475265735766,
+          0.22844439766763341
+        ],
+        "numerator": 1,
+        "value": 0.045454545454545456,
+        "wilson_ci_95": [
+          0.00806942762126385,
+          0.21798045838657332
+        ]
+      },
+      "2": {
+        "bootstrap_ci_95": [
+          0.0,
+          0.13636363636363635
+        ],
+        "denominator": 22,
+        "display_ci_95": [
+          0.00806942762126385,
+          0.21798045838657332
+        ],
+        "display_ci_method": "Wilson score",
+        "exact_binomial_ci_95": [
+          0.0011501475265735766,
+          0.22844439766763341
+        ],
+        "numerator": 1,
+        "value": 0.045454545454545456,
+        "wilson_ci_95": [
+          0.00806942762126385,
+          0.21798045838657332
+        ]
+      },
+      "3": {
+        "bootstrap_ci_95": [
+          0.0,
+          0.13636363636363635
+        ],
+        "denominator": 22,
+        "display_ci_95": [
+          0.00806942762126385,
+          0.21798045838657332
+        ],
+        "display_ci_method": "Wilson score",
+        "exact_binomial_ci_95": [
+          0.0011501475265735766,
+          0.22844439766763341
+        ],
+        "numerator": 1,
+        "value": 0.045454545454545456,
+        "wilson_ci_95": [
+          0.00806942762126385,
+          0.21798045838657332
+        ]
+      }
+    },
+    "warmup_rate": {
+      "bootstrap_ci_95": [
+        0.7272727272727273,
+        0.9090909090909091
+      ],
+      "denominator": 66,
+      "display_ci_95": [
+        0.7085480732292817,
+        0.8928139359439193
+      ],
+      "display_ci_method": "Wilson score",
+      "exact_binomial_ci_95": [
+        0.7039345441700697,
+        0.9023647979841516
+      ],
+      "numerator": 54,
+      "value": 0.8181818181818182,
+      "wilson_ci_95": [
+        0.7085480732292817,
+        0.8928139359439193
+      ]
+    }
+  },
+  "B2": {
+    "excluded_by_reason": {},
+    "excluded_records": 0,
+    "hygiene": {
+      "AdmTok/task": 126.5,
+      "counts_sum": {
+        "contaminated": 1,
+        "retrieved_memories": 198,
+        "sleep_writes": 198
+      },
+      "metrics_mean": {
+        "ContradictionRepairAccuracy": 0.12121212121212122,
+        "HarmfulMemoryRate": 0.0,
+        "HumanFeedbackUseAccuracy": 0.10606060606060606,
+        "RegressionAfterUpdate": 0.3181818181818182,
+        "RepeatedErrorRate": 0.2727272727272727,
+        "ScopeAccuracy": 0.553030303030303,
+        "TransferScore": 0.10606060606060606,
+        "UsefulMemoryPrecision": 0.42424242424242425
+      },
+      "source_file_count": 33
+    },
+    "n_S3": 66,
+    "partial": false,
+    "partial_note": "",
+    "pass_at_1_rate": {
+      "bootstrap_ci_95": [
+        0.0,
+        0.10606060606060606
+      ],
+      "denominator": 66,
+      "display_ci_95": [
+        0.015578274334433505,
+        0.1253331411324222
+      ],
+      "display_ci_method": "Wilson score",
+      "exact_binomial_ci_95": [
+        0.009473738563706226,
+        0.1271425059113172
+      ],
+      "numerator": 3,
+      "value": 0.045454545454545456,
+      "wilson_ci_95": [
+        0.015578274334433505,
+        0.1253331411324222
+      ]
+    },
+    "per_seed_s3": {
+      "1": {
+        "bootstrap_ci_95": [
+          0.0,
+          0.13636363636363635
+        ],
+        "denominator": 22,
+        "display_ci_95": [
+          0.00806942762126385,
+          0.21798045838657332
+        ],
+        "display_ci_method": "Wilson score",
+        "exact_binomial_ci_95": [
+          0.0011501475265735766,
+          0.22844439766763341
+        ],
+        "numerator": 1,
+        "value": 0.045454545454545456,
+        "wilson_ci_95": [
+          0.00806942762126385,
+          0.21798045838657332
+        ]
+      },
+      "2": {
+        "bootstrap_ci_95": [
+          0.0,
+          0.13636363636363635
+        ],
+        "denominator": 22,
+        "display_ci_95": [
+          0.00806942762126385,
+          0.21798045838657332
+        ],
+        "display_ci_method": "Wilson score",
+        "exact_binomial_ci_95": [
+          0.0011501475265735766,
+          0.22844439766763341
+        ],
+        "numerator": 1,
+        "value": 0.045454545454545456,
+        "wilson_ci_95": [
+          0.00806942762126385,
+          0.21798045838657332
+        ]
+      },
+      "3": {
+        "bootstrap_ci_95": [
+          0.0,
+          0.13636363636363635
+        ],
+        "denominator": 22,
+        "display_ci_95": [
+          0.00806942762126385,
+          0.21798045838657332
+        ],
+        "display_ci_method": "Wilson score",
+        "exact_binomial_ci_95": [
+          0.0011501475265735766,
+          0.22844439766763341
+        ],
+        "numerator": 1,
+        "value": 0.045454545454545456,
+        "wilson_ci_95": [
+          0.00806942762126385,
+          0.21798045838657332
+        ]
+      }
+    },
+    "warmup_rate": {
+      "bootstrap_ci_95": [
+        0.7272727272727273,
+        0.9090909090909091
+      ],
+      "denominator": 66,
+      "display_ci_95": [
+        0.7085480732292817,
+        0.8928139359439193
+      ],
+      "display_ci_method": "Wilson score",
+      "exact_binomial_ci_95": [
+        0.7039345441700697,
+        0.9023647979841516
+      ],
+      "numerator": 54,
+      "value": 0.8181818181818182,
+      "wilson_ci_95": [
+        0.7085480732292817,
+        0.8928139359439193
+      ]
+    }
+  },
+  "B3": {
+    "excluded_by_reason": {},
+    "excluded_records": 0,
+    "hygiene": {
+      "AdmTok/task": 126.77777777777779,
+      "counts_sum": {
+        "contaminated": 1,
+        "retrieved_memories": 198,
+        "sleep_writes": 198
+      },
+      "metrics_mean": {
+        "ContradictionRepairAccuracy": 0.4393939393939394,
+        "HarmfulMemoryRate": 0.0,
+        "HumanFeedbackUseAccuracy": 0.4393939393939394,
+        "RegressionAfterUpdate": 0.24242424242424243,
+        "RepeatedErrorRate": 0.2727272727272727,
+        "ScopeAccuracy": 0.7196969696969697,
+        "TransferScore": 0.4393939393939394,
+        "UsefulMemoryPrecision": 0.5
+      },
+      "source_file_count": 33
+    },
+    "n_S3": 66,
+    "partial": false,
+    "partial_note": "",
+    "pass_at_1_rate": {
+      "bootstrap_ci_95": [
+        0.24242424242424243,
+        0.4696969696969697
+      ],
+      "denominator": 66,
+      "display_ci_95": [
+        0.2447587406192953,
+        0.4688783978696565
+      ],
+      "display_ci_method": "Wilson score",
+      "exact_binomial_ci_95": [
+        0.2352919694103216,
+        0.47576023167290027
+      ],
+      "numerator": 23,
+      "value": 0.3484848484848485,
+      "wilson_ci_95": [
+        0.2447587406192953,
+        0.4688783978696565
+      ]
+    },
+    "per_seed_s3": {
+      "1": {
+        "bootstrap_ci_95": [
+          0.18181818181818182,
+          0.5465909090908926
+        ],
+        "denominator": 22,
+        "display_ci_95": [
+          0.19733204670366125,
+          0.5704829190986899
+        ],
+        "display_ci_method": "Wilson score",
+        "exact_binomial_ci_95": [
+          0.1719794376463324,
+          0.5934233311743533
+        ],
+        "numerator": 8,
+        "value": 0.36363636363636365,
+        "wilson_ci_95": [
+          0.19733204670366125,
+          0.5704829190986899
+        ]
+      },
+      "2": {
+        "bootstrap_ci_95": [
+          0.13636363636363635,
+          0.5
+        ],
+        "denominator": 22,
+        "display_ci_95": [
+          0.1636059318135624,
+          0.5268140225895723
+        ],
+        "display_ci_method": "Wilson score",
+        "exact_binomial_ci_95": [
+          0.13864652155379786,
+          0.5487244275737704
+        ],
+        "numerator": 7,
+        "value": 0.3181818181818182,
+        "wilson_ci_95": [
+          0.1636059318135624,
+          0.5268140225895723
+        ]
+      },
+      "3": {
+        "bootstrap_ci_95": [
+          0.18181818181818182,
+          0.5465909090908926
+        ],
+        "denominator": 22,
+        "display_ci_95": [
+          0.19733204670366125,
+          0.5704829190986899
+        ],
+        "display_ci_method": "Wilson score",
+        "exact_binomial_ci_95": [
+          0.1719794376463324,
+          0.5934233311743533
+        ],
+        "numerator": 8,
+        "value": 0.36363636363636365,
+        "wilson_ci_95": [
+          0.19733204670366125,
+          0.5704829190986899
+        ]
+      }
+    },
+    "warmup_rate": {
+      "bootstrap_ci_95": [
+        0.7272727272727273,
+        0.9090909090909091
+      ],
+      "denominator": 66,
+      "display_ci_95": [
+        0.7085480732292817,
+        0.8928139359439193
+      ],
+      "display_ci_method": "Wilson score",
+      "exact_binomial_ci_95": [
+        0.7039345441700697,
+        0.9023647979841516
+      ],
+      "numerator": 54,
+      "value": 0.8181818181818182,
+      "wilson_ci_95": [
+        0.7085480732292817,
+        0.8928139359439193
+      ]
+    }
+  },
+  "B4": {
+    "excluded_by_reason": {},
+    "excluded_records": 0,
+    "hygiene": {
+      "AdmTok/task": 118.91919191919192,
+      "counts_sum": {
+        "contaminated": 1,
+        "retrieved_memories": 196,
+        "sleep_writes": 198
+      },
+      "metrics_mean": {
+        "ContradictionRepairAccuracy": 0.13636363636363635,
+        "HarmfulMemoryRate": 0.0,
+        "HumanFeedbackUseAccuracy": 0.06060606060606061,
+        "RegressionAfterUpdate": 0.30303030303030304,
+        "RepeatedErrorRate": 0.30303030303030304,
+        "ScopeAccuracy": 0.5303030303030303,
+        "TransferScore": 0.06060606060606061,
+        "UsefulMemoryPrecision": 0.3813131313131313
+      },
+      "source_file_count": 33
+    },
+    "n_S3": 66,
+    "partial": false,
+    "partial_note": "",
+    "pass_at_1_rate": {
+      "bootstrap_ci_95": [
+        0.0,
+        0.10606060606060606
+      ],
+      "denominator": 66,
+      "display_ci_95": [
+        0.015578274334433505,
+        0.1253331411324222
+      ],
+      "display_ci_method": "Wilson score",
+      "exact_binomial_ci_95": [
+        0.009473738563706226,
+        0.1271425059113172
+      ],
+      "numerator": 3,
+      "value": 0.045454545454545456,
+      "wilson_ci_95": [
+        0.015578274334433505,
+        0.1253331411324222
+      ]
+    },
+    "per_seed_s3": {
+      "1": {
+        "bootstrap_ci_95": [
+          0.0,
+          0.13636363636363635
+        ],
+        "denominator": 22,
+        "display_ci_95": [
+          0.00806942762126385,
+          0.21798045838657332
+        ],
+        "display_ci_method": "Wilson score",
+        "exact_binomial_ci_95": [
+          0.0011501475265735766,
+          0.22844439766763341
+        ],
+        "numerator": 1,
+        "value": 0.045454545454545456,
+        "wilson_ci_95": [
+          0.00806942762126385,
+          0.21798045838657332
+        ]
+      },
+      "2": {
+        "bootstrap_ci_95": [
+          0.0,
+          0.13636363636363635
+        ],
+        "denominator": 22,
+        "display_ci_95": [
+          0.00806942762126385,
+          0.21798045838657332
+        ],
+        "display_ci_method": "Wilson score",
+        "exact_binomial_ci_95": [
+          0.0011501475265735766,
+          0.22844439766763341
+        ],
+        "numerator": 1,
+        "value": 0.045454545454545456,
+        "wilson_ci_95": [
+          0.00806942762126385,
+          0.21798045838657332
+        ]
+      },
+      "3": {
+        "bootstrap_ci_95": [
+          0.0,
+          0.13636363636363635
+        ],
+        "denominator": 22,
+        "display_ci_95": [
+          0.00806942762126385,
+          0.21798045838657332
+        ],
+        "display_ci_method": "Wilson score",
+        "exact_binomial_ci_95": [
+          0.0011501475265735766,
+          0.22844439766763341
+        ],
+        "numerator": 1,
+        "value": 0.045454545454545456,
+        "wilson_ci_95": [
+          0.00806942762126385,
+          0.21798045838657332
+        ]
+      }
+    },
+    "warmup_rate": {
+      "bootstrap_ci_95": [
+        0.7272727272727273,
+        0.9090909090909091
+      ],
+      "denominator": 66,
+      "display_ci_95": [
+        0.7085480732292817,
+        0.8928139359439193
+      ],
+      "display_ci_method": "Wilson score",
+      "exact_binomial_ci_95": [
+        0.7039345441700697,
+        0.9023647979841516
+      ],
+      "numerator": 54,
+      "value": 0.8181818181818182,
+      "wilson_ci_95": [
+        0.7085480732292817,
+        0.8928139359439193
+      ]
+    }
+  },
+  "B5": {
+    "excluded_by_reason": {},
+    "excluded_records": 0,
+    "hygiene": {
+      "AdmTok/task": 152.0909090909091,
+      "counts_sum": {
+        "contaminated": 3,
+        "retrieved_memories": 198,
+        "sleep_writes": 198
+      },
+      "metrics_mean": {
+        "ContradictionRepairAccuracy": 0.7727272727272727,
+        "HarmfulMemoryRate": 0.0,
+        "HumanFeedbackUseAccuracy": 0.7727272727272727,
+        "RegressionAfterUpdate": 0.13636363636363635,
+        "RepeatedErrorRate": 0.22727272727272727,
+        "ScopeAccuracy": 0.8863636363636364,
+        "TransferScore": 0.7727272727272727,
+        "UsefulMemoryPrecision": 0.5
+      },
+      "source_file_count": 33
+    },
+    "n_S3": 66,
+    "partial": false,
+    "partial_note": "",
+    "pass_at_1_rate": {
+      "bootstrap_ci_95": [
+        0.6212121212121212,
+        0.8333333333333334
+      ],
+      "denominator": 66,
+      "display_ci_95": [
+        0.6095777422224589,
+        0.8199665500441133
+      ],
+      "display_ci_method": "Wilson score",
+      "exact_binomial_ci_95": [
+        0.6036427957562944,
+        0.8296733838204806
+      ],
+      "numerator": 48,
+      "value": 0.7272727272727273,
+      "wilson_ci_95": [
+        0.6095777422224589,
+        0.8199665500441133
+      ]
+    },
+    "per_seed_s3": {
+      "1": {
+        "bootstrap_ci_95": [
+          0.5454545454545454,
+          0.9090909090909091
+        ],
+        "denominator": 22,
+        "display_ci_95": [
+          0.5184826598759762,
+          0.8684923971201053
+        ],
+        "display_ci_method": "Wilson score",
+        "exact_binomial_ci_95": [
+          0.49777879873365116,
+          0.8927107516296031
+        ],
+        "numerator": 16,
+        "value": 0.7272727272727273,
+        "wilson_ci_95": [
+          0.5184826598759762,
+          0.8684923971201053
+        ]
+      },
+      "2": {
+        "bootstrap_ci_95": [
+          0.5454545454545454,
+          0.9090909090909091
+        ],
+        "denominator": 22,
+        "display_ci_95": [
+          0.5184826598759762,
+          0.8684923971201053
+        ],
+        "display_ci_method": "Wilson score",
+        "exact_binomial_ci_95": [
+          0.49777879873365116,
+          0.8927107516296031
+        ],
+        "numerator": 16,
+        "value": 0.7272727272727273,
+        "wilson_ci_95": [
+          0.5184826598759762,
+          0.8684923971201053
+        ]
+      },
+      "3": {
+        "bootstrap_ci_95": [
+          0.5454545454545454,
+          0.9090909090909091
+        ],
+        "denominator": 22,
+        "display_ci_95": [
+          0.5184826598759762,
+          0.8684923971201053
+        ],
+        "display_ci_method": "Wilson score",
+        "exact_binomial_ci_95": [
+          0.49777879873365116,
+          0.8927107516296031
+        ],
+        "numerator": 16,
+        "value": 0.7272727272727273,
+        "wilson_ci_95": [
+          0.5184826598759762,
+          0.8684923971201053
+        ]
+      }
+    },
+    "warmup_rate": {
+      "bootstrap_ci_95": [
+        0.7272727272727273,
+        0.9090909090909091
+      ],
+      "denominator": 66,
+      "display_ci_95": [
+        0.7085480732292817,
+        0.8928139359439193
+      ],
+      "display_ci_method": "Wilson score",
+      "exact_binomial_ci_95": [
+        0.7039345441700697,
+        0.9023647979841516
+      ],
+      "numerator": 54,
+      "value": 0.8181818181818182,
+      "wilson_ci_95": [
+        0.7085480732292817,
+        0.8928139359439193
+      ]
+    }
+  },
+  "B5-MEM0": {
+    "excluded_by_reason": {},
+    "excluded_records": 0,
+    "hygiene": {
+      "AdmTok/task": 140.28282828282826,
+      "counts_sum": {
+        "contaminated": 4,
+        "retrieved_memories": 385,
+        "sleep_writes": 0
+      },
+      "metrics_mean": {
+        "ContradictionRepairAccuracy": 0.18181818181818182,
+        "HarmfulMemoryRate": 0.0,
+        "HumanFeedbackUseAccuracy": 0.18181818181818182,
+        "RegressionAfterUpdate": 0.3333333333333333,
+        "RepeatedErrorRate": 0.2878787878787879,
+        "ScopeAccuracy": 0.5909090909090909,
+        "TransferScore": 0.0,
+        "UsefulMemoryPrecision": 0.16354453627180898
+      },
+      "source_file_count": 33
+    },
+    "n_S3": 66,
+    "partial": false,
+    "partial_note": "",
+    "pass_at_1_rate": {
+      "bootstrap_ci_95": [
+        0.030303030303030304,
+        0.16666666666666666
+      ],
+      "denominator": 66,
+      "display_ci_95": [
+        0.04233297507051134,
+        0.18448729884965878
+      ],
+      "display_ci_method": "Wilson score",
+      "exact_binomial_ci_95": [
+        0.03409713277126851,
+        0.18744265118647313
+      ],
+      "numerator": 6,
+      "value": 0.09090909090909091,
+      "wilson_ci_95": [
+        0.04233297507051134,
+        0.18448729884965878
+      ]
+    },
+    "per_seed_s3": {
+      "1": {
+        "bootstrap_ci_95": [
+          0.0,
+          0.22727272727272727
+        ],
+        "denominator": 22,
+        "display_ci_95": [
+          0.025295428990995267,
+          0.27814946841605814
+        ],
+        "display_ci_method": "Wilson score",
+        "exact_binomial_ci_95": [
+          0.011205586024150997,
+          0.29161274155393346
+        ],
+        "numerator": 2,
+        "value": 0.09090909090909091,
+        "wilson_ci_95": [
+          0.025295428990995267,
+          0.27814946841605814
+        ]
+      },
+      "2": {
+        "bootstrap_ci_95": [
+          0.0,
+          0.22727272727272727
+        ],
+        "denominator": 22,
+        "display_ci_95": [
+          0.025295428990995267,
+          0.27814946841605814
+        ],
+        "display_ci_method": "Wilson score",
+        "exact_binomial_ci_95": [
+          0.011205586024150997,
+          0.29161274155393346
+        ],
+        "numerator": 2,
+        "value": 0.09090909090909091,
+        "wilson_ci_95": [
+          0.025295428990995267,
+          0.27814946841605814
+        ]
+      },
+      "3": {
+        "bootstrap_ci_95": [
+          0.0,
+          0.22727272727272727
+        ],
+        "denominator": 22,
+        "display_ci_95": [
+          0.025295428990995267,
+          0.27814946841605814
+        ],
+        "display_ci_method": "Wilson score",
+        "exact_binomial_ci_95": [
+          0.011205586024150997,
+          0.29161274155393346
+        ],
+        "numerator": 2,
+        "value": 0.09090909090909091,
+        "wilson_ci_95": [
+          0.025295428990995267,
+          0.27814946841605814
+        ]
+      }
+    },
+    "warmup_rate": {
+      "bootstrap_ci_95": [
+        0.7272727272727273,
+        0.9090909090909091
+      ],
+      "denominator": 66,
+      "display_ci_95": [
+        0.7085480732292817,
+        0.8928139359439193
+      ],
+      "display_ci_method": "Wilson score",
+      "exact_binomial_ci_95": [
+        0.7039345441700697,
+        0.9023647979841516
+      ],
+      "numerator": 54,
+      "value": 0.8181818181818182,
+      "wilson_ci_95": [
+        0.7085480732292817,
+        0.8928139359439193
+      ]
+    }
+  },
+  "B6": {
+    "excluded_by_reason": {},
+    "excluded_records": 0,
+    "hygiene": {
+      "AdmTok/task": 101.33333333333333,
+      "counts_sum": {
+        "contaminated": 0,
+        "retrieved_memories": 198,
+        "sleep_writes": 198
+      },
+      "metrics_mean": {
+        "ContradictionRepairAccuracy": 0.13636363636363635,
+        "HarmfulMemoryRate": 0.0,
+        "HumanFeedbackUseAccuracy": 0.045454545454545456,
+        "RegressionAfterUpdate": 0.3333333333333333,
+        "RepeatedErrorRate": 0.2727272727272727,
+        "ScopeAccuracy": 0.5227272727272727,
+        "TransferScore": 0.045454545454545456,
+        "UsefulMemoryPrecision": 0.3560606060606061
+      },
+      "source_file_count": 33
+    },
+    "n_S3": 66,
+    "partial": false,
+    "partial_note": "",
+    "pass_at_1_rate": {
+      "bootstrap_ci_95": [
+        0.0,
+        0.10606060606060606
+      ],
+      "denominator": 66,
+      "display_ci_95": [
+        0.015578274334433505,
+        0.1253331411324222
+      ],
+      "display_ci_method": "Wilson score",
+      "exact_binomial_ci_95": [
+        0.009473738563706226,
+        0.1271425059113172
+      ],
+      "numerator": 3,
+      "value": 0.045454545454545456,
+      "wilson_ci_95": [
+        0.015578274334433505,
+        0.1253331411324222
+      ]
+    },
+    "per_seed_s3": {
+      "1": {
+        "bootstrap_ci_95": [
+          0.0,
+          0.13636363636363635
+        ],
+        "denominator": 22,
+        "display_ci_95": [
+          0.00806942762126385,
+          0.21798045838657332
+        ],
+        "display_ci_method": "Wilson score",
+        "exact_binomial_ci_95": [
+          0.0011501475265735766,
+          0.22844439766763341
+        ],
+        "numerator": 1,
+        "value": 0.045454545454545456,
+        "wilson_ci_95": [
+          0.00806942762126385,
+          0.21798045838657332
+        ]
+      },
+      "2": {
+        "bootstrap_ci_95": [
+          0.0,
+          0.13636363636363635
+        ],
+        "denominator": 22,
+        "display_ci_95": [
+          0.00806942762126385,
+          0.21798045838657332
+        ],
+        "display_ci_method": "Wilson score",
+        "exact_binomial_ci_95": [
+          0.0011501475265735766,
+          0.22844439766763341
+        ],
+        "numerator": 1,
+        "value": 0.045454545454545456,
+        "wilson_ci_95": [
+          0.00806942762126385,
+          0.21798045838657332
+        ]
+      },
+      "3": {
+        "bootstrap_ci_95": [
+          0.0,
+          0.13636363636363635
+        ],
+        "denominator": 22,
+        "display_ci_95": [
+          0.00806942762126385,
+          0.21798045838657332
+        ],
+        "display_ci_method": "Wilson score",
+        "exact_binomial_ci_95": [
+          0.0011501475265735766,
+          0.22844439766763341
+        ],
+        "numerator": 1,
+        "value": 0.045454545454545456,
+        "wilson_ci_95": [
+          0.00806942762126385,
+          0.21798045838657332
+        ]
+      }
+    },
+    "warmup_rate": {
+      "bootstrap_ci_95": [
+        0.7272727272727273,
+        0.9090909090909091
+      ],
+      "denominator": 66,
+      "display_ci_95": [
+        0.7085480732292817,
+        0.8928139359439193
+      ],
+      "display_ci_method": "Wilson score",
+      "exact_binomial_ci_95": [
+        0.7039345441700697,
+        0.9023647979841516
+      ],
+      "numerator": 54,
+      "value": 0.8181818181818182,
+      "wilson_ci_95": [
+        0.7085480732292817,
+        0.8928139359439193
+      ]
+    }
+  },
+  "B7": {
+    "excluded_by_reason": {},
+    "excluded_records": 0,
+    "hygiene": {
+      "AdmTok/task": 82.68181818181819,
+      "counts_sum": {
+        "contaminated": 1,
+        "retrieved_memories": 132,
+        "sleep_writes": 198
+      },
+      "metrics_mean": {
+        "ContradictionRepairAccuracy": 0.13636363636363635,
+        "HarmfulMemoryRate": 0.0,
+        "HumanFeedbackUseAccuracy": 0.07575757575757576,
+        "RegressionAfterUpdate": 0.36363636363636365,
+        "RepeatedErrorRate": 0.2727272727272727,
+        "ScopeAccuracy": 0.5378787878787878,
+        "TransferScore": 0.07575757575757576,
+        "UsefulMemoryPrecision": 0.7727272727272727
+      },
+      "source_file_count": 33
+    },
+    "n_S3": 66,
+    "partial": false,
+    "partial_note": "",
+    "pass_at_1_rate": {
+      "bootstrap_ci_95": [
+        0.0,
+        0.10606060606060606
+      ],
+      "denominator": 66,
+      "display_ci_95": [
+        0.015578274334433505,
+        0.1253331411324222
+      ],
+      "display_ci_method": "Wilson score",
+      "exact_binomial_ci_95": [
+        0.009473738563706226,
+        0.1271425059113172
+      ],
+      "numerator": 3,
+      "value": 0.045454545454545456,
+      "wilson_ci_95": [
+        0.015578274334433505,
+        0.1253331411324222
+      ]
+    },
+    "per_seed_s3": {
+      "1": {
+        "bootstrap_ci_95": [
+          0.0,
+          0.13636363636363635
+        ],
+        "denominator": 22,
+        "display_ci_95": [
+          0.00806942762126385,
+          0.21798045838657332
+        ],
+        "display_ci_method": "Wilson score",
+        "exact_binomial_ci_95": [
+          0.0011501475265735766,
+          0.22844439766763341
+        ],
+        "numerator": 1,
+        "value": 0.045454545454545456,
+        "wilson_ci_95": [
+          0.00806942762126385,
+          0.21798045838657332
+        ]
+      },
+      "2": {
+        "bootstrap_ci_95": [
+          0.0,
+          0.13636363636363635
+        ],
+        "denominator": 22,
+        "display_ci_95": [
+          0.00806942762126385,
+          0.21798045838657332
+        ],
+        "display_ci_method": "Wilson score",
+        "exact_binomial_ci_95": [
+          0.0011501475265735766,
+          0.22844439766763341
+        ],
+        "numerator": 1,
+        "value": 0.045454545454545456,
+        "wilson_ci_95": [
+          0.00806942762126385,
+          0.21798045838657332
+        ]
+      },
+      "3": {
+        "bootstrap_ci_95": [
+          0.0,
+          0.13636363636363635
+        ],
+        "denominator": 22,
+        "display_ci_95": [
+          0.00806942762126385,
+          0.21798045838657332
+        ],
+        "display_ci_method": "Wilson score",
+        "exact_binomial_ci_95": [
+          0.0011501475265735766,
+          0.22844439766763341
+        ],
+        "numerator": 1,
+        "value": 0.045454545454545456,
+        "wilson_ci_95": [
+          0.00806942762126385,
+          0.21798045838657332
+        ]
+      }
+    },
+    "warmup_rate": {
+      "bootstrap_ci_95": [
+        0.7272727272727273,
+        0.9090909090909091
+      ],
+      "denominator": 66,
+      "display_ci_95": [
+        0.7085480732292817,
+        0.8928139359439193
+      ],
+      "display_ci_method": "Wilson score",
+      "exact_binomial_ci_95": [
+        0.7039345441700697,
+        0.9023647979841516
+      ],
+      "numerator": 54,
+      "value": 0.8181818181818182,
+      "wilson_ci_95": [
+        0.7085480732292817,
+        0.8928139359439193
+      ]
+    }
+  },
+  "DF": {
+    "excluded_by_reason": {
+      "codex_exec_failed": 1
+    },
+    "excluded_records": 1,
+    "hygiene": {
+      "AdmTok/task": 250.37878787878788,
+      "counts_sum": {
+        "contaminated": 1,
+        "retrieved_memories": 566,
+        "sleep_writes": 1279
+      },
+      "metrics_mean": {
+        "ContradictionRepairAccuracy": 0.6818181818181818,
+        "HarmfulMemoryRate": 0.0,
+        "HumanFeedbackUseAccuracy": 0.6818181818181818,
+        "RegressionAfterUpdate": 0.045454545454545456,
+        "RepeatedErrorRate": 0.19696969696969696,
+        "ScopeAccuracy": 0.8409090909090909,
+        "TransferScore": 0.6818181818181818,
+        "UsefulMemoryPrecision": 0.1918732782369146
+      },
+      "source_file_count": 33
+    },
+    "n_S3": 65,
+    "partial": false,
+    "partial_note": "1 S3 cell(s) excluded by validity gate",
+    "pass_at_1_rate": {
+      "bootstrap_ci_95": [
+        0.5538461538461539,
+        0.7846153846153846
+      ],
+      "denominator": 65,
+      "display_ci_95": [
+        0.5561398872118912,
+        0.7779611093969441
+      ],
+      "display_ci_method": "Wilson score",
+      "exact_binomial_ci_95": [
+        0.5494504329002265,
+        0.7876723930606071
+      ],
+      "numerator": 44,
+      "value": 0.676923076923077,
+      "wilson_ci_95": [
+        0.5561398872118912,
+        0.7779611093969441
+      ]
+    },
+    "per_seed_s3": {
+      "1": {
+        "bootstrap_ci_95": [
+          0.36363636363636365,
+          0.7727272727272727
+        ],
+        "denominator": 22,
+        "display_ci_95": [
+          0.3873481847631513,
+          0.7674418380352814
+        ],
+        "display_ci_method": "Wilson score",
+        "exact_binomial_ci_95": [
+          0.36354696172973133,
+          0.7929068770028509
+        ],
+        "numerator": 13,
+        "value": 0.5909090909090909,
+        "wilson_ci_95": [
+          0.3873481847631513,
+          0.7674418380352814
+        ]
+      },
+      "2": {
+        "bootstrap_ci_95": [
+          0.4090909090909091,
+          0.8181818181818182
+        ],
+        "denominator": 22,
+        "display_ci_95": [
+          0.42951708090131013,
+          0.8026679532963387
+        ],
+        "display_ci_method": "Wilson score",
+        "exact_binomial_ci_95": [
+          0.4065766688256467,
+          0.8280205623536676
+        ],
+        "numerator": 14,
+        "value": 0.6363636363636364,
+        "wilson_ci_95": [
+          0.42951708090131013,
+          0.8026679532963387
+        ]
+      },
+      "3": {
+        "bootstrap_ci_95": [
+          0.6190476190476191,
+          0.9523809523809523
+        ],
+        "denominator": 21,
+        "display_ci_95": [
+          0.5999943530979508,
+          0.9233243494723822
+        ],
+        "display_ci_method": "Wilson score",
+        "exact_binomial_ci_95": [
+          0.5809339588164721,
+          0.9455364318215931
+        ],
+        "numerator": 17,
+        "value": 0.8095238095238095,
+        "wilson_ci_95": [
+          0.5999943530979508,
+          0.9233243494723822
+        ]
+      }
+    },
+    "warmup_rate": {
+      "bootstrap_ci_95": [
+        0.8333333333333334,
+        0.9696969696969697
+      ],
+      "denominator": 66,
+      "display_ci_95": [
+        0.8155127011503411,
+        0.9576670249294885
+      ],
+      "display_ci_method": "Wilson score",
+      "exact_binomial_ci_95": [
+        0.8125573488135269,
+        0.9659028672287315
+      ],
+      "numerator": 60,
+      "value": 0.9090909090909091,
+      "wilson_ci_95": [
+        0.8155127011503411,
+        0.9576670249294885
+      ]
+    }
+  },
+  "DF-hybrid": {
+    "excluded_by_reason": {},
+    "excluded_records": 0,
+    "hygiene": {
+      "AdmTok/task": 232.56565656565658,
+      "counts_sum": {
+        "contaminated": 3,
+        "retrieved_memories": 460,
+        "sleep_writes": 1604
+      },
+      "metrics_mean": {
+        "ContradictionRepairAccuracy": 0.8181818181818182,
+        "HarmfulMemoryRate": 0.0,
+        "HumanFeedbackUseAccuracy": 0.8181818181818182,
+        "RegressionAfterUpdate": 0.09090909090909091,
+        "RepeatedErrorRate": 0.06060606060606061,
+        "ScopeAccuracy": 0.9090909090909091,
+        "TransferScore": 0.8181818181818182,
+        "UsefulMemoryPrecision": 0.23431391840482751
+      },
+      "source_file_count": 33
+    },
+    "n_S3": 66,
+    "partial": false,
+    "partial_note": "",
+    "pass_at_1_rate": {
+      "bootstrap_ci_95": [
+        0.6818181818181818,
+        0.8787878787878788
+      ],
+      "denominator": 66,
+      "display_ci_95": [
+        0.6748692879502294,
+        0.8692201489207618
+      ],
+      "display_ci_method": "Wilson score",
+      "exact_binomial_ci_95": [
+        0.6697885403521797,
+        0.878898067744857
+      ],
+      "numerator": 52,
+      "value": 0.7878787878787878,
+      "wilson_ci_95": [
+        0.6748692879502294,
+        0.8692201489207618
+      ]
+    },
+    "per_seed_s3": {
+      "1": {
+        "bootstrap_ci_95": [
+          0.5454545454545454,
+          0.9090909090909091
+        ],
+        "denominator": 22,
+        "display_ci_95": [
+          0.5184826598759762,
+          0.8684923971201053
+        ],
+        "display_ci_method": "Wilson score",
+        "exact_binomial_ci_95": [
+          0.49777879873365116,
+          0.8927107516296031
+        ],
+        "numerator": 16,
+        "value": 0.7272727272727273,
+        "wilson_ci_95": [
+          0.5184826598759762,
+          0.8684923971201053
+        ]
+      },
+      "2": {
+        "bootstrap_ci_95": [
+          0.5909090909090909,
+          0.9545454545454546
+        ],
+        "denominator": 22,
+        "display_ci_95": [
+          0.5656004682477829,
+          0.8987696001475147
+        ],
+        "display_ci_method": "Wilson score",
+        "exact_binomial_ci_95": [
+          0.5462963763378781,
+          0.9217937396481075
+        ],
+        "numerator": 17,
+        "value": 0.7727272727272727,
+        "wilson_ci_95": [
+          0.5656004682477829,
+          0.8987696001475147
+        ]
+      },
+      "3": {
+        "bootstrap_ci_95": [
+          0.7272727272727273,
+          1.0
+        ],
+        "denominator": 22,
+        "display_ci_95": [
+          0.6666501283342828,
+          0.9525099628594474
+        ],
+        "display_ci_method": "Wilson score",
+        "exact_binomial_ci_95": [
+          0.6508779027425919,
+          0.9709441488712534
+        ],
+        "numerator": 19,
+        "value": 0.8636363636363636,
+        "wilson_ci_95": [
+          0.6666501283342828,
+          0.9525099628594474
+        ]
+      }
+    },
+    "warmup_rate": {
+      "bootstrap_ci_95": [
+        0.7727272727272727,
+        0.9393939393939394
+      ],
+      "denominator": 66,
+      "display_ci_95": [
+        0.7607040702832047,
+        0.9265667973433106
+      ],
+      "display_ci_method": "Wilson score",
+      "exact_binomial_ci_95": [
+        0.7568586684861609,
+        0.9357018153567447
+      ],
+      "numerator": 57,
+      "value": 0.8636363636363636,
+      "wilson_ci_95": [
+        0.7607040702832047,
+        0.9265667973433106
+      ]
+    }
+  },
+  "DF-raw-only": {
+    "excluded_by_reason": {},
+    "excluded_records": 0,
+    "hygiene": {
+      "AdmTok/task": 139.2070707070707,
+      "counts_sum": {
+        "contaminated": 3,
+        "retrieved_memories": 198,
+        "sleep_writes": 198
+      },
+      "metrics_mean": {
+        "ContradictionRepairAccuracy": 0.7727272727272727,
+        "HarmfulMemoryRate": 0.0,
+        "HumanFeedbackUseAccuracy": 0.7727272727272727,
+        "RegressionAfterUpdate": 0.13636363636363635,
+        "RepeatedErrorRate": 0.22727272727272727,
+        "ScopeAccuracy": 0.8863636363636364,
+        "TransferScore": 0.7727272727272727,
+        "UsefulMemoryPrecision": 0.5
+      },
+      "source_file_count": 33
+    },
+    "n_S3": 66,
+    "partial": false,
+    "partial_note": "",
+    "pass_at_1_rate": {
+      "bootstrap_ci_95": [
+        0.6060606060606061,
+        0.8181818181818182
+      ],
+      "denominator": 66,
+      "display_ci_95": [
+        0.5936275059135345,
+        0.8072805002019328
+      ],
+      "display_ci_method": "Wilson score",
+      "exact_binomial_ci_95": [
+        0.5874932401392494,
+        0.816959774581892
+      ],
+      "numerator": 47,
+      "value": 0.7121212121212122,
+      "wilson_ci_95": [
+        0.5936275059135345,
+        0.8072805002019328
+      ]
+    },
+    "per_seed_s3": {
+      "1": {
+        "bootstrap_ci_95": [
+          0.5,
+          0.8636363636363636
+        ],
+        "denominator": 22,
+        "display_ci_95": [
+          0.47318597741042745,
+          0.8363940681864375
+        ],
+        "display_ci_method": "Wilson score",
+        "exact_binomial_ci_95": [
+          0.4512755724262295,
+          0.861353478446202
+        ],
+        "numerator": 15,
+        "value": 0.6818181818181818,
+        "wilson_ci_95": [
+          0.47318597741042745,
+          0.8363940681864375
+        ]
+      },
+      "2": {
+        "bootstrap_ci_95": [
+          0.5454545454545454,
+          0.9090909090909091
+        ],
+        "denominator": 22,
+        "display_ci_95": [
+          0.5184826598759762,
+          0.8684923971201053
+        ],
+        "display_ci_method": "Wilson score",
+        "exact_binomial_ci_95": [
+          0.49777879873365116,
+          0.8927107516296031
+        ],
+        "numerator": 16,
+        "value": 0.7272727272727273,
+        "wilson_ci_95": [
+          0.5184826598759762,
+          0.8684923971201053
+        ]
+      },
+      "3": {
+        "bootstrap_ci_95": [
+          0.5454545454545454,
+          0.9090909090909091
+        ],
+        "denominator": 22,
+        "display_ci_95": [
+          0.5184826598759762,
+          0.8684923971201053
+        ],
+        "display_ci_method": "Wilson score",
+        "exact_binomial_ci_95": [
+          0.49777879873365116,
+          0.8927107516296031
+        ],
+        "numerator": 16,
+        "value": 0.7272727272727273,
+        "wilson_ci_95": [
+          0.5184826598759762,
+          0.8684923971201053
+        ]
+      }
+    },
+    "warmup_rate": {
+      "bootstrap_ci_95": [
+        0.7272727272727273,
+        0.9090909090909091
+      ],
+      "denominator": 66,
+      "display_ci_95": [
+        0.7085480732292817,
+        0.8928139359439193
+      ],
+      "display_ci_method": "Wilson score",
+      "exact_binomial_ci_95": [
+        0.7039345441700697,
+        0.9023647979841516
+      ],
+      "numerator": 54,
+      "value": 0.8181818181818182,
+      "wilson_ci_95": [
+        0.7085480732292817,
+        0.8928139359439193
+      ]
+    }
+  },
+  "DF-strict": {
+    "excluded_by_reason": {
+      "task_exception": 11
+    },
+    "excluded_records": 11,
+    "hygiene": {
+      "AdmTok/task": 145.42929292929293,
+      "counts_sum": {
+        "contaminated": 2,
+        "retrieved_memories": 321,
+        "sleep_writes": 1219
+      },
+      "metrics_mean": {
+        "ContradictionRepairAccuracy": 0.4090909090909091,
+        "HarmfulMemoryRate": 0.0,
+        "HumanFeedbackUseAccuracy": 0.3787878787878788,
+        "RegressionAfterUpdate": 0.15151515151515152,
+        "RepeatedErrorRate": 0.21212121212121213,
+        "ScopeAccuracy": 0.6893939393939394,
+        "TransferScore": 0.3787878787878788,
+        "UsefulMemoryPrecision": 0.30707070707070705
+      },
+      "source_file_count": 33
+    },
+    "n_S3": 59,
+    "partial": true,
+    "partial_note": "7 S3 cell(s) excluded by validity gate",
+    "pass_at_1_rate": {
+      "bootstrap_ci_95": [
+        0.22033898305084745,
+        0.4576271186440678
+      ],
+      "denominator": 59,
+      "display_ci_95": [
+        0.23137653685587656,
+        0.46627529433071635
+      ],
+      "display_ci_method": "Wilson score",
+      "exact_binomial_ci_95": [
+        0.22081169863442018,
+        0.4739291144519243
+      ],
+      "numerator": 20,
+      "value": 0.3389830508474576,
+      "wilson_ci_95": [
+        0.23137653685587656,
+        0.46627529433071635
+      ]
+    },
+    "per_seed_s3": {
+      "1": {
+        "bootstrap_ci_95": [
+          0.09090909090909091,
+          0.45454545454545453
+        ],
+        "denominator": 22,
+        "display_ci_95": [
+          0.13150760287989469,
+          0.4815173401240238
+        ],
+        "display_ci_method": "Wilson score",
+        "exact_binomial_ci_95": [
+          0.10728924837039697,
+          0.5022212012663487
+        ],
+        "numerator": 6,
+        "value": 0.2727272727272727,
+        "wilson_ci_95": [
+          0.13150760287989469,
+          0.4815173401240238
+        ]
+      },
+      "2": {
+        "bootstrap_ci_95": [
+          0.19047619047619047,
+          0.5714285714285714
+        ],
+        "denominator": 21,
+        "display_ci_95": [
+          0.20751011368564493,
+          0.5912134622488425
+        ],
+        "display_ci_method": "Wilson score",
+        "exact_binomial_ci_95": [
+          0.1810716255401732,
+          0.6156456096213541
+        ],
+        "numerator": 8,
+        "value": 0.38095238095238093,
+        "wilson_ci_95": [
+          0.20751011368564493,
+          0.5912134622488425
+        ]
+      },
+      "3": {
+        "bootstrap_ci_95": [
+          0.125,
+          0.625
+        ],
+        "denominator": 16,
+        "display_ci_95": [
+          0.18481232558863633,
+          0.6135895945449727
+        ],
+        "display_ci_method": "Wilson score",
+        "exact_binomial_ci_95": [
+          0.15198367508112204,
+          0.6456539056979218
+        ],
+        "numerator": 6,
+        "value": 0.375,
+        "wilson_ci_95": [
+          0.18481232558863633,
+          0.6135895945449727
+        ]
+      }
+    },
+    "warmup_rate": {
+      "bootstrap_ci_95": [
+        0.8333333333333334,
+        0.9696969696969697
+      ],
+      "denominator": 66,
+      "display_ci_95": [
+        0.8155127011503411,
+        0.9576670249294885
+      ],
+      "display_ci_method": "Wilson score",
+      "exact_binomial_ci_95": [
+        0.8125573488135269,
+        0.9659028672287315
+      ],
+      "numerator": 60,
+      "value": 0.9090909090909091,
+      "wilson_ci_95": [
+        0.8155127011503411,
+        0.9576670249294885
+      ]
+    }
+  },
+  "DF-strict-hybrid": {
+    "excluded_by_reason": {},
+    "excluded_records": 0,
+    "hygiene": {
+      "AdmTok/task": 178.15656565656568,
+      "counts_sum": {
+        "contaminated": 2,
+        "retrieved_memories": 344,
+        "sleep_writes": 1652
+      },
+      "metrics_mean": {
+        "ContradictionRepairAccuracy": 0.7424242424242424,
+        "HarmfulMemoryRate": 0.0,
+        "HumanFeedbackUseAccuracy": 0.7424242424242424,
+        "RegressionAfterUpdate": 0.12121212121212122,
+        "RepeatedErrorRate": 0.12121212121212122,
+        "ScopeAccuracy": 0.8712121212121212,
+        "TransferScore": 0.7424242424242424,
+        "UsefulMemoryPrecision": 0.3373737373737374
+      },
+      "source_file_count": 33
+    },
+    "n_S3": 66,
+    "partial": false,
+    "partial_note": "",
+    "pass_at_1_rate": {
+      "bootstrap_ci_95": [
+        0.6212121212121212,
+        0.8333333333333334
+      ],
+      "denominator": 66,
+      "display_ci_95": [
+        0.6095777422224589,
+        0.8199665500441133
+      ],
+      "display_ci_method": "Wilson score",
+      "exact_binomial_ci_95": [
+        0.6036427957562944,
+        0.8296733838204806
+      ],
+      "numerator": 48,
+      "value": 0.7272727272727273,
+      "wilson_ci_95": [
+        0.6095777422224589,
+        0.8199665500441133
+      ]
+    },
+    "per_seed_s3": {
+      "1": {
+        "bootstrap_ci_95": [
+          0.36363636363636365,
+          0.7727272727272727
+        ],
+        "denominator": 22,
+        "display_ci_95": [
+          0.3873481847631513,
+          0.7674418380352814
+        ],
+        "display_ci_method": "Wilson score",
+        "exact_binomial_ci_95": [
+          0.36354696172973133,
+          0.7929068770028509
+        ],
+        "numerator": 13,
+        "value": 0.5909090909090909,
+        "wilson_ci_95": [
+          0.3873481847631513,
+          0.7674418380352814
+        ]
+      },
+      "2": {
+        "bootstrap_ci_95": [
+          0.5909090909090909,
+          0.9545454545454546
+        ],
+        "denominator": 22,
+        "display_ci_95": [
+          0.5656004682477829,
+          0.8987696001475147
+        ],
+        "display_ci_method": "Wilson score",
+        "exact_binomial_ci_95": [
+          0.5462963763378781,
+          0.9217937396481075
+        ],
+        "numerator": 17,
+        "value": 0.7727272727272727,
+        "wilson_ci_95": [
+          0.5656004682477829,
+          0.8987696001475147
+        ]
+      },
+      "3": {
+        "bootstrap_ci_95": [
+          0.6363636363636364,
+          0.9545454545454546
+        ],
+        "denominator": 22,
+        "display_ci_95": [
+          0.6148339256287345,
+          0.9269311541657794
+        ],
+        "display_ci_method": "Wilson score",
+        "exact_binomial_ci_95": [
+          0.5971542169221287,
+          0.9481327006875631
+        ],
+        "numerator": 18,
+        "value": 0.8181818181818182,
+        "wilson_ci_95": [
+          0.6148339256287345,
+          0.9269311541657794
+        ]
+      }
+    },
+    "warmup_rate": {
+      "bootstrap_ci_95": [
+        0.8181818181818182,
+        0.9545454545454546
+      ],
+      "denominator": 66,
+      "display_ci_95": [
+        0.7968769124835199,
+        0.9476665274452051
+      ],
+      "display_ci_method": "Wilson score",
+      "exact_binomial_ci_95": [
+        0.793606517867613,
+        0.9562815509014071
+      ],
+      "numerator": 59,
+      "value": 0.8939393939393939,
+      "wilson_ci_95": [
+        0.7968769124835199,
+        0.9476665274452051
+      ]
+    }
+  },
+  "_metadata": {
+    "generated_at_utc": "2026-07-05T08:04:07.893340Z",
+    "generated_by": "scripts/generate_tables.py",
+    "input": "analysis/fold/confirmatory.json",
+    "live_results_scanned": false,
+    "paired_risk_difference_ci": {
+      "level": 0.95,
+      "method": "Exact conditional matched-pair interval: Clopper-Pearson CI for b/(b+c), transformed to (b-c)/paired_n with discordant_n fixed."
+    },
+    "pass_rate_ci": {
+      "level": 0.95,
+      "method": "Wilson score interval",
+      "note": "Displayed pass-rate intervals are Wilson/binomial score intervals, matching the enhancement-plan sanity values."
+    },
+    "source": "analysis/fold/confirmatory.json frozen 3-seed fold"
+  },
+  "_tables": {
+    "confirmatory_baselines": [
+      {
+        "condition": "B0",
+        "condition_summary": {
+          "excluded_by_reason": {},
+          "excluded_records": 0,
+          "hygiene": {
+            "AdmTok/task": 1.0,
+            "counts_sum": {
+              "contaminated": 1,
+              "retrieved_memories": 0,
+              "sleep_writes": 0
+            },
+            "metrics_mean": {
+              "ContradictionRepairAccuracy": 0.13636363636363635,
+              "HarmfulMemoryRate": 0.0,
+              "HumanFeedbackUseAccuracy": 0.0,
+              "RegressionAfterUpdate": 0.3484848484848485,
+              "RepeatedErrorRate": 0.2878787878787879,
+              "ScopeAccuracy": 0.5,
+              "TransferScore": 0.0,
+              "UsefulMemoryPrecision": null
+            },
+            "source_file_count": 33
+          },
+          "n_S3": 66,
+          "partial": false,
+          "partial_note": "",
+          "pass_at_1_rate": {
+            "bootstrap_ci_95": [
+              0.0,
+              0.10606060606060606
+            ],
+            "denominator": 66,
+            "display_ci_95": [
+              0.015578274334433505,
+              0.1253331411324222
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.009473738563706226,
+              0.1271425059113172
+            ],
+            "numerator": 3,
+            "value": 0.045454545454545456,
+            "wilson_ci_95": [
+              0.015578274334433505,
+              0.1253331411324222
+            ]
+          },
+          "per_seed_s3": {
+            "1": {
+              "bootstrap_ci_95": [
+                0.0,
+                0.13636363636363635
+              ],
+              "denominator": 22,
+              "display_ci_95": [
+                0.00806942762126385,
+                0.21798045838657332
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.0011501475265735766,
+                0.22844439766763341
+              ],
+              "numerator": 1,
+              "value": 0.045454545454545456,
+              "wilson_ci_95": [
+                0.00806942762126385,
+                0.21798045838657332
+              ]
+            },
+            "2": {
+              "bootstrap_ci_95": [
+                0.0,
+                0.13636363636363635
+              ],
+              "denominator": 22,
+              "display_ci_95": [
+                0.00806942762126385,
+                0.21798045838657332
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.0011501475265735766,
+                0.22844439766763341
+              ],
+              "numerator": 1,
+              "value": 0.045454545454545456,
+              "wilson_ci_95": [
+                0.00806942762126385,
+                0.21798045838657332
+              ]
+            },
+            "3": {
+              "bootstrap_ci_95": [
+                0.0,
+                0.13636363636363635
+              ],
+              "denominator": 22,
+              "display_ci_95": [
+                0.00806942762126385,
+                0.21798045838657332
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.0011501475265735766,
+                0.22844439766763341
+              ],
+              "numerator": 1,
+              "value": 0.045454545454545456,
+              "wilson_ci_95": [
+                0.00806942762126385,
+                0.21798045838657332
+              ]
+            }
+          },
+          "warmup_rate": {
+            "bootstrap_ci_95": [
+              0.7272727272727273,
+              0.9090909090909091
+            ],
+            "denominator": 66,
+            "display_ci_95": [
+              0.7085480732292817,
+              0.8928139359439193
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.7039345441700697,
+              0.9023647979841516
+            ],
+            "numerator": 54,
+            "value": 0.8181818181818182,
+            "wilson_ci_95": [
+              0.7085480732292817,
+              0.8928139359439193
+            ]
+          }
+        },
+        "excluded_by_reason": {},
+        "exclusions": 0,
+        "label": "B0 No memory",
+        "label_tex": "B0 No memory",
+        "n_s3": 66,
+        "pass_at_1": {
+          "bootstrap_ci_95": [
+            0.0,
+            0.10606060606060606
+          ],
+          "denominator": 66,
+          "display_ci_95": [
+            0.015578274334433505,
+            0.1253331411324222
+          ],
+          "display_ci_method": "Wilson score",
+          "exact_binomial_ci_95": [
+            0.009473738563706226,
+            0.1271425059113172
+          ],
+          "numerator": 3,
+          "value": 0.045454545454545456,
+          "wilson_ci_95": [
+            0.015578274334433505,
+            0.1253331411324222
+          ]
+        },
+        "warmup": {
+          "bootstrap_ci_95": [
+            0.7272727272727273,
+            0.9090909090909091
+          ],
+          "denominator": 66,
+          "display_ci_95": [
+            0.7085480732292817,
+            0.8928139359439193
+          ],
+          "display_ci_method": "Wilson score",
+          "exact_binomial_ci_95": [
+            0.7039345441700697,
+            0.9023647979841516
+          ],
+          "numerator": 54,
+          "value": 0.8181818181818182,
+          "wilson_ci_95": [
+            0.7085480732292817,
+            0.8928139359439193
+          ]
+        }
+      },
+      {
+        "condition": "B1",
+        "condition_summary": {
+          "excluded_by_reason": {},
+          "excluded_records": 0,
+          "hygiene": {
+            "AdmTok/task": 124.69191919191918,
+            "counts_sum": {
+              "contaminated": 0,
+              "retrieved_memories": 198,
+              "sleep_writes": 0
+            },
+            "metrics_mean": {
+              "ContradictionRepairAccuracy": 0.13636363636363635,
+              "HarmfulMemoryRate": 0.0,
+              "HumanFeedbackUseAccuracy": 0.10606060606060606,
+              "RegressionAfterUpdate": 0.3181818181818182,
+              "RepeatedErrorRate": 0.2727272727272727,
+              "ScopeAccuracy": 0.553030303030303,
+              "TransferScore": 0.0,
+              "UsefulMemoryPrecision": 0.38636363636363635
+            },
+            "source_file_count": 33
+          },
+          "n_S3": 66,
+          "partial": false,
+          "partial_note": "",
+          "pass_at_1_rate": {
+            "bootstrap_ci_95": [
+              0.0,
+              0.10606060606060606
+            ],
+            "denominator": 66,
+            "display_ci_95": [
+              0.015578274334433505,
+              0.1253331411324222
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.009473738563706226,
+              0.1271425059113172
+            ],
+            "numerator": 3,
+            "value": 0.045454545454545456,
+            "wilson_ci_95": [
+              0.015578274334433505,
+              0.1253331411324222
+            ]
+          },
+          "per_seed_s3": {
+            "1": {
+              "bootstrap_ci_95": [
+                0.0,
+                0.13636363636363635
+              ],
+              "denominator": 22,
+              "display_ci_95": [
+                0.00806942762126385,
+                0.21798045838657332
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.0011501475265735766,
+                0.22844439766763341
+              ],
+              "numerator": 1,
+              "value": 0.045454545454545456,
+              "wilson_ci_95": [
+                0.00806942762126385,
+                0.21798045838657332
+              ]
+            },
+            "2": {
+              "bootstrap_ci_95": [
+                0.0,
+                0.13636363636363635
+              ],
+              "denominator": 22,
+              "display_ci_95": [
+                0.00806942762126385,
+                0.21798045838657332
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.0011501475265735766,
+                0.22844439766763341
+              ],
+              "numerator": 1,
+              "value": 0.045454545454545456,
+              "wilson_ci_95": [
+                0.00806942762126385,
+                0.21798045838657332
+              ]
+            },
+            "3": {
+              "bootstrap_ci_95": [
+                0.0,
+                0.13636363636363635
+              ],
+              "denominator": 22,
+              "display_ci_95": [
+                0.00806942762126385,
+                0.21798045838657332
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.0011501475265735766,
+                0.22844439766763341
+              ],
+              "numerator": 1,
+              "value": 0.045454545454545456,
+              "wilson_ci_95": [
+                0.00806942762126385,
+                0.21798045838657332
+              ]
+            }
+          },
+          "warmup_rate": {
+            "bootstrap_ci_95": [
+              0.7272727272727273,
+              0.9090909090909091
+            ],
+            "denominator": 66,
+            "display_ci_95": [
+              0.7085480732292817,
+              0.8928139359439193
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.7039345441700697,
+              0.9023647979841516
+            ],
+            "numerator": 54,
+            "value": 0.8181818181818182,
+            "wilson_ci_95": [
+              0.7085480732292817,
+              0.8928139359439193
+            ]
+          }
+        },
+        "excluded_by_reason": {},
+        "exclusions": 0,
+        "label": "B1 Raw episodic",
+        "label_tex": "B1 Raw episodic",
+        "n_s3": 66,
+        "pass_at_1": {
+          "bootstrap_ci_95": [
+            0.0,
+            0.10606060606060606
+          ],
+          "denominator": 66,
+          "display_ci_95": [
+            0.015578274334433505,
+            0.1253331411324222
+          ],
+          "display_ci_method": "Wilson score",
+          "exact_binomial_ci_95": [
+            0.009473738563706226,
+            0.1271425059113172
+          ],
+          "numerator": 3,
+          "value": 0.045454545454545456,
+          "wilson_ci_95": [
+            0.015578274334433505,
+            0.1253331411324222
+          ]
+        },
+        "warmup": {
+          "bootstrap_ci_95": [
+            0.7272727272727273,
+            0.9090909090909091
+          ],
+          "denominator": 66,
+          "display_ci_95": [
+            0.7085480732292817,
+            0.8928139359439193
+          ],
+          "display_ci_method": "Wilson score",
+          "exact_binomial_ci_95": [
+            0.7039345441700697,
+            0.9023647979841516
+          ],
+          "numerator": 54,
+          "value": 0.8181818181818182,
+          "wilson_ci_95": [
+            0.7085480732292817,
+            0.8928139359439193
+          ]
+        }
+      },
+      {
+        "condition": "B2",
+        "condition_summary": {
+          "excluded_by_reason": {},
+          "excluded_records": 0,
+          "hygiene": {
+            "AdmTok/task": 126.5,
+            "counts_sum": {
+              "contaminated": 1,
+              "retrieved_memories": 198,
+              "sleep_writes": 198
+            },
+            "metrics_mean": {
+              "ContradictionRepairAccuracy": 0.12121212121212122,
+              "HarmfulMemoryRate": 0.0,
+              "HumanFeedbackUseAccuracy": 0.10606060606060606,
+              "RegressionAfterUpdate": 0.3181818181818182,
+              "RepeatedErrorRate": 0.2727272727272727,
+              "ScopeAccuracy": 0.553030303030303,
+              "TransferScore": 0.10606060606060606,
+              "UsefulMemoryPrecision": 0.42424242424242425
+            },
+            "source_file_count": 33
+          },
+          "n_S3": 66,
+          "partial": false,
+          "partial_note": "",
+          "pass_at_1_rate": {
+            "bootstrap_ci_95": [
+              0.0,
+              0.10606060606060606
+            ],
+            "denominator": 66,
+            "display_ci_95": [
+              0.015578274334433505,
+              0.1253331411324222
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.009473738563706226,
+              0.1271425059113172
+            ],
+            "numerator": 3,
+            "value": 0.045454545454545456,
+            "wilson_ci_95": [
+              0.015578274334433505,
+              0.1253331411324222
+            ]
+          },
+          "per_seed_s3": {
+            "1": {
+              "bootstrap_ci_95": [
+                0.0,
+                0.13636363636363635
+              ],
+              "denominator": 22,
+              "display_ci_95": [
+                0.00806942762126385,
+                0.21798045838657332
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.0011501475265735766,
+                0.22844439766763341
+              ],
+              "numerator": 1,
+              "value": 0.045454545454545456,
+              "wilson_ci_95": [
+                0.00806942762126385,
+                0.21798045838657332
+              ]
+            },
+            "2": {
+              "bootstrap_ci_95": [
+                0.0,
+                0.13636363636363635
+              ],
+              "denominator": 22,
+              "display_ci_95": [
+                0.00806942762126385,
+                0.21798045838657332
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.0011501475265735766,
+                0.22844439766763341
+              ],
+              "numerator": 1,
+              "value": 0.045454545454545456,
+              "wilson_ci_95": [
+                0.00806942762126385,
+                0.21798045838657332
+              ]
+            },
+            "3": {
+              "bootstrap_ci_95": [
+                0.0,
+                0.13636363636363635
+              ],
+              "denominator": 22,
+              "display_ci_95": [
+                0.00806942762126385,
+                0.21798045838657332
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.0011501475265735766,
+                0.22844439766763341
+              ],
+              "numerator": 1,
+              "value": 0.045454545454545456,
+              "wilson_ci_95": [
+                0.00806942762126385,
+                0.21798045838657332
+              ]
+            }
+          },
+          "warmup_rate": {
+            "bootstrap_ci_95": [
+              0.7272727272727273,
+              0.9090909090909091
+            ],
+            "denominator": 66,
+            "display_ci_95": [
+              0.7085480732292817,
+              0.8928139359439193
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.7039345441700697,
+              0.9023647979841516
+            ],
+            "numerator": 54,
+            "value": 0.8181818181818182,
+            "wilson_ci_95": [
+              0.7085480732292817,
+              0.8928139359439193
+            ]
+          }
+        },
+        "excluded_by_reason": {},
+        "exclusions": 0,
+        "label": "B2 Vector traces",
+        "label_tex": "B2 Vector traces",
+        "n_s3": 66,
+        "pass_at_1": {
+          "bootstrap_ci_95": [
+            0.0,
+            0.10606060606060606
+          ],
+          "denominator": 66,
+          "display_ci_95": [
+            0.015578274334433505,
+            0.1253331411324222
+          ],
+          "display_ci_method": "Wilson score",
+          "exact_binomial_ci_95": [
+            0.009473738563706226,
+            0.1271425059113172
+          ],
+          "numerator": 3,
+          "value": 0.045454545454545456,
+          "wilson_ci_95": [
+            0.015578274334433505,
+            0.1253331411324222
+          ]
+        },
+        "warmup": {
+          "bootstrap_ci_95": [
+            0.7272727272727273,
+            0.9090909090909091
+          ],
+          "denominator": 66,
+          "display_ci_95": [
+            0.7085480732292817,
+            0.8928139359439193
+          ],
+          "display_ci_method": "Wilson score",
+          "exact_binomial_ci_95": [
+            0.7039345441700697,
+            0.9023647979841516
+          ],
+          "numerator": 54,
+          "value": 0.8181818181818182,
+          "wilson_ci_95": [
+            0.7085480732292817,
+            0.8928139359439193
+          ]
+        }
+      },
+      {
+        "condition": "B3",
+        "condition_summary": {
+          "excluded_by_reason": {},
+          "excluded_records": 0,
+          "hygiene": {
+            "AdmTok/task": 126.77777777777779,
+            "counts_sum": {
+              "contaminated": 1,
+              "retrieved_memories": 198,
+              "sleep_writes": 198
+            },
+            "metrics_mean": {
+              "ContradictionRepairAccuracy": 0.4393939393939394,
+              "HarmfulMemoryRate": 0.0,
+              "HumanFeedbackUseAccuracy": 0.4393939393939394,
+              "RegressionAfterUpdate": 0.24242424242424243,
+              "RepeatedErrorRate": 0.2727272727272727,
+              "ScopeAccuracy": 0.7196969696969697,
+              "TransferScore": 0.4393939393939394,
+              "UsefulMemoryPrecision": 0.5
+            },
+            "source_file_count": 33
+          },
+          "n_S3": 66,
+          "partial": false,
+          "partial_note": "",
+          "pass_at_1_rate": {
+            "bootstrap_ci_95": [
+              0.24242424242424243,
+              0.4696969696969697
+            ],
+            "denominator": 66,
+            "display_ci_95": [
+              0.2447587406192953,
+              0.4688783978696565
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.2352919694103216,
+              0.47576023167290027
+            ],
+            "numerator": 23,
+            "value": 0.3484848484848485,
+            "wilson_ci_95": [
+              0.2447587406192953,
+              0.4688783978696565
+            ]
+          },
+          "per_seed_s3": {
+            "1": {
+              "bootstrap_ci_95": [
+                0.18181818181818182,
+                0.5465909090908926
+              ],
+              "denominator": 22,
+              "display_ci_95": [
+                0.19733204670366125,
+                0.5704829190986899
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.1719794376463324,
+                0.5934233311743533
+              ],
+              "numerator": 8,
+              "value": 0.36363636363636365,
+              "wilson_ci_95": [
+                0.19733204670366125,
+                0.5704829190986899
+              ]
+            },
+            "2": {
+              "bootstrap_ci_95": [
+                0.13636363636363635,
+                0.5
+              ],
+              "denominator": 22,
+              "display_ci_95": [
+                0.1636059318135624,
+                0.5268140225895723
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.13864652155379786,
+                0.5487244275737704
+              ],
+              "numerator": 7,
+              "value": 0.3181818181818182,
+              "wilson_ci_95": [
+                0.1636059318135624,
+                0.5268140225895723
+              ]
+            },
+            "3": {
+              "bootstrap_ci_95": [
+                0.18181818181818182,
+                0.5465909090908926
+              ],
+              "denominator": 22,
+              "display_ci_95": [
+                0.19733204670366125,
+                0.5704829190986899
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.1719794376463324,
+                0.5934233311743533
+              ],
+              "numerator": 8,
+              "value": 0.36363636363636365,
+              "wilson_ci_95": [
+                0.19733204670366125,
+                0.5704829190986899
+              ]
+            }
+          },
+          "warmup_rate": {
+            "bootstrap_ci_95": [
+              0.7272727272727273,
+              0.9090909090909091
+            ],
+            "denominator": 66,
+            "display_ci_95": [
+              0.7085480732292817,
+              0.8928139359439193
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.7039345441700697,
+              0.9023647979841516
+            ],
+            "numerator": 54,
+            "value": 0.8181818181818182,
+            "wilson_ci_95": [
+              0.7085480732292817,
+              0.8928139359439193
+            ]
+          }
+        },
+        "excluded_by_reason": {},
+        "exclusions": 0,
+        "label": "B3 Reflection-vector",
+        "label_tex": "B3 Reflection-vector",
+        "n_s3": 66,
+        "pass_at_1": {
+          "bootstrap_ci_95": [
+            0.24242424242424243,
+            0.4696969696969697
+          ],
+          "denominator": 66,
+          "display_ci_95": [
+            0.2447587406192953,
+            0.4688783978696565
+          ],
+          "display_ci_method": "Wilson score",
+          "exact_binomial_ci_95": [
+            0.2352919694103216,
+            0.47576023167290027
+          ],
+          "numerator": 23,
+          "value": 0.3484848484848485,
+          "wilson_ci_95": [
+            0.2447587406192953,
+            0.4688783978696565
+          ]
+        },
+        "warmup": {
+          "bootstrap_ci_95": [
+            0.7272727272727273,
+            0.9090909090909091
+          ],
+          "denominator": 66,
+          "display_ci_95": [
+            0.7085480732292817,
+            0.8928139359439193
+          ],
+          "display_ci_method": "Wilson score",
+          "exact_binomial_ci_95": [
+            0.7039345441700697,
+            0.9023647979841516
+          ],
+          "numerator": 54,
+          "value": 0.8181818181818182,
+          "wilson_ci_95": [
+            0.7085480732292817,
+            0.8928139359439193
+          ]
+        }
+      },
+      {
+        "condition": "B4",
+        "condition_summary": {
+          "excluded_by_reason": {},
+          "excluded_records": 0,
+          "hygiene": {
+            "AdmTok/task": 118.91919191919192,
+            "counts_sum": {
+              "contaminated": 1,
+              "retrieved_memories": 196,
+              "sleep_writes": 198
+            },
+            "metrics_mean": {
+              "ContradictionRepairAccuracy": 0.13636363636363635,
+              "HarmfulMemoryRate": 0.0,
+              "HumanFeedbackUseAccuracy": 0.06060606060606061,
+              "RegressionAfterUpdate": 0.30303030303030304,
+              "RepeatedErrorRate": 0.30303030303030304,
+              "ScopeAccuracy": 0.5303030303030303,
+              "TransferScore": 0.06060606060606061,
+              "UsefulMemoryPrecision": 0.3813131313131313
+            },
+            "source_file_count": 33
+          },
+          "n_S3": 66,
+          "partial": false,
+          "partial_note": "",
+          "pass_at_1_rate": {
+            "bootstrap_ci_95": [
+              0.0,
+              0.10606060606060606
+            ],
+            "denominator": 66,
+            "display_ci_95": [
+              0.015578274334433505,
+              0.1253331411324222
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.009473738563706226,
+              0.1271425059113172
+            ],
+            "numerator": 3,
+            "value": 0.045454545454545456,
+            "wilson_ci_95": [
+              0.015578274334433505,
+              0.1253331411324222
+            ]
+          },
+          "per_seed_s3": {
+            "1": {
+              "bootstrap_ci_95": [
+                0.0,
+                0.13636363636363635
+              ],
+              "denominator": 22,
+              "display_ci_95": [
+                0.00806942762126385,
+                0.21798045838657332
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.0011501475265735766,
+                0.22844439766763341
+              ],
+              "numerator": 1,
+              "value": 0.045454545454545456,
+              "wilson_ci_95": [
+                0.00806942762126385,
+                0.21798045838657332
+              ]
+            },
+            "2": {
+              "bootstrap_ci_95": [
+                0.0,
+                0.13636363636363635
+              ],
+              "denominator": 22,
+              "display_ci_95": [
+                0.00806942762126385,
+                0.21798045838657332
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.0011501475265735766,
+                0.22844439766763341
+              ],
+              "numerator": 1,
+              "value": 0.045454545454545456,
+              "wilson_ci_95": [
+                0.00806942762126385,
+                0.21798045838657332
+              ]
+            },
+            "3": {
+              "bootstrap_ci_95": [
+                0.0,
+                0.13636363636363635
+              ],
+              "denominator": 22,
+              "display_ci_95": [
+                0.00806942762126385,
+                0.21798045838657332
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.0011501475265735766,
+                0.22844439766763341
+              ],
+              "numerator": 1,
+              "value": 0.045454545454545456,
+              "wilson_ci_95": [
+                0.00806942762126385,
+                0.21798045838657332
+              ]
+            }
+          },
+          "warmup_rate": {
+            "bootstrap_ci_95": [
+              0.7272727272727273,
+              0.9090909090909091
+            ],
+            "denominator": 66,
+            "display_ci_95": [
+              0.7085480732292817,
+              0.8928139359439193
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.7039345441700697,
+              0.9023647979841516
+            ],
+            "numerator": 54,
+            "value": 0.8181818181818182,
+            "wilson_ci_95": [
+              0.7085480732292817,
+              0.8928139359439193
+            ]
+          }
+        },
+        "excluded_by_reason": {},
+        "exclusions": 0,
+        "label": "B4 Untyped summary",
+        "label_tex": "B4 Untyped summary",
+        "n_s3": 66,
+        "pass_at_1": {
+          "bootstrap_ci_95": [
+            0.0,
+            0.10606060606060606
+          ],
+          "denominator": 66,
+          "display_ci_95": [
+            0.015578274334433505,
+            0.1253331411324222
+          ],
+          "display_ci_method": "Wilson score",
+          "exact_binomial_ci_95": [
+            0.009473738563706226,
+            0.1271425059113172
+          ],
+          "numerator": 3,
+          "value": 0.045454545454545456,
+          "wilson_ci_95": [
+            0.015578274334433505,
+            0.1253331411324222
+          ]
+        },
+        "warmup": {
+          "bootstrap_ci_95": [
+            0.7272727272727273,
+            0.9090909090909091
+          ],
+          "denominator": 66,
+          "display_ci_95": [
+            0.7085480732292817,
+            0.8928139359439193
+          ],
+          "display_ci_method": "Wilson score",
+          "exact_binomial_ci_95": [
+            0.7039345441700697,
+            0.9023647979841516
+          ],
+          "numerator": 54,
+          "value": 0.8181818181818182,
+          "wilson_ci_95": [
+            0.7085480732292817,
+            0.8928139359439193
+          ]
+        }
+      },
+      {
+        "condition": "B5",
+        "condition_summary": {
+          "excluded_by_reason": {},
+          "excluded_records": 0,
+          "hygiene": {
+            "AdmTok/task": 152.0909090909091,
+            "counts_sum": {
+              "contaminated": 3,
+              "retrieved_memories": 198,
+              "sleep_writes": 198
+            },
+            "metrics_mean": {
+              "ContradictionRepairAccuracy": 0.7727272727272727,
+              "HarmfulMemoryRate": 0.0,
+              "HumanFeedbackUseAccuracy": 0.7727272727272727,
+              "RegressionAfterUpdate": 0.13636363636363635,
+              "RepeatedErrorRate": 0.22727272727272727,
+              "ScopeAccuracy": 0.8863636363636364,
+              "TransferScore": 0.7727272727272727,
+              "UsefulMemoryPrecision": 0.5
+            },
+            "source_file_count": 33
+          },
+          "n_S3": 66,
+          "partial": false,
+          "partial_note": "",
+          "pass_at_1_rate": {
+            "bootstrap_ci_95": [
+              0.6212121212121212,
+              0.8333333333333334
+            ],
+            "denominator": 66,
+            "display_ci_95": [
+              0.6095777422224589,
+              0.8199665500441133
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.6036427957562944,
+              0.8296733838204806
+            ],
+            "numerator": 48,
+            "value": 0.7272727272727273,
+            "wilson_ci_95": [
+              0.6095777422224589,
+              0.8199665500441133
+            ]
+          },
+          "per_seed_s3": {
+            "1": {
+              "bootstrap_ci_95": [
+                0.5454545454545454,
+                0.9090909090909091
+              ],
+              "denominator": 22,
+              "display_ci_95": [
+                0.5184826598759762,
+                0.8684923971201053
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.49777879873365116,
+                0.8927107516296031
+              ],
+              "numerator": 16,
+              "value": 0.7272727272727273,
+              "wilson_ci_95": [
+                0.5184826598759762,
+                0.8684923971201053
+              ]
+            },
+            "2": {
+              "bootstrap_ci_95": [
+                0.5454545454545454,
+                0.9090909090909091
+              ],
+              "denominator": 22,
+              "display_ci_95": [
+                0.5184826598759762,
+                0.8684923971201053
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.49777879873365116,
+                0.8927107516296031
+              ],
+              "numerator": 16,
+              "value": 0.7272727272727273,
+              "wilson_ci_95": [
+                0.5184826598759762,
+                0.8684923971201053
+              ]
+            },
+            "3": {
+              "bootstrap_ci_95": [
+                0.5454545454545454,
+                0.9090909090909091
+              ],
+              "denominator": 22,
+              "display_ci_95": [
+                0.5184826598759762,
+                0.8684923971201053
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.49777879873365116,
+                0.8927107516296031
+              ],
+              "numerator": 16,
+              "value": 0.7272727272727273,
+              "wilson_ci_95": [
+                0.5184826598759762,
+                0.8684923971201053
+              ]
+            }
+          },
+          "warmup_rate": {
+            "bootstrap_ci_95": [
+              0.7272727272727273,
+              0.9090909090909091
+            ],
+            "denominator": 66,
+            "display_ci_95": [
+              0.7085480732292817,
+              0.8928139359439193
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.7039345441700697,
+              0.9023647979841516
+            ],
+            "numerator": 54,
+            "value": 0.8181818181818182,
+            "wilson_ci_95": [
+              0.7085480732292817,
+              0.8928139359439193
+            ]
+          }
+        },
+        "excluded_by_reason": {},
+        "exclusions": 0,
+        "label": "B5 Instance-mem. sub.",
+        "label_tex": "B5 Instance-mem.\\ sub.",
+        "n_s3": 66,
+        "pass_at_1": {
+          "bootstrap_ci_95": [
+            0.6212121212121212,
+            0.8333333333333334
+          ],
+          "denominator": 66,
+          "display_ci_95": [
+            0.6095777422224589,
+            0.8199665500441133
+          ],
+          "display_ci_method": "Wilson score",
+          "exact_binomial_ci_95": [
+            0.6036427957562944,
+            0.8296733838204806
+          ],
+          "numerator": 48,
+          "value": 0.7272727272727273,
+          "wilson_ci_95": [
+            0.6095777422224589,
+            0.8199665500441133
+          ]
+        },
+        "warmup": {
+          "bootstrap_ci_95": [
+            0.7272727272727273,
+            0.9090909090909091
+          ],
+          "denominator": 66,
+          "display_ci_95": [
+            0.7085480732292817,
+            0.8928139359439193
+          ],
+          "display_ci_method": "Wilson score",
+          "exact_binomial_ci_95": [
+            0.7039345441700697,
+            0.9023647979841516
+          ],
+          "numerator": 54,
+          "value": 0.8181818181818182,
+          "wilson_ci_95": [
+            0.7085480732292817,
+            0.8928139359439193
+          ]
+        }
+      },
+      {
+        "condition": "B5-MEM0",
+        "condition_summary": {
+          "excluded_by_reason": {},
+          "excluded_records": 0,
+          "hygiene": {
+            "AdmTok/task": 140.28282828282826,
+            "counts_sum": {
+              "contaminated": 4,
+              "retrieved_memories": 385,
+              "sleep_writes": 0
+            },
+            "metrics_mean": {
+              "ContradictionRepairAccuracy": 0.18181818181818182,
+              "HarmfulMemoryRate": 0.0,
+              "HumanFeedbackUseAccuracy": 0.18181818181818182,
+              "RegressionAfterUpdate": 0.3333333333333333,
+              "RepeatedErrorRate": 0.2878787878787879,
+              "ScopeAccuracy": 0.5909090909090909,
+              "TransferScore": 0.0,
+              "UsefulMemoryPrecision": 0.16354453627180898
+            },
+            "source_file_count": 33
+          },
+          "n_S3": 66,
+          "partial": false,
+          "partial_note": "",
+          "pass_at_1_rate": {
+            "bootstrap_ci_95": [
+              0.030303030303030304,
+              0.16666666666666666
+            ],
+            "denominator": 66,
+            "display_ci_95": [
+              0.04233297507051134,
+              0.18448729884965878
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.03409713277126851,
+              0.18744265118647313
+            ],
+            "numerator": 6,
+            "value": 0.09090909090909091,
+            "wilson_ci_95": [
+              0.04233297507051134,
+              0.18448729884965878
+            ]
+          },
+          "per_seed_s3": {
+            "1": {
+              "bootstrap_ci_95": [
+                0.0,
+                0.22727272727272727
+              ],
+              "denominator": 22,
+              "display_ci_95": [
+                0.025295428990995267,
+                0.27814946841605814
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.011205586024150997,
+                0.29161274155393346
+              ],
+              "numerator": 2,
+              "value": 0.09090909090909091,
+              "wilson_ci_95": [
+                0.025295428990995267,
+                0.27814946841605814
+              ]
+            },
+            "2": {
+              "bootstrap_ci_95": [
+                0.0,
+                0.22727272727272727
+              ],
+              "denominator": 22,
+              "display_ci_95": [
+                0.025295428990995267,
+                0.27814946841605814
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.011205586024150997,
+                0.29161274155393346
+              ],
+              "numerator": 2,
+              "value": 0.09090909090909091,
+              "wilson_ci_95": [
+                0.025295428990995267,
+                0.27814946841605814
+              ]
+            },
+            "3": {
+              "bootstrap_ci_95": [
+                0.0,
+                0.22727272727272727
+              ],
+              "denominator": 22,
+              "display_ci_95": [
+                0.025295428990995267,
+                0.27814946841605814
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.011205586024150997,
+                0.29161274155393346
+              ],
+              "numerator": 2,
+              "value": 0.09090909090909091,
+              "wilson_ci_95": [
+                0.025295428990995267,
+                0.27814946841605814
+              ]
+            }
+          },
+          "warmup_rate": {
+            "bootstrap_ci_95": [
+              0.7272727272727273,
+              0.9090909090909091
+            ],
+            "denominator": 66,
+            "display_ci_95": [
+              0.7085480732292817,
+              0.8928139359439193
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.7039345441700697,
+              0.9023647979841516
+            ],
+            "numerator": 54,
+            "value": 0.8181818181818182,
+            "wilson_ci_95": [
+              0.7085480732292817,
+              0.8928139359439193
+            ]
+          }
+        },
+        "excluded_by_reason": {},
+        "exclusions": 0,
+        "label": "B5-MEM0 Hosted Mem0 (pinned)",
+        "label_tex": "B5-MEM0 Hosted Mem0 (pinned)",
+        "n_s3": 66,
+        "pass_at_1": {
+          "bootstrap_ci_95": [
+            0.030303030303030304,
+            0.16666666666666666
+          ],
+          "denominator": 66,
+          "display_ci_95": [
+            0.04233297507051134,
+            0.18448729884965878
+          ],
+          "display_ci_method": "Wilson score",
+          "exact_binomial_ci_95": [
+            0.03409713277126851,
+            0.18744265118647313
+          ],
+          "numerator": 6,
+          "value": 0.09090909090909091,
+          "wilson_ci_95": [
+            0.04233297507051134,
+            0.18448729884965878
+          ]
+        },
+        "warmup": {
+          "bootstrap_ci_95": [
+            0.7272727272727273,
+            0.9090909090909091
+          ],
+          "denominator": 66,
+          "display_ci_95": [
+            0.7085480732292817,
+            0.8928139359439193
+          ],
+          "display_ci_method": "Wilson score",
+          "exact_binomial_ci_95": [
+            0.7039345441700697,
+            0.9023647979841516
+          ],
+          "numerator": 54,
+          "value": 0.8181818181818182,
+          "wilson_ci_95": [
+            0.7085480732292817,
+            0.8928139359439193
+          ]
+        }
+      },
+      {
+        "condition": "B6",
+        "condition_summary": {
+          "excluded_by_reason": {},
+          "excluded_records": 0,
+          "hygiene": {
+            "AdmTok/task": 101.33333333333333,
+            "counts_sum": {
+              "contaminated": 0,
+              "retrieved_memories": 198,
+              "sleep_writes": 198
+            },
+            "metrics_mean": {
+              "ContradictionRepairAccuracy": 0.13636363636363635,
+              "HarmfulMemoryRate": 0.0,
+              "HumanFeedbackUseAccuracy": 0.045454545454545456,
+              "RegressionAfterUpdate": 0.3333333333333333,
+              "RepeatedErrorRate": 0.2727272727272727,
+              "ScopeAccuracy": 0.5227272727272727,
+              "TransferScore": 0.045454545454545456,
+              "UsefulMemoryPrecision": 0.3560606060606061
+            },
+            "source_file_count": 33
+          },
+          "n_S3": 66,
+          "partial": false,
+          "partial_note": "",
+          "pass_at_1_rate": {
+            "bootstrap_ci_95": [
+              0.0,
+              0.10606060606060606
+            ],
+            "denominator": 66,
+            "display_ci_95": [
+              0.015578274334433505,
+              0.1253331411324222
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.009473738563706226,
+              0.1271425059113172
+            ],
+            "numerator": 3,
+            "value": 0.045454545454545456,
+            "wilson_ci_95": [
+              0.015578274334433505,
+              0.1253331411324222
+            ]
+          },
+          "per_seed_s3": {
+            "1": {
+              "bootstrap_ci_95": [
+                0.0,
+                0.13636363636363635
+              ],
+              "denominator": 22,
+              "display_ci_95": [
+                0.00806942762126385,
+                0.21798045838657332
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.0011501475265735766,
+                0.22844439766763341
+              ],
+              "numerator": 1,
+              "value": 0.045454545454545456,
+              "wilson_ci_95": [
+                0.00806942762126385,
+                0.21798045838657332
+              ]
+            },
+            "2": {
+              "bootstrap_ci_95": [
+                0.0,
+                0.13636363636363635
+              ],
+              "denominator": 22,
+              "display_ci_95": [
+                0.00806942762126385,
+                0.21798045838657332
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.0011501475265735766,
+                0.22844439766763341
+              ],
+              "numerator": 1,
+              "value": 0.045454545454545456,
+              "wilson_ci_95": [
+                0.00806942762126385,
+                0.21798045838657332
+              ]
+            },
+            "3": {
+              "bootstrap_ci_95": [
+                0.0,
+                0.13636363636363635
+              ],
+              "denominator": 22,
+              "display_ci_95": [
+                0.00806942762126385,
+                0.21798045838657332
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.0011501475265735766,
+                0.22844439766763341
+              ],
+              "numerator": 1,
+              "value": 0.045454545454545456,
+              "wilson_ci_95": [
+                0.00806942762126385,
+                0.21798045838657332
+              ]
+            }
+          },
+          "warmup_rate": {
+            "bootstrap_ci_95": [
+              0.7272727272727273,
+              0.9090909090909091
+            ],
+            "denominator": 66,
+            "display_ci_95": [
+              0.7085480732292817,
+              0.8928139359439193
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.7039345441700697,
+              0.9023647979841516
+            ],
+            "numerator": 54,
+            "value": 0.8181818181818182,
+            "wilson_ci_95": [
+              0.7085480732292817,
+              0.8928139359439193
+            ]
+          }
+        },
+        "excluded_by_reason": {},
+        "exclusions": 0,
+        "label": "B6 Subtask memory",
+        "label_tex": "B6 Subtask memory",
+        "n_s3": 66,
+        "pass_at_1": {
+          "bootstrap_ci_95": [
+            0.0,
+            0.10606060606060606
+          ],
+          "denominator": 66,
+          "display_ci_95": [
+            0.015578274334433505,
+            0.1253331411324222
+          ],
+          "display_ci_method": "Wilson score",
+          "exact_binomial_ci_95": [
+            0.009473738563706226,
+            0.1271425059113172
+          ],
+          "numerator": 3,
+          "value": 0.045454545454545456,
+          "wilson_ci_95": [
+            0.015578274334433505,
+            0.1253331411324222
+          ]
+        },
+        "warmup": {
+          "bootstrap_ci_95": [
+            0.7272727272727273,
+            0.9090909090909091
+          ],
+          "denominator": 66,
+          "display_ci_95": [
+            0.7085480732292817,
+            0.8928139359439193
+          ],
+          "display_ci_method": "Wilson score",
+          "exact_binomial_ci_95": [
+            0.7039345441700697,
+            0.9023647979841516
+          ],
+          "numerator": 54,
+          "value": 0.8181818181818182,
+          "wilson_ci_95": [
+            0.7085480732292817,
+            0.8928139359439193
+          ]
+        }
+      },
+      {
+        "condition": "B7",
+        "condition_summary": {
+          "excluded_by_reason": {},
+          "excluded_records": 0,
+          "hygiene": {
+            "AdmTok/task": 82.68181818181819,
+            "counts_sum": {
+              "contaminated": 1,
+              "retrieved_memories": 132,
+              "sleep_writes": 198
+            },
+            "metrics_mean": {
+              "ContradictionRepairAccuracy": 0.13636363636363635,
+              "HarmfulMemoryRate": 0.0,
+              "HumanFeedbackUseAccuracy": 0.07575757575757576,
+              "RegressionAfterUpdate": 0.36363636363636365,
+              "RepeatedErrorRate": 0.2727272727272727,
+              "ScopeAccuracy": 0.5378787878787878,
+              "TransferScore": 0.07575757575757576,
+              "UsefulMemoryPrecision": 0.7727272727272727
+            },
+            "source_file_count": 33
+          },
+          "n_S3": 66,
+          "partial": false,
+          "partial_note": "",
+          "pass_at_1_rate": {
+            "bootstrap_ci_95": [
+              0.0,
+              0.10606060606060606
+            ],
+            "denominator": 66,
+            "display_ci_95": [
+              0.015578274334433505,
+              0.1253331411324222
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.009473738563706226,
+              0.1271425059113172
+            ],
+            "numerator": 3,
+            "value": 0.045454545454545456,
+            "wilson_ci_95": [
+              0.015578274334433505,
+              0.1253331411324222
+            ]
+          },
+          "per_seed_s3": {
+            "1": {
+              "bootstrap_ci_95": [
+                0.0,
+                0.13636363636363635
+              ],
+              "denominator": 22,
+              "display_ci_95": [
+                0.00806942762126385,
+                0.21798045838657332
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.0011501475265735766,
+                0.22844439766763341
+              ],
+              "numerator": 1,
+              "value": 0.045454545454545456,
+              "wilson_ci_95": [
+                0.00806942762126385,
+                0.21798045838657332
+              ]
+            },
+            "2": {
+              "bootstrap_ci_95": [
+                0.0,
+                0.13636363636363635
+              ],
+              "denominator": 22,
+              "display_ci_95": [
+                0.00806942762126385,
+                0.21798045838657332
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.0011501475265735766,
+                0.22844439766763341
+              ],
+              "numerator": 1,
+              "value": 0.045454545454545456,
+              "wilson_ci_95": [
+                0.00806942762126385,
+                0.21798045838657332
+              ]
+            },
+            "3": {
+              "bootstrap_ci_95": [
+                0.0,
+                0.13636363636363635
+              ],
+              "denominator": 22,
+              "display_ci_95": [
+                0.00806942762126385,
+                0.21798045838657332
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.0011501475265735766,
+                0.22844439766763341
+              ],
+              "numerator": 1,
+              "value": 0.045454545454545456,
+              "wilson_ci_95": [
+                0.00806942762126385,
+                0.21798045838657332
+              ]
+            }
+          },
+          "warmup_rate": {
+            "bootstrap_ci_95": [
+              0.7272727272727273,
+              0.9090909090909091
+            ],
+            "denominator": 66,
+            "display_ci_95": [
+              0.7085480732292817,
+              0.8928139359439193
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.7039345441700697,
+              0.9023647979841516
+            ],
+            "numerator": 54,
+            "value": 0.8181818181818182,
+            "wilson_ci_95": [
+              0.7085480732292817,
+              0.8928139359439193
+            ]
+          }
+        },
+        "excluded_by_reason": {},
+        "exclusions": 0,
+        "label": "B7 Task tracker",
+        "label_tex": "B7 Task tracker",
+        "n_s3": 66,
+        "pass_at_1": {
+          "bootstrap_ci_95": [
+            0.0,
+            0.10606060606060606
+          ],
+          "denominator": 66,
+          "display_ci_95": [
+            0.015578274334433505,
+            0.1253331411324222
+          ],
+          "display_ci_method": "Wilson score",
+          "exact_binomial_ci_95": [
+            0.009473738563706226,
+            0.1271425059113172
+          ],
+          "numerator": 3,
+          "value": 0.045454545454545456,
+          "wilson_ci_95": [
+            0.015578274334433505,
+            0.1253331411324222
+          ]
+        },
+        "warmup": {
+          "bootstrap_ci_95": [
+            0.7272727272727273,
+            0.9090909090909091
+          ],
+          "denominator": 66,
+          "display_ci_95": [
+            0.7085480732292817,
+            0.8928139359439193
+          ],
+          "display_ci_method": "Wilson score",
+          "exact_binomial_ci_95": [
+            0.7039345441700697,
+            0.9023647979841516
+          ],
+          "numerator": 54,
+          "value": 0.8181818181818182,
+          "wilson_ci_95": [
+            0.7085480732292817,
+            0.8928139359439193
+          ]
+        }
+      },
+      {
+        "condition": "DF",
+        "condition_summary": {
+          "excluded_by_reason": {
+            "codex_exec_failed": 1
+          },
+          "excluded_records": 1,
+          "hygiene": {
+            "AdmTok/task": 250.37878787878788,
+            "counts_sum": {
+              "contaminated": 1,
+              "retrieved_memories": 566,
+              "sleep_writes": 1279
+            },
+            "metrics_mean": {
+              "ContradictionRepairAccuracy": 0.6818181818181818,
+              "HarmfulMemoryRate": 0.0,
+              "HumanFeedbackUseAccuracy": 0.6818181818181818,
+              "RegressionAfterUpdate": 0.045454545454545456,
+              "RepeatedErrorRate": 0.19696969696969696,
+              "ScopeAccuracy": 0.8409090909090909,
+              "TransferScore": 0.6818181818181818,
+              "UsefulMemoryPrecision": 0.1918732782369146
+            },
+            "source_file_count": 33
+          },
+          "n_S3": 65,
+          "partial": false,
+          "partial_note": "1 S3 cell(s) excluded by validity gate",
+          "pass_at_1_rate": {
+            "bootstrap_ci_95": [
+              0.5538461538461539,
+              0.7846153846153846
+            ],
+            "denominator": 65,
+            "display_ci_95": [
+              0.5561398872118912,
+              0.7779611093969441
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.5494504329002265,
+              0.7876723930606071
+            ],
+            "numerator": 44,
+            "value": 0.676923076923077,
+            "wilson_ci_95": [
+              0.5561398872118912,
+              0.7779611093969441
+            ]
+          },
+          "per_seed_s3": {
+            "1": {
+              "bootstrap_ci_95": [
+                0.36363636363636365,
+                0.7727272727272727
+              ],
+              "denominator": 22,
+              "display_ci_95": [
+                0.3873481847631513,
+                0.7674418380352814
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.36354696172973133,
+                0.7929068770028509
+              ],
+              "numerator": 13,
+              "value": 0.5909090909090909,
+              "wilson_ci_95": [
+                0.3873481847631513,
+                0.7674418380352814
+              ]
+            },
+            "2": {
+              "bootstrap_ci_95": [
+                0.4090909090909091,
+                0.8181818181818182
+              ],
+              "denominator": 22,
+              "display_ci_95": [
+                0.42951708090131013,
+                0.8026679532963387
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.4065766688256467,
+                0.8280205623536676
+              ],
+              "numerator": 14,
+              "value": 0.6363636363636364,
+              "wilson_ci_95": [
+                0.42951708090131013,
+                0.8026679532963387
+              ]
+            },
+            "3": {
+              "bootstrap_ci_95": [
+                0.6190476190476191,
+                0.9523809523809523
+              ],
+              "denominator": 21,
+              "display_ci_95": [
+                0.5999943530979508,
+                0.9233243494723822
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.5809339588164721,
+                0.9455364318215931
+              ],
+              "numerator": 17,
+              "value": 0.8095238095238095,
+              "wilson_ci_95": [
+                0.5999943530979508,
+                0.9233243494723822
+              ]
+            }
+          },
+          "warmup_rate": {
+            "bootstrap_ci_95": [
+              0.8333333333333334,
+              0.9696969696969697
+            ],
+            "denominator": 66,
+            "display_ci_95": [
+              0.8155127011503411,
+              0.9576670249294885
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.8125573488135269,
+              0.9659028672287315
+            ],
+            "numerator": 60,
+            "value": 0.9090909090909091,
+            "wilson_ci_95": [
+              0.8155127011503411,
+              0.9576670249294885
+            ]
+          }
+        },
+        "excluded_by_reason": {
+          "codex_exec_failed": 1
+        },
+        "exclusions": 1,
+        "label": "reference-probe typed-only (DF)",
+        "label_tex": "\reference-probe typed-only (DF)",
+        "n_s3": 65,
+        "pass_at_1": {
+          "bootstrap_ci_95": [
+            0.5538461538461539,
+            0.7846153846153846
+          ],
+          "denominator": 65,
+          "display_ci_95": [
+            0.5561398872118912,
+            0.7779611093969441
+          ],
+          "display_ci_method": "Wilson score",
+          "exact_binomial_ci_95": [
+            0.5494504329002265,
+            0.7876723930606071
+          ],
+          "numerator": 44,
+          "value": 0.676923076923077,
+          "wilson_ci_95": [
+            0.5561398872118912,
+            0.7779611093969441
+          ]
+        },
+        "warmup": {
+          "bootstrap_ci_95": [
+            0.8333333333333334,
+            0.9696969696969697
+          ],
+          "denominator": 66,
+          "display_ci_95": [
+            0.8155127011503411,
+            0.9576670249294885
+          ],
+          "display_ci_method": "Wilson score",
+          "exact_binomial_ci_95": [
+            0.8125573488135269,
+            0.9659028672287315
+          ],
+          "numerator": 60,
+          "value": 0.9090909090909091,
+          "wilson_ci_95": [
+            0.8155127011503411,
+            0.9576670249294885
+          ]
+        }
+      },
+      {
+        "condition": "DF-raw-only",
+        "condition_summary": {
+          "excluded_by_reason": {},
+          "excluded_records": 0,
+          "hygiene": {
+            "AdmTok/task": 139.2070707070707,
+            "counts_sum": {
+              "contaminated": 3,
+              "retrieved_memories": 198,
+              "sleep_writes": 198
+            },
+            "metrics_mean": {
+              "ContradictionRepairAccuracy": 0.7727272727272727,
+              "HarmfulMemoryRate": 0.0,
+              "HumanFeedbackUseAccuracy": 0.7727272727272727,
+              "RegressionAfterUpdate": 0.13636363636363635,
+              "RepeatedErrorRate": 0.22727272727272727,
+              "ScopeAccuracy": 0.8863636363636364,
+              "TransferScore": 0.7727272727272727,
+              "UsefulMemoryPrecision": 0.5
+            },
+            "source_file_count": 33
+          },
+          "n_S3": 66,
+          "partial": false,
+          "partial_note": "",
+          "pass_at_1_rate": {
+            "bootstrap_ci_95": [
+              0.6060606060606061,
+              0.8181818181818182
+            ],
+            "denominator": 66,
+            "display_ci_95": [
+              0.5936275059135345,
+              0.8072805002019328
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.5874932401392494,
+              0.816959774581892
+            ],
+            "numerator": 47,
+            "value": 0.7121212121212122,
+            "wilson_ci_95": [
+              0.5936275059135345,
+              0.8072805002019328
+            ]
+          },
+          "per_seed_s3": {
+            "1": {
+              "bootstrap_ci_95": [
+                0.5,
+                0.8636363636363636
+              ],
+              "denominator": 22,
+              "display_ci_95": [
+                0.47318597741042745,
+                0.8363940681864375
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.4512755724262295,
+                0.861353478446202
+              ],
+              "numerator": 15,
+              "value": 0.6818181818181818,
+              "wilson_ci_95": [
+                0.47318597741042745,
+                0.8363940681864375
+              ]
+            },
+            "2": {
+              "bootstrap_ci_95": [
+                0.5454545454545454,
+                0.9090909090909091
+              ],
+              "denominator": 22,
+              "display_ci_95": [
+                0.5184826598759762,
+                0.8684923971201053
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.49777879873365116,
+                0.8927107516296031
+              ],
+              "numerator": 16,
+              "value": 0.7272727272727273,
+              "wilson_ci_95": [
+                0.5184826598759762,
+                0.8684923971201053
+              ]
+            },
+            "3": {
+              "bootstrap_ci_95": [
+                0.5454545454545454,
+                0.9090909090909091
+              ],
+              "denominator": 22,
+              "display_ci_95": [
+                0.5184826598759762,
+                0.8684923971201053
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.49777879873365116,
+                0.8927107516296031
+              ],
+              "numerator": 16,
+              "value": 0.7272727272727273,
+              "wilson_ci_95": [
+                0.5184826598759762,
+                0.8684923971201053
+              ]
+            }
+          },
+          "warmup_rate": {
+            "bootstrap_ci_95": [
+              0.7272727272727273,
+              0.9090909090909091
+            ],
+            "denominator": 66,
+            "display_ci_95": [
+              0.7085480732292817,
+              0.8928139359439193
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.7039345441700697,
+              0.9023647979841516
+            ],
+            "numerator": 54,
+            "value": 0.8181818181818182,
+            "wilson_ci_95": [
+              0.7085480732292817,
+              0.8928139359439193
+            ]
+          }
+        },
+        "excluded_by_reason": {},
+        "exclusions": 0,
+        "label": "reference-probe raw-only (DF-raw-only)",
+        "label_tex": "\reference-probe raw-only (DF-raw-only)",
+        "n_s3": 66,
+        "pass_at_1": {
+          "bootstrap_ci_95": [
+            0.6060606060606061,
+            0.8181818181818182
+          ],
+          "denominator": 66,
+          "display_ci_95": [
+            0.5936275059135345,
+            0.8072805002019328
+          ],
+          "display_ci_method": "Wilson score",
+          "exact_binomial_ci_95": [
+            0.5874932401392494,
+            0.816959774581892
+          ],
+          "numerator": 47,
+          "value": 0.7121212121212122,
+          "wilson_ci_95": [
+            0.5936275059135345,
+            0.8072805002019328
+          ]
+        },
+        "warmup": {
+          "bootstrap_ci_95": [
+            0.7272727272727273,
+            0.9090909090909091
+          ],
+          "denominator": 66,
+          "display_ci_95": [
+            0.7085480732292817,
+            0.8928139359439193
+          ],
+          "display_ci_method": "Wilson score",
+          "exact_binomial_ci_95": [
+            0.7039345441700697,
+            0.9023647979841516
+          ],
+          "numerator": 54,
+          "value": 0.8181818181818182,
+          "wilson_ci_95": [
+            0.7085480732292817,
+            0.8928139359439193
+          ]
+        }
+      },
+      {
+        "condition": "DF-hybrid",
+        "condition_summary": {
+          "excluded_by_reason": {},
+          "excluded_records": 0,
+          "hygiene": {
+            "AdmTok/task": 232.56565656565658,
+            "counts_sum": {
+              "contaminated": 3,
+              "retrieved_memories": 460,
+              "sleep_writes": 1604
+            },
+            "metrics_mean": {
+              "ContradictionRepairAccuracy": 0.8181818181818182,
+              "HarmfulMemoryRate": 0.0,
+              "HumanFeedbackUseAccuracy": 0.8181818181818182,
+              "RegressionAfterUpdate": 0.09090909090909091,
+              "RepeatedErrorRate": 0.06060606060606061,
+              "ScopeAccuracy": 0.9090909090909091,
+              "TransferScore": 0.8181818181818182,
+              "UsefulMemoryPrecision": 0.23431391840482751
+            },
+            "source_file_count": 33
+          },
+          "n_S3": 66,
+          "partial": false,
+          "partial_note": "",
+          "pass_at_1_rate": {
+            "bootstrap_ci_95": [
+              0.6818181818181818,
+              0.8787878787878788
+            ],
+            "denominator": 66,
+            "display_ci_95": [
+              0.6748692879502294,
+              0.8692201489207618
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.6697885403521797,
+              0.878898067744857
+            ],
+            "numerator": 52,
+            "value": 0.7878787878787878,
+            "wilson_ci_95": [
+              0.6748692879502294,
+              0.8692201489207618
+            ]
+          },
+          "per_seed_s3": {
+            "1": {
+              "bootstrap_ci_95": [
+                0.5454545454545454,
+                0.9090909090909091
+              ],
+              "denominator": 22,
+              "display_ci_95": [
+                0.5184826598759762,
+                0.8684923971201053
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.49777879873365116,
+                0.8927107516296031
+              ],
+              "numerator": 16,
+              "value": 0.7272727272727273,
+              "wilson_ci_95": [
+                0.5184826598759762,
+                0.8684923971201053
+              ]
+            },
+            "2": {
+              "bootstrap_ci_95": [
+                0.5909090909090909,
+                0.9545454545454546
+              ],
+              "denominator": 22,
+              "display_ci_95": [
+                0.5656004682477829,
+                0.8987696001475147
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.5462963763378781,
+                0.9217937396481075
+              ],
+              "numerator": 17,
+              "value": 0.7727272727272727,
+              "wilson_ci_95": [
+                0.5656004682477829,
+                0.8987696001475147
+              ]
+            },
+            "3": {
+              "bootstrap_ci_95": [
+                0.7272727272727273,
+                1.0
+              ],
+              "denominator": 22,
+              "display_ci_95": [
+                0.6666501283342828,
+                0.9525099628594474
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.6508779027425919,
+                0.9709441488712534
+              ],
+              "numerator": 19,
+              "value": 0.8636363636363636,
+              "wilson_ci_95": [
+                0.6666501283342828,
+                0.9525099628594474
+              ]
+            }
+          },
+          "warmup_rate": {
+            "bootstrap_ci_95": [
+              0.7727272727272727,
+              0.9393939393939394
+            ],
+            "denominator": 66,
+            "display_ci_95": [
+              0.7607040702832047,
+              0.9265667973433106
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.7568586684861609,
+              0.9357018153567447
+            ],
+            "numerator": 57,
+            "value": 0.8636363636363636,
+            "wilson_ci_95": [
+              0.7607040702832047,
+              0.9265667973433106
+            ]
+          }
+        },
+        "excluded_by_reason": {},
+        "exclusions": 0,
+        "label": "reference-probe hybrid (DF-hybrid)",
+        "label_tex": "\reference-probe hybrid (DF-hybrid)",
+        "n_s3": 66,
+        "pass_at_1": {
+          "bootstrap_ci_95": [
+            0.6818181818181818,
+            0.8787878787878788
+          ],
+          "denominator": 66,
+          "display_ci_95": [
+            0.6748692879502294,
+            0.8692201489207618
+          ],
+          "display_ci_method": "Wilson score",
+          "exact_binomial_ci_95": [
+            0.6697885403521797,
+            0.878898067744857
+          ],
+          "numerator": 52,
+          "value": 0.7878787878787878,
+          "wilson_ci_95": [
+            0.6748692879502294,
+            0.8692201489207618
+          ]
+        },
+        "warmup": {
+          "bootstrap_ci_95": [
+            0.7727272727272727,
+            0.9393939393939394
+          ],
+          "denominator": 66,
+          "display_ci_95": [
+            0.7607040702832047,
+            0.9265667973433106
+          ],
+          "display_ci_method": "Wilson score",
+          "exact_binomial_ci_95": [
+            0.7568586684861609,
+            0.9357018153567447
+          ],
+          "numerator": 57,
+          "value": 0.8636363636363636,
+          "wilson_ci_95": [
+            0.7607040702832047,
+            0.9265667973433106
+          ]
+        }
+      },
+      {
+        "condition": "reference-probe strict (DF-strict)",
+        "condition_summary": {
+          "excluded_by_reason": {
+            "task_exception": 11
+          },
+          "excluded_records": 11,
+          "hygiene": {
+            "AdmTok/task": 145.42929292929293,
+            "counts_sum": {
+              "contaminated": 2,
+              "retrieved_memories": 321,
+              "sleep_writes": 1219
+            },
+            "metrics_mean": {
+              "ContradictionRepairAccuracy": 0.4090909090909091,
+              "HarmfulMemoryRate": 0.0,
+              "HumanFeedbackUseAccuracy": 0.3787878787878788,
+              "RegressionAfterUpdate": 0.15151515151515152,
+              "RepeatedErrorRate": 0.21212121212121213,
+              "ScopeAccuracy": 0.6893939393939394,
+              "TransferScore": 0.3787878787878788,
+              "UsefulMemoryPrecision": 0.30707070707070705
+            },
+            "source_file_count": 33
+          },
+          "n_S3": 59,
+          "partial": true,
+          "partial_note": "7 S3 cell(s) excluded by validity gate",
+          "pass_at_1_rate": {
+            "bootstrap_ci_95": [
+              0.22033898305084745,
+              0.4576271186440678
+            ],
+            "denominator": 59,
+            "display_ci_95": [
+              0.23137653685587656,
+              0.46627529433071635
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.22081169863442018,
+              0.4739291144519243
+            ],
+            "numerator": 20,
+            "value": 0.3389830508474576,
+            "wilson_ci_95": [
+              0.23137653685587656,
+              0.46627529433071635
+            ]
+          },
+          "per_seed_s3": {
+            "1": {
+              "bootstrap_ci_95": [
+                0.09090909090909091,
+                0.45454545454545453
+              ],
+              "denominator": 22,
+              "display_ci_95": [
+                0.13150760287989469,
+                0.4815173401240238
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.10728924837039697,
+                0.5022212012663487
+              ],
+              "numerator": 6,
+              "value": 0.2727272727272727,
+              "wilson_ci_95": [
+                0.13150760287989469,
+                0.4815173401240238
+              ]
+            },
+            "2": {
+              "bootstrap_ci_95": [
+                0.19047619047619047,
+                0.5714285714285714
+              ],
+              "denominator": 21,
+              "display_ci_95": [
+                0.20751011368564493,
+                0.5912134622488425
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.1810716255401732,
+                0.6156456096213541
+              ],
+              "numerator": 8,
+              "value": 0.38095238095238093,
+              "wilson_ci_95": [
+                0.20751011368564493,
+                0.5912134622488425
+              ]
+            },
+            "3": {
+              "bootstrap_ci_95": [
+                0.125,
+                0.625
+              ],
+              "denominator": 16,
+              "display_ci_95": [
+                0.18481232558863633,
+                0.6135895945449727
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.15198367508112204,
+                0.6456539056979218
+              ],
+              "numerator": 6,
+              "value": 0.375,
+              "wilson_ci_95": [
+                0.18481232558863633,
+                0.6135895945449727
+              ]
+            }
+          },
+          "warmup_rate": {
+            "bootstrap_ci_95": [
+              0.8333333333333334,
+              0.9696969696969697
+            ],
+            "denominator": 66,
+            "display_ci_95": [
+              0.8155127011503411,
+              0.9576670249294885
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.8125573488135269,
+              0.9659028672287315
+            ],
+            "numerator": 60,
+            "value": 0.9090909090909091,
+            "wilson_ci_95": [
+              0.8155127011503411,
+              0.9576670249294885
+            ]
+          }
+        },
+        "excluded_by_reason": {
+          "task_exception": 11
+        },
+        "exclusions": 11,
+        "label": "reference-probe strict (DF-strict)",
+        "label_tex": "reference-probe strict (DF-strict)",
+        "n_s3": 59,
+        "pass_at_1": {
+          "bootstrap_ci_95": [
+            0.22033898305084745,
+            0.4576271186440678
+          ],
+          "denominator": 59,
+          "display_ci_95": [
+            0.23137653685587656,
+            0.46627529433071635
+          ],
+          "display_ci_method": "Wilson score",
+          "exact_binomial_ci_95": [
+            0.22081169863442018,
+            0.4739291144519243
+          ],
+          "numerator": 20,
+          "value": 0.3389830508474576,
+          "wilson_ci_95": [
+            0.23137653685587656,
+            0.46627529433071635
+          ]
+        },
+        "warmup": {
+          "bootstrap_ci_95": [
+            0.8333333333333334,
+            0.9696969696969697
+          ],
+          "denominator": 66,
+          "display_ci_95": [
+            0.8155127011503411,
+            0.9576670249294885
+          ],
+          "display_ci_method": "Wilson score",
+          "exact_binomial_ci_95": [
+            0.8125573488135269,
+            0.9659028672287315
+          ],
+          "numerator": 60,
+          "value": 0.9090909090909091,
+          "wilson_ci_95": [
+            0.8155127011503411,
+            0.9576670249294885
+          ]
+        }
+      },
+      {
+        "condition": "reference-probe strict-hybrid (DF-strict-hybrid)",
+        "condition_summary": {
+          "excluded_by_reason": {},
+          "excluded_records": 0,
+          "hygiene": {
+            "AdmTok/task": 178.15656565656568,
+            "counts_sum": {
+              "contaminated": 2,
+              "retrieved_memories": 344,
+              "sleep_writes": 1652
+            },
+            "metrics_mean": {
+              "ContradictionRepairAccuracy": 0.7424242424242424,
+              "HarmfulMemoryRate": 0.0,
+              "HumanFeedbackUseAccuracy": 0.7424242424242424,
+              "RegressionAfterUpdate": 0.12121212121212122,
+              "RepeatedErrorRate": 0.12121212121212122,
+              "ScopeAccuracy": 0.8712121212121212,
+              "TransferScore": 0.7424242424242424,
+              "UsefulMemoryPrecision": 0.3373737373737374
+            },
+            "source_file_count": 33
+          },
+          "n_S3": 66,
+          "partial": false,
+          "partial_note": "",
+          "pass_at_1_rate": {
+            "bootstrap_ci_95": [
+              0.6212121212121212,
+              0.8333333333333334
+            ],
+            "denominator": 66,
+            "display_ci_95": [
+              0.6095777422224589,
+              0.8199665500441133
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.6036427957562944,
+              0.8296733838204806
+            ],
+            "numerator": 48,
+            "value": 0.7272727272727273,
+            "wilson_ci_95": [
+              0.6095777422224589,
+              0.8199665500441133
+            ]
+          },
+          "per_seed_s3": {
+            "1": {
+              "bootstrap_ci_95": [
+                0.36363636363636365,
+                0.7727272727272727
+              ],
+              "denominator": 22,
+              "display_ci_95": [
+                0.3873481847631513,
+                0.7674418380352814
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.36354696172973133,
+                0.7929068770028509
+              ],
+              "numerator": 13,
+              "value": 0.5909090909090909,
+              "wilson_ci_95": [
+                0.3873481847631513,
+                0.7674418380352814
+              ]
+            },
+            "2": {
+              "bootstrap_ci_95": [
+                0.5909090909090909,
+                0.9545454545454546
+              ],
+              "denominator": 22,
+              "display_ci_95": [
+                0.5656004682477829,
+                0.8987696001475147
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.5462963763378781,
+                0.9217937396481075
+              ],
+              "numerator": 17,
+              "value": 0.7727272727272727,
+              "wilson_ci_95": [
+                0.5656004682477829,
+                0.8987696001475147
+              ]
+            },
+            "3": {
+              "bootstrap_ci_95": [
+                0.6363636363636364,
+                0.9545454545454546
+              ],
+              "denominator": 22,
+              "display_ci_95": [
+                0.6148339256287345,
+                0.9269311541657794
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.5971542169221287,
+                0.9481327006875631
+              ],
+              "numerator": 18,
+              "value": 0.8181818181818182,
+              "wilson_ci_95": [
+                0.6148339256287345,
+                0.9269311541657794
+              ]
+            }
+          },
+          "warmup_rate": {
+            "bootstrap_ci_95": [
+              0.8181818181818182,
+              0.9545454545454546
+            ],
+            "denominator": 66,
+            "display_ci_95": [
+              0.7968769124835199,
+              0.9476665274452051
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.793606517867613,
+              0.9562815509014071
+            ],
+            "numerator": 59,
+            "value": 0.8939393939393939,
+            "wilson_ci_95": [
+              0.7968769124835199,
+              0.9476665274452051
+            ]
+          }
+        },
+        "excluded_by_reason": {},
+        "exclusions": 0,
+        "label": "reference-probe strict-hybrid (DF-strict-hybrid)",
+        "label_tex": "reference-probe strict-hybrid (DF-strict-hybrid)",
+        "n_s3": 66,
+        "pass_at_1": {
+          "bootstrap_ci_95": [
+            0.6212121212121212,
+            0.8333333333333334
+          ],
+          "denominator": 66,
+          "display_ci_95": [
+            0.6095777422224589,
+            0.8199665500441133
+          ],
+          "display_ci_method": "Wilson score",
+          "exact_binomial_ci_95": [
+            0.6036427957562944,
+            0.8296733838204806
+          ],
+          "numerator": 48,
+          "value": 0.7272727272727273,
+          "wilson_ci_95": [
+            0.6095777422224589,
+            0.8199665500441133
+          ]
+        },
+        "warmup": {
+          "bootstrap_ci_95": [
+            0.8181818181818182,
+            0.9545454545454546
+          ],
+          "denominator": 66,
+          "display_ci_95": [
+            0.7968769124835199,
+            0.9476665274452051
+          ],
+          "display_ci_method": "Wilson score",
+          "exact_binomial_ci_95": [
+            0.793606517867613,
+            0.9562815509014071
+          ],
+          "numerator": 59,
+          "value": 0.8939393939393939,
+          "wilson_ci_95": [
+            0.7968769124835199,
+            0.9476665274452051
+          ]
+        }
+      }
+    ],
+    "ladder": [
+      {
+        "condition": "B5",
+        "label": "B5 (verbatim event-memory)",
+        "label_tex": "B5 (verbatim event-memory)",
+        "per_seed": {
+          "1": {
+            "bootstrap_ci_95": [
+              0.5454545454545454,
+              0.9090909090909091
+            ],
+            "denominator": 22,
+            "display_ci_95": [
+              0.5184826598759762,
+              0.8684923971201053
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.49777879873365116,
+              0.8927107516296031
+            ],
+            "numerator": 16,
+            "value": 0.7272727272727273,
+            "wilson_ci_95": [
+              0.5184826598759762,
+              0.8684923971201053
+            ]
+          },
+          "2": {
+            "bootstrap_ci_95": [
+              0.5454545454545454,
+              0.9090909090909091
+            ],
+            "denominator": 22,
+            "display_ci_95": [
+              0.5184826598759762,
+              0.8684923971201053
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.49777879873365116,
+              0.8927107516296031
+            ],
+            "numerator": 16,
+            "value": 0.7272727272727273,
+            "wilson_ci_95": [
+              0.5184826598759762,
+              0.8684923971201053
+            ]
+          },
+          "3": {
+            "bootstrap_ci_95": [
+              0.5454545454545454,
+              0.9090909090909091
+            ],
+            "denominator": 22,
+            "display_ci_95": [
+              0.5184826598759762,
+              0.8684923971201053
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.49777879873365116,
+              0.8927107516296031
+            ],
+            "numerator": 16,
+            "value": 0.7272727272727273,
+            "wilson_ci_95": [
+              0.5184826598759762,
+              0.8684923971201053
+            ]
+          }
+        },
+        "pooled_s3": {
+          "bootstrap_ci_95": [
+            0.6212121212121212,
+            0.8333333333333334
+          ],
+          "denominator": 66,
+          "display_ci_95": [
+            0.6095777422224589,
+            0.8199665500441133
+          ],
+          "display_ci_method": "Wilson score",
+          "exact_binomial_ci_95": [
+            0.6036427957562944,
+            0.8296733838204806
+          ],
+          "numerator": 48,
+          "value": 0.7272727272727273,
+          "wilson_ci_95": [
+            0.6095777422224589,
+            0.8199665500441133
+          ]
+        }
+      },
+      {
+        "condition": "DF",
+        "label": "reference-probe typed-only (DF)",
+        "label_tex": "\reference-probe typed-only (DF)",
+        "per_seed": {
+          "1": {
+            "bootstrap_ci_95": [
+              0.36363636363636365,
+              0.7727272727272727
+            ],
+            "denominator": 22,
+            "display_ci_95": [
+              0.3873481847631513,
+              0.7674418380352814
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.36354696172973133,
+              0.7929068770028509
+            ],
+            "numerator": 13,
+            "value": 0.5909090909090909,
+            "wilson_ci_95": [
+              0.3873481847631513,
+              0.7674418380352814
+            ]
+          },
+          "2": {
+            "bootstrap_ci_95": [
+              0.4090909090909091,
+              0.8181818181818182
+            ],
+            "denominator": 22,
+            "display_ci_95": [
+              0.42951708090131013,
+              0.8026679532963387
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.4065766688256467,
+              0.8280205623536676
+            ],
+            "numerator": 14,
+            "value": 0.6363636363636364,
+            "wilson_ci_95": [
+              0.42951708090131013,
+              0.8026679532963387
+            ]
+          },
+          "3": {
+            "bootstrap_ci_95": [
+              0.6190476190476191,
+              0.9523809523809523
+            ],
+            "denominator": 21,
+            "display_ci_95": [
+              0.5999943530979508,
+              0.9233243494723822
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.5809339588164721,
+              0.9455364318215931
+            ],
+            "numerator": 17,
+            "value": 0.8095238095238095,
+            "wilson_ci_95": [
+              0.5999943530979508,
+              0.9233243494723822
+            ]
+          }
+        },
+        "pooled_s3": {
+          "bootstrap_ci_95": [
+            0.5538461538461539,
+            0.7846153846153846
+          ],
+          "denominator": 65,
+          "display_ci_95": [
+            0.5561398872118912,
+            0.7779611093969441
+          ],
+          "display_ci_method": "Wilson score",
+          "exact_binomial_ci_95": [
+            0.5494504329002265,
+            0.7876723930606071
+          ],
+          "numerator": 44,
+          "value": 0.676923076923077,
+          "wilson_ci_95": [
+            0.5561398872118912,
+            0.7779611093969441
+          ]
+        }
+      },
+      {
+        "condition": "DF-raw-only",
+        "label": "reference-probe raw-only (DF-raw-only)",
+        "label_tex": "\reference-probe raw-only (DF-raw-only)",
+        "per_seed": {
+          "1": {
+            "bootstrap_ci_95": [
+              0.5,
+              0.8636363636363636
+            ],
+            "denominator": 22,
+            "display_ci_95": [
+              0.47318597741042745,
+              0.8363940681864375
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.4512755724262295,
+              0.861353478446202
+            ],
+            "numerator": 15,
+            "value": 0.6818181818181818,
+            "wilson_ci_95": [
+              0.47318597741042745,
+              0.8363940681864375
+            ]
+          },
+          "2": {
+            "bootstrap_ci_95": [
+              0.5454545454545454,
+              0.9090909090909091
+            ],
+            "denominator": 22,
+            "display_ci_95": [
+              0.5184826598759762,
+              0.8684923971201053
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.49777879873365116,
+              0.8927107516296031
+            ],
+            "numerator": 16,
+            "value": 0.7272727272727273,
+            "wilson_ci_95": [
+              0.5184826598759762,
+              0.8684923971201053
+            ]
+          },
+          "3": {
+            "bootstrap_ci_95": [
+              0.5454545454545454,
+              0.9090909090909091
+            ],
+            "denominator": 22,
+            "display_ci_95": [
+              0.5184826598759762,
+              0.8684923971201053
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.49777879873365116,
+              0.8927107516296031
+            ],
+            "numerator": 16,
+            "value": 0.7272727272727273,
+            "wilson_ci_95": [
+              0.5184826598759762,
+              0.8684923971201053
+            ]
+          }
+        },
+        "pooled_s3": {
+          "bootstrap_ci_95": [
+            0.6060606060606061,
+            0.8181818181818182
+          ],
+          "denominator": 66,
+          "display_ci_95": [
+            0.5936275059135345,
+            0.8072805002019328
+          ],
+          "display_ci_method": "Wilson score",
+          "exact_binomial_ci_95": [
+            0.5874932401392494,
+            0.816959774581892
+          ],
+          "numerator": 47,
+          "value": 0.7121212121212122,
+          "wilson_ci_95": [
+            0.5936275059135345,
+            0.8072805002019328
+          ]
+        }
+      },
+      {
+        "condition": "DF-hybrid",
+        "label": "reference-probe hybrid (DF-hybrid)",
+        "label_tex": "\reference-probe hybrid (DF-hybrid)",
+        "per_seed": {
+          "1": {
+            "bootstrap_ci_95": [
+              0.5454545454545454,
+              0.9090909090909091
+            ],
+            "denominator": 22,
+            "display_ci_95": [
+              0.5184826598759762,
+              0.8684923971201053
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.49777879873365116,
+              0.8927107516296031
+            ],
+            "numerator": 16,
+            "value": 0.7272727272727273,
+            "wilson_ci_95": [
+              0.5184826598759762,
+              0.8684923971201053
+            ]
+          },
+          "2": {
+            "bootstrap_ci_95": [
+              0.5909090909090909,
+              0.9545454545454546
+            ],
+            "denominator": 22,
+            "display_ci_95": [
+              0.5656004682477829,
+              0.8987696001475147
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.5462963763378781,
+              0.9217937396481075
+            ],
+            "numerator": 17,
+            "value": 0.7727272727272727,
+            "wilson_ci_95": [
+              0.5656004682477829,
+              0.8987696001475147
+            ]
+          },
+          "3": {
+            "bootstrap_ci_95": [
+              0.7272727272727273,
+              1.0
+            ],
+            "denominator": 22,
+            "display_ci_95": [
+              0.6666501283342828,
+              0.9525099628594474
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.6508779027425919,
+              0.9709441488712534
+            ],
+            "numerator": 19,
+            "value": 0.8636363636363636,
+            "wilson_ci_95": [
+              0.6666501283342828,
+              0.9525099628594474
+            ]
+          }
+        },
+        "pooled_s3": {
+          "bootstrap_ci_95": [
+            0.6818181818181818,
+            0.8787878787878788
+          ],
+          "denominator": 66,
+          "display_ci_95": [
+            0.6748692879502294,
+            0.8692201489207618
+          ],
+          "display_ci_method": "Wilson score",
+          "exact_binomial_ci_95": [
+            0.6697885403521797,
+            0.878898067744857
+          ],
+          "numerator": 52,
+          "value": 0.7878787878787878,
+          "wilson_ci_95": [
+            0.6748692879502294,
+            0.8692201489207618
+          ]
+        }
+      }
+    ],
+    "mcnemar_family": [
+      {
+        "b_first_wins": 12,
+        "c_second_wins": 8,
+        "comparison": "DF-hybrid vs B5",
+        "discordant_n": 20,
+        "discordant_win_fraction": {
+          "denominator": 20,
+          "exact_binomial_ci_95": [
+            0.36054258730748967,
+            0.8088099392746928
+          ],
+          "numerator": 12,
+          "value": 0.6
+        },
+        "first": "DF-hybrid",
+        "holm_adjusted_p": 1.0,
+        "holm_reject_0_05": false,
+        "label": "reference-probe hybrid vs B5",
+        "label_tex": "reference-probe hybrid vs.\\ B5",
+        "mcnemar_exact_p": 0.5034446716308594,
+        "missing_first_cells": [],
+        "missing_second_cells": [],
+        "paired_n": 66,
+        "paired_risk_difference": 0.06060606060606061,
+        "paired_risk_difference_ci_95": [
+          -0.08451964405606686,
+          0.18715753895435927
+        ],
+        "second": "B5"
+      },
+      {
+        "b_first_wins": 14,
+        "c_second_wins": 7,
+        "comparison": "DF-hybrid vs DF",
+        "discordant_n": 21,
+        "discordant_win_fraction": {
+          "denominator": 21,
+          "exact_binomial_ci_95": [
+            0.4303245170958758,
+            0.8541230576569032
+          ],
+          "numerator": 14,
+          "value": 0.6666666666666666
+        },
+        "first": "DF-hybrid",
+        "holm_adjusted_p": 0.756988525390625,
+        "holm_reject_0_05": false,
+        "label": "reference-probe hybrid vs Probe typed-only",
+        "label_tex": "reference-probe hybrid vs.\\ reference-probe typed-only",
+        "mcnemar_exact_p": 0.18924713134765625,
+        "missing_first_cells": [],
+        "missing_second_cells": [
+          "seed3:expr-stale-registry-stability"
+        ],
+        "paired_n": 65,
+        "paired_risk_difference": 0.1076923076923077,
+        "paired_risk_difference_ci_95": [
+          -0.045021081261126396,
+          0.22881797571676823
+        ],
+        "second": "DF"
+      },
+      {
+        "b_first_wins": 0,
+        "c_second_wins": 1,
+        "comparison": "DF-raw-only vs B5",
+        "discordant_n": 1,
+        "discordant_win_fraction": {
+          "denominator": 1,
+          "exact_binomial_ci_95": [
+            0.0,
+            0.9749999999999999
+          ],
+          "numerator": 0,
+          "value": 0.0
+        },
+        "first": "DF-raw-only",
+        "holm_adjusted_p": 1.0,
+        "holm_reject_0_05": false,
+        "label": "reference-probe raw-only vs B5",
+        "label_tex": "reference-probe raw-only vs.\\ B5",
+        "mcnemar_exact_p": 1.0,
+        "missing_first_cells": [],
+        "missing_second_cells": [],
+        "paired_n": 66,
+        "paired_risk_difference": -0.015151515151515152,
+        "paired_risk_difference_ci_95": [
+          -0.015151515151515152,
+          0.01439393939393939
+        ],
+        "second": "B5"
+      },
+      {
+        "b_first_wins": 5,
+        "c_second_wins": 9,
+        "comparison": "DF vs B5",
+        "discordant_n": 14,
+        "discordant_win_fraction": {
+          "denominator": 14,
+          "exact_binomial_ci_95": [
+            0.12759842985915937,
+            0.6486198893840085
+          ],
+          "numerator": 5,
+          "value": 0.35714285714285715
+        },
+        "first": "DF",
+        "holm_adjusted_p": 1.0,
+        "holm_reject_0_05": false,
+        "label": "reference-probe typed-only vs B5",
+        "label_tex": "reference-probe typed-only vs.\\ B5",
+        "mcnemar_exact_p": 0.4239501953125,
+        "missing_first_cells": [
+          "seed3:expr-stale-registry-stability"
+        ],
+        "missing_second_cells": [],
+        "paired_n": 65,
+        "paired_risk_difference": -0.06153846153846154,
+        "paired_risk_difference_ci_95": [
+          -0.16041913790682366,
+          0.06402087542695752
+        ],
+        "second": "B5"
+      },
+      {
+        "b_first_wins": 24,
+        "c_second_wins": 3,
+        "comparison": "DF vs B3",
+        "discordant_n": 27,
+        "discordant_win_fraction": {
+          "denominator": 27,
+          "exact_binomial_ci_95": [
+            0.708413075726448,
+            0.9764725456191461
+          ],
+          "numerator": 24,
+          "value": 0.8888888888888888
+        },
+        "first": "DF",
+        "holm_adjusted_p": 0.0002461671829223633,
+        "holm_reject_0_05": true,
+        "label": "reference-probe typed-only vs B3",
+        "label_tex": "reference-probe typed-only vs.\\ B3",
+        "mcnemar_exact_p": 4.9233436584472656e-05,
+        "missing_first_cells": [
+          "seed3:expr-stale-registry-stability"
+        ],
+        "missing_second_cells": [],
+        "paired_n": 65,
+        "paired_risk_difference": 0.3230769230769231,
+        "paired_risk_difference_ci_95": [
+          0.17314317060351062,
+          0.39583873020667526
+        ],
+        "second": "B3"
+      }
+    ],
+    "pipeline_ablations": [
+      {
+        "component": "Episodic-only, no consolidation",
+        "condition": "A0",
+        "label": "A0",
+        "label_tex": "A0",
+        "per_seed": {
+          "1": {
+            "bootstrap_ci_95": [
+              0.0,
+              0.13636363636363635
+            ],
+            "denominator": 22,
+            "display_ci_95": [
+              0.00806942762126385,
+              0.21798045838657332
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.0011501475265735766,
+              0.22844439766763341
+            ],
+            "numerator": 1,
+            "value": 0.045454545454545456,
+            "wilson_ci_95": [
+              0.00806942762126385,
+              0.21798045838657332
+            ]
+          },
+          "2": {
+            "bootstrap_ci_95": [
+              0.0,
+              0.13636363636363635
+            ],
+            "denominator": 22,
+            "display_ci_95": [
+              0.00806942762126385,
+              0.21798045838657332
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.0011501475265735766,
+              0.22844439766763341
+            ],
+            "numerator": 1,
+            "value": 0.045454545454545456,
+            "wilson_ci_95": [
+              0.00806942762126385,
+              0.21798045838657332
+            ]
+          },
+          "3": {
+            "bootstrap_ci_95": [
+              0.0,
+              0.13636363636363635
+            ],
+            "denominator": 22,
+            "display_ci_95": [
+              0.00806942762126385,
+              0.21798045838657332
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.0011501475265735766,
+              0.22844439766763341
+            ],
+            "numerator": 1,
+            "value": 0.045454545454545456,
+            "wilson_ci_95": [
+              0.00806942762126385,
+              0.21798045838657332
+            ]
+          }
+        },
+        "pooled_s3": {
+          "bootstrap_ci_95": [
+            0.0,
+            0.10606060606060606
+          ],
+          "denominator": 66,
+          "display_ci_95": [
+            0.015578274334433505,
+            0.1253331411324222
+          ],
+          "display_ci_method": "Wilson score",
+          "exact_binomial_ci_95": [
+            0.009473738563706226,
+            0.1271425059113172
+          ],
+          "numerator": 3,
+          "value": 0.045454545454545456,
+          "wilson_ci_95": [
+            0.015578274334433505,
+            0.1253331411324222
+          ]
+        }
+      },
+      {
+        "component": "No contradiction repair",
+        "condition": "A2",
+        "label": "A2",
+        "label_tex": "A2",
+        "per_seed": {
+          "1": {
+            "bootstrap_ci_95": [
+              0.6363636363636364,
+              0.9545454545454546
+            ],
+            "denominator": 22,
+            "display_ci_95": [
+              0.6148339256287345,
+              0.9269311541657794
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.5971542169221287,
+              0.9481327006875631
+            ],
+            "numerator": 18,
+            "value": 0.8181818181818182,
+            "wilson_ci_95": [
+              0.6148339256287345,
+              0.9269311541657794
+            ]
+          },
+          "2": {
+            "bootstrap_ci_95": [
+              0.4090909090909091,
+              0.8181818181818182
+            ],
+            "denominator": 22,
+            "display_ci_95": [
+              0.42951708090131013,
+              0.8026679532963387
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.4065766688256467,
+              0.8280205623536676
+            ],
+            "numerator": 14,
+            "value": 0.6363636363636364,
+            "wilson_ci_95": [
+              0.42951708090131013,
+              0.8026679532963387
+            ]
+          },
+          "3": {
+            "bootstrap_ci_95": [
+              0.5909090909090909,
+              0.9545454545454546
+            ],
+            "denominator": 22,
+            "display_ci_95": [
+              0.5656004682477829,
+              0.8987696001475147
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.5462963763378781,
+              0.9217937396481075
+            ],
+            "numerator": 17,
+            "value": 0.7727272727272727,
+            "wilson_ci_95": [
+              0.5656004682477829,
+              0.8987696001475147
+            ]
+          }
+        },
+        "pooled_s3": {
+          "bootstrap_ci_95": [
+            0.6363636363636364,
+            0.8484848484848485
+          ],
+          "denominator": 66,
+          "display_ci_95": [
+            0.6256690145359197,
+            0.8325115638817572
+          ],
+          "display_ci_method": "Wilson score",
+          "exact_binomial_ci_95": [
+            0.61993875932653,
+            0.8422336207426879
+          ],
+          "numerator": 49,
+          "value": 0.7424242424242424,
+          "wilson_ci_95": [
+            0.6256690145359197,
+            0.8325115638817572
+          ]
+        }
+      },
+      {
+        "component": "No counterfactual replay",
+        "condition": "A4",
+        "label": "A4",
+        "label_tex": "A4",
+        "per_seed": {
+          "1": {
+            "bootstrap_ci_95": [
+              0.36363636363636365,
+              0.7727272727272727
+            ],
+            "denominator": 22,
+            "display_ci_95": [
+              0.3873481847631513,
+              0.7674418380352814
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.36354696172973133,
+              0.7929068770028509
+            ],
+            "numerator": 13,
+            "value": 0.5909090909090909,
+            "wilson_ci_95": [
+              0.3873481847631513,
+              0.7674418380352814
+            ]
+          },
+          "2": {
+            "bootstrap_ci_95": [
+              0.5,
+              0.8636363636363636
+            ],
+            "denominator": 22,
+            "display_ci_95": [
+              0.47318597741042745,
+              0.8363940681864375
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.4512755724262295,
+              0.861353478446202
+            ],
+            "numerator": 15,
+            "value": 0.6818181818181818,
+            "wilson_ci_95": [
+              0.47318597741042745,
+              0.8363940681864375
+            ]
+          },
+          "3": {
+            "bootstrap_ci_95": [
+              0.36363636363636365,
+              0.7727272727272727
+            ],
+            "denominator": 22,
+            "display_ci_95": [
+              0.3873481847631513,
+              0.7674418380352814
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.36354696172973133,
+              0.7929068770028509
+            ],
+            "numerator": 13,
+            "value": 0.5909090909090909,
+            "wilson_ci_95": [
+              0.3873481847631513,
+              0.7674418380352814
+            ]
+          }
+        },
+        "pooled_s3": {
+          "bootstrap_ci_95": [
+            0.5,
+            0.7424242424242424
+          ],
+          "denominator": 66,
+          "display_ci_95": [
+            0.5005847591462179,
+            0.7285055300626205
+          ],
+          "display_ci_method": "Wilson score",
+          "exact_binomial_ci_95": [
+            0.49335717720233774,
+            0.7378154230046878
+          ],
+          "numerator": 41,
+          "value": 0.6212121212121212,
+          "wilson_ci_95": [
+            0.5005847591462179,
+            0.7285055300626205
+          ]
+        }
+      },
+      {
+        "component": "No stale suppression",
+        "condition": "A5",
+        "label": "A5",
+        "label_tex": "A5",
+        "per_seed": {
+          "1": {
+            "bootstrap_ci_95": [
+              0.2727272727272727,
+              0.6818181818181818
+            ],
+            "denominator": 22,
+            "display_ci_95": [
+              0.2692029418081331,
+              0.6534020467926505
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.2438618659230165,
+              0.6778952454468283
+            ],
+            "numerator": 10,
+            "value": 0.45454545454545453,
+            "wilson_ci_95": [
+              0.2692029418081331,
+              0.6534020467926505
+            ]
+          },
+          "2": {
+            "bootstrap_ci_95": [
+              0.5909090909090909,
+              0.9545454545454546
+            ],
+            "denominator": 22,
+            "display_ci_95": [
+              0.5656004682477829,
+              0.8987696001475147
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.5462963763378781,
+              0.9217937396481075
+            ],
+            "numerator": 17,
+            "value": 0.7727272727272727,
+            "wilson_ci_95": [
+              0.5656004682477829,
+              0.8987696001475147
+            ]
+          },
+          "3": {
+            "bootstrap_ci_95": [
+              0.5454545454545454,
+              0.9090909090909091
+            ],
+            "denominator": 22,
+            "display_ci_95": [
+              0.5184826598759762,
+              0.8684923971201053
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.49777879873365116,
+              0.8927107516296031
+            ],
+            "numerator": 16,
+            "value": 0.7272727272727273,
+            "wilson_ci_95": [
+              0.5184826598759762,
+              0.8684923971201053
+            ]
+          }
+        },
+        "pooled_s3": {
+          "bootstrap_ci_95": [
+            0.5303030303030303,
+            0.7575757575757576
+          ],
+          "denominator": 66,
+          "display_ci_95": [
+            0.5311216021303434,
+            0.7552412593807046
+          ],
+          "display_ci_method": "Wilson score",
+          "exact_binomial_ci_95": [
+            0.5242397683270998,
+            0.7647080305896783
+          ],
+          "numerator": 43,
+          "value": 0.6515151515151515,
+          "wilson_ci_95": [
+            0.5311216021303434,
+            0.7552412593807046
+          ]
+        }
+      },
+      {
+        "component": "No retrieval gate",
+        "condition": "A6",
+        "label": "A6",
+        "label_tex": "A6",
+        "per_seed": {
+          "1": {
+            "bootstrap_ci_95": [
+              0.36363636363636365,
+              0.7727272727272727
+            ],
+            "denominator": 22,
+            "display_ci_95": [
+              0.3873481847631513,
+              0.7674418380352814
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.36354696172973133,
+              0.7929068770028509
+            ],
+            "numerator": 13,
+            "value": 0.5909090909090909,
+            "wilson_ci_95": [
+              0.3873481847631513,
+              0.7674418380352814
+            ]
+          },
+          "2": {
+            "bootstrap_ci_95": [
+              0.36363636363636365,
+              0.7727272727272727
+            ],
+            "denominator": 22,
+            "display_ci_95": [
+              0.3873481847631513,
+              0.7674418380352814
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.36354696172973133,
+              0.7929068770028509
+            ],
+            "numerator": 13,
+            "value": 0.5909090909090909,
+            "wilson_ci_95": [
+              0.3873481847631513,
+              0.7674418380352814
+            ]
+          },
+          "3": {
+            "bootstrap_ci_95": [
+              0.3181818181818182,
+              0.7272727272727273
+            ],
+            "denominator": 22,
+            "display_ci_95": [
+              0.3465979532073494,
+              0.7307970581918668
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.32210475455317167,
+              0.7561381340769835
+            ],
+            "numerator": 12,
+            "value": 0.5454545454545454,
+            "wilson_ci_95": [
+              0.3465979532073494,
+              0.7307970581918668
+            ]
+          }
+        },
+        "pooled_s3": {
+          "bootstrap_ci_95": [
+            0.45454545454545453,
+            0.696969696969697
+          ],
+          "denominator": 66,
+          "display_ci_95": [
+            0.45560653224094294,
+            0.6875748985145812
+          ],
+          "display_ci_method": "Wilson score",
+          "exact_binomial_ci_95": [
+            0.44789403770875946,
+            0.6965980669616616
+          ],
+          "numerator": 38,
+          "value": 0.5757575757575758,
+          "wilson_ci_95": [
+            0.45560653224094294,
+            0.6875748985145812
+          ]
+        }
+      },
+      {
+        "component": "Forced global consolidation",
+        "condition": "A11",
+        "label": "A11",
+        "label_tex": "A11",
+        "per_seed": {
+          "1": {
+            "bootstrap_ci_95": [
+              0.5454545454545454,
+              0.9090909090909091
+            ],
+            "denominator": 22,
+            "display_ci_95": [
+              0.5184826598759762,
+              0.8684923971201053
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.49777879873365116,
+              0.8927107516296031
+            ],
+            "numerator": 16,
+            "value": 0.7272727272727273,
+            "wilson_ci_95": [
+              0.5184826598759762,
+              0.8684923971201053
+            ]
+          },
+          "2": {
+            "bootstrap_ci_95": [
+              0.5909090909090909,
+              0.9545454545454546
+            ],
+            "denominator": 22,
+            "display_ci_95": [
+              0.5656004682477829,
+              0.8987696001475147
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.5462963763378781,
+              0.9217937396481075
+            ],
+            "numerator": 17,
+            "value": 0.7727272727272727,
+            "wilson_ci_95": [
+              0.5656004682477829,
+              0.8987696001475147
+            ]
+          },
+          "3": {
+            "bootstrap_ci_95": [
+              0.5454545454545454,
+              0.9090909090909091
+            ],
+            "denominator": 22,
+            "display_ci_95": [
+              0.5184826598759762,
+              0.8684923971201053
+            ],
+            "display_ci_method": "Wilson score",
+            "exact_binomial_ci_95": [
+              0.49777879873365116,
+              0.8927107516296031
+            ],
+            "numerator": 16,
+            "value": 0.7272727272727273,
+            "wilson_ci_95": [
+              0.5184826598759762,
+              0.8684923971201053
+            ]
+          }
+        },
+        "pooled_s3": {
+          "bootstrap_ci_95": [
+            0.6363636363636364,
+            0.8484848484848485
+          ],
+          "denominator": 66,
+          "display_ci_95": [
+            0.6256690145359197,
+            0.8325115638817572
+          ],
+          "display_ci_method": "Wilson score",
+          "exact_binomial_ci_95": [
+            0.61993875932653,
+            0.8422336207426879
+          ],
+          "numerator": 49,
+          "value": 0.7424242424242424,
+          "wilson_ci_95": [
+            0.6256690145359197,
+            0.8325115638817572
+          ]
+        }
+      }
+    ],
+    "supplemental_mcnemar": [
+      {
+        "b_first_wins": 46,
+        "c_second_wins": 0,
+        "comparison": "DF-hybrid vs B5-MEM0",
+        "discordant_n": 46,
+        "discordant_win_fraction": {
+          "denominator": 46,
+          "exact_binomial_ci_95": [
+            0.9229381729480992,
+            1.0
+          ],
+          "numerator": 46,
+          "value": 1.0
+        },
+        "first": "DF-hybrid",
+        "label": "DF-hybrid vs B5-MEM0",
+        "label_tex": "DF-hybrid vs B5-MEM0",
+        "mcnemar_exact_p": 2.842170943040401e-14,
+        "missing_first_cells": [],
+        "missing_second_cells": [],
+        "paired_n": 66,
+        "paired_risk_difference": 0.696969696969697,
+        "paired_risk_difference_ci_95": [
+          0.589550180473108,
+          0.696969696969697
+        ],
+        "second": "B5-MEM0"
+      }
+    ],
+    "taxonomy_results": [
+      {
+        "cells": 54,
+        "conditions": {
+          "B5": {
+            "label": "B5",
+            "pass_at_1": {
+              "bootstrap_ci_95": [
+                0.7962962962962963,
+                0.9629629629629629
+              ],
+              "denominator": 54,
+              "display_ci_95": [
+                0.7780529897881872,
+                0.9480697750300044
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.7736868373700343,
+                0.958116236422146
+              ],
+              "numerator": 48,
+              "value": 0.8888888888888888,
+              "wilson_ci_95": [
+                0.7780529897881872,
+                0.9480697750300044
+              ]
+            }
+          },
+          "B5-MEM0": {
+            "label": "B5-MEM0",
+            "pass_at_1": {
+              "bootstrap_ci_95": [
+                0.037037037037037035,
+                0.2037037037037037
+              ],
+              "denominator": 54,
+              "display_ci_95": [
+                0.051930224969995484,
+                0.2219470102118128
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.04188376357785403,
+                0.22631316262996565
+              ],
+              "numerator": 6,
+              "value": 0.1111111111111111,
+              "wilson_ci_95": [
+                0.051930224969995484,
+                0.2219470102118128
+              ]
+            }
+          },
+          "DF": {
+            "label": "Probe typed-only",
+            "pass_at_1": {
+              "bootstrap_ci_95": [
+                0.6415094339622641,
+                0.8679245283018868
+              ],
+              "denominator": 53,
+              "display_ci_95": [
+                0.6243344231264808,
+                0.8506709789194319
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.6171753417731267,
+                0.8624488244476836
+              ],
+              "numerator": 40,
+              "value": 0.7547169811320755,
+              "wilson_ci_95": [
+                0.6243344231264808,
+                0.8506709789194319
+              ]
+            }
+          },
+          "DF-hybrid": {
+            "label": "Probe hybrid",
+            "pass_at_1": {
+              "bootstrap_ci_95": [
+                0.6851851851851852,
+                0.8888888888888888
+              ],
+              "denominator": 54,
+              "display_ci_95": [
+                0.6709769331166456,
+                0.8822594591257861
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.6646950805107503,
+                0.8936807475097854
+              ],
+              "numerator": 43,
+              "value": 0.7962962962962963,
+              "wilson_ci_95": [
+                0.6709769331166456,
+                0.8822594591257861
+              ]
+            }
+          },
+          "DF-raw-only": {
+            "label": "Probe raw-only",
+            "pass_at_1": {
+              "bootstrap_ci_95": [
+                0.7777777777777778,
+                0.9444444444444444
+              ],
+              "denominator": 54,
+              "display_ci_95": [
+                0.7557826977763024,
+                0.9357627925267374
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.750987807596682,
+                0.946257009311479
+              ],
+              "numerator": 47,
+              "value": 0.8703703703703703,
+              "wilson_ci_95": [
+                0.7557826977763024,
+                0.9357627925267374
+              ]
+            }
+          }
+        },
+        "expected_cells": 54,
+        "sequences": [
+          "config-convention-sections",
+          "config-freeze-provenance",
+          "config-reviewer-coerce-tag",
+          "config-reviewer-dupkey",
+          "config-reviewer-strict-csv",
+          "config-stale-merge",
+          "config-stale-schema-id",
+          "expr-arity-contract",
+          "expr-reviewer-divzero",
+          "expr-stale-registry-stability",
+          "todo-archive-bucket",
+          "todo-convention-aggregate",
+          "todo-convention-summary",
+          "todo-dedupe-keeplowest",
+          "todo-flaky-duetiebreak",
+          "todo-flaky-monotonic-ids",
+          "todo-reviewer-export-dialect",
+          "todo-reviewer-idformat"
+        ],
+        "source": "v1.0 confirmatory fold",
+        "trap_class": "Recall-verbatim"
+      },
+      {
+        "cells": 24,
+        "conditions": {
+          "B5": {
+            "label": "B5",
+            "pass_at_1": {
+              "bootstrap_ci_95": [
+                0.08333333333333333,
+                0.4166666666666667
+              ],
+              "denominator": 24,
+              "display_ci_95": [
+                0.11999366228595004,
+                0.44899444005154004
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.09773040947453304,
+                0.4671128024226693
+              ],
+              "numerator": 6,
+              "value": 0.25,
+              "wilson_ci_95": [
+                0.11999366228595004,
+                0.44899444005154004
+              ]
+            }
+          },
+          "B5-MEM0": {
+            "label": "B5-MEM0",
+            "pass_at_1": {
+              "bootstrap_ci_95": [
+                0.0,
+                0.0
+              ],
+              "denominator": 24,
+              "display_ci_95": [
+                0.0,
+                0.13797620467498017
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.0,
+                0.1424735977225256
+              ],
+              "numerator": 0,
+              "value": 0.0,
+              "wilson_ci_95": [
+                0.0,
+                0.13797620467498017
+              ]
+            }
+          },
+          "DF": {
+            "label": "Probe typed-only",
+            "pass_at_1": {
+              "bootstrap_ci_95": [
+                0.041666666666666664,
+                0.3333333333333333
+              ],
+              "denominator": 24,
+              "display_ci_95": [
+                0.06678676328632951,
+                0.3585307064969906
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.04735362660725713,
+                0.3738417134886828
+              ],
+              "numerator": 4,
+              "value": 0.16666666666666666,
+              "wilson_ci_95": [
+                0.06678676328632951,
+                0.3585307064969906
+              ]
+            }
+          },
+          "DF-hybrid": {
+            "label": "Probe hybrid",
+            "pass_at_1": {
+              "bootstrap_ci_95": [
+                0.08333333333333333,
+                0.4166666666666667
+              ],
+              "denominator": 24,
+              "display_ci_95": [
+                0.11999366228595004,
+                0.44899444005154004
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.09773040947453304,
+                0.4671128024226693
+              ],
+              "numerator": 6,
+              "value": 0.25,
+              "wilson_ci_95": [
+                0.11999366228595004,
+                0.44899444005154004
+              ]
+            }
+          },
+          "DF-raw-only": {
+            "label": "Probe raw-only",
+            "pass_at_1": {
+              "bootstrap_ci_95": [
+                0.125,
+                0.5
+              ],
+              "denominator": 24,
+              "display_ci_95": [
+                0.14914648196960875,
+                0.49167693664496637
+              ],
+              "display_ci_method": "Wilson score",
+              "exact_binomial_ci_95": [
+                0.1261520885236913,
+                0.5109478138578332
+              ],
+              "numerator": 7,
+              "value": 0.2916666666666667,
+              "wilson_ci_95": [
+                0.14914648196960875,
+                0.49167693664496637
+              ]
+            }
+          }
+        },
+        "expected_cells": 24,
+        "sequences": [
+          "synth-config-csv-width-delta",
+          "synth-config-dupsec-code",
+          "synth-config-schema-audit-code",
+          "synth-expr-bitwise-help",
+          "synth-expr-help-epoch",
+          "synth-expr-precedence-derive",
+          "synth-todo-overdue-handoff",
+          "synth-todo-report-channel"
+        ],
+        "source": "DreamBench-SWE-Synth directional slice",
+        "trap_class": "Synthesis slice"
+      }
+    ]
+  }
+}

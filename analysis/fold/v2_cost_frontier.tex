@@ -1,0 +1,33 @@
+% Cost-frontier figure caption and pgfplots coordinates.
+\caption{Cost frontier for the v2 fold. Points plot Pass@1 against CostPerSuccessfulTaskUSD computed from run artifacts; frontier points are nondominated under higher Pass@1 and lower cost. The plotted v2 numeric results are computed from the supplied fold artifact.}
+\label{fig:v2-cost-frontier}
+% PARETO_COORDINATES_BEGIN
+% x=CostPerSuccessfulTaskUSD, y=PassAt1
+\addplot+[only marks] coordinates {
+  (0.035562728,0.692592593) % DF-raw-only
+  (0.038322177,0.718518519) % DF-hybrid
+  (0.039526003,0.705555556) % B5
+  (0.04219016,0.683333333) % DF-strict-hybrid
+  (0.050475207,0.707407407) % A2
+  (0.050794211,0.687037037) % A5
+  (0.053486989,0.674074074) % A11
+  (0.05895252,0.687037037) % A4
+  (0.062444527,0.668518519) % A6
+  (0.062815106,0.688888889) % DF
+  (0.064030828,0.609259259) % DF-strict
+  (0.066490931,0.661111111) % B3
+  (0.070721352,0.555555556) % B7
+  (0.071785096,0.57037037) % B0
+  (0.072696042,0.575925926) % B1
+  (0.075663296,0.577777778) % B5-MEM0-LIT
+  (0.080485334,0.574074074) % A0
+  (0.081811571,0.564814815) % B2
+  (0.088727168,0.572222222) % B4
+  (0.088798758,0.572222222) % B5-MEM0
+  (0.111265863,0.568518519) % B6
+};
+\addplot+[only marks,mark=*] coordinates {
+  (0.035562728,0.692592593) % DF-raw-only
+  (0.038322177,0.718518519) % DF-hybrid
+};
+% PARETO_COORDINATES_END

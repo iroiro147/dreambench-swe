@@ -1,0 +1,435 @@
+{
+  "constructs": [
+    {
+      "admitted": 6,
+      "admitted_ids": [
+        "v2-c2-config-retrieval-interference-csv-prefix-01",
+        "v2-c2-config-retrieval-interference-schema-marker-02",
+        "v2-c2-expr-retrieval-interference-help-footer-02",
+        "v2-c2-expr-retrieval-interference-operator-family-01",
+        "v2-c2-todo-retrieval-interference-export-marker-02",
+        "v2-c2-todo-retrieval-interference-review-lane-01"
+      ],
+      "admitted_without_dry_valid_ids": [],
+      "authored": 6,
+      "authored_ids": [
+        "v2-c2-config-retrieval-interference-csv-prefix-01",
+        "v2-c2-config-retrieval-interference-schema-marker-02",
+        "v2-c2-expr-retrieval-interference-help-footer-02",
+        "v2-c2-expr-retrieval-interference-operator-family-01",
+        "v2-c2-todo-retrieval-interference-export-marker-02",
+        "v2-c2-todo-retrieval-interference-review-lane-01"
+      ],
+      "authored_not_admitted_ids": [],
+      "construct": "C2",
+      "dry_valid": 6,
+      "dry_valid_ids": [
+        "v2-c2-config-retrieval-interference-csv-prefix-01",
+        "v2-c2-config-retrieval-interference-schema-marker-02",
+        "v2-c2-expr-retrieval-interference-help-footer-02",
+        "v2-c2-expr-retrieval-interference-operator-family-01",
+        "v2-c2-todo-retrieval-interference-export-marker-02",
+        "v2-c2-todo-retrieval-interference-review-lane-01"
+      ],
+      "live_valid": 6,
+      "live_valid_ids": [
+        "v2-c2-config-retrieval-interference-csv-prefix-01",
+        "v2-c2-config-retrieval-interference-schema-marker-02",
+        "v2-c2-expr-retrieval-interference-help-footer-02",
+        "v2-c2-expr-retrieval-interference-operator-family-01",
+        "v2-c2-todo-retrieval-interference-export-marker-02",
+        "v2-c2-todo-retrieval-interference-review-lane-01"
+      ],
+      "live_valid_status": "available"
+    },
+    {
+      "admitted": 5,
+      "admitted_ids": [
+        "v2-c3-config-supersede-error-suffix-02",
+        "v2-c3-config-supersede-schema-envelope-01",
+        "v2-c3-expr-supersede-epoch-anti-recency-01",
+        "v2-c3-expr-supersede-family-token-02",
+        "v2-c3-todo-supersede-channel-anti-recency-01"
+      ],
+      "admitted_without_dry_valid_ids": [],
+      "authored": 5,
+      "authored_ids": [
+        "v2-c3-config-supersede-error-suffix-02",
+        "v2-c3-config-supersede-schema-envelope-01",
+        "v2-c3-expr-supersede-epoch-anti-recency-01",
+        "v2-c3-expr-supersede-family-token-02",
+        "v2-c3-todo-supersede-channel-anti-recency-01"
+      ],
+      "authored_not_admitted_ids": [],
+      "construct": "C3",
+      "dry_valid": 5,
+      "dry_valid_ids": [
+        "v2-c3-config-supersede-error-suffix-02",
+        "v2-c3-config-supersede-schema-envelope-01",
+        "v2-c3-expr-supersede-epoch-anti-recency-01",
+        "v2-c3-expr-supersede-family-token-02",
+        "v2-c3-todo-supersede-channel-anti-recency-01"
+      ],
+      "live_valid": 5,
+      "live_valid_ids": [
+        "v2-c3-config-supersede-error-suffix-02",
+        "v2-c3-config-supersede-schema-envelope-01",
+        "v2-c3-expr-supersede-epoch-anti-recency-01",
+        "v2-c3-expr-supersede-family-token-02",
+        "v2-c3-todo-supersede-channel-anti-recency-01"
+      ],
+      "live_valid_status": "available"
+    },
+    {
+      "admitted": 6,
+      "admitted_ids": [
+        "v2-c5-config-scope-csv-vs-ini-01",
+        "v2-c5-config-scope-schema-vs-runtime-02",
+        "v2-c5-expr-scope-bitwise-vs-arithmetic-02",
+        "v2-c5-expr-scope-generated-help-vs-evaluator-01",
+        "v2-c5-todo-scope-export-vs-list-01",
+        "v2-c5-todo-scope-review-vs-normal-02"
+      ],
+      "admitted_without_dry_valid_ids": [],
+      "authored": 6,
+      "authored_ids": [
+        "v2-c5-config-scope-csv-vs-ini-01",
+        "v2-c5-config-scope-schema-vs-runtime-02",
+        "v2-c5-expr-scope-bitwise-vs-arithmetic-02",
+        "v2-c5-expr-scope-generated-help-vs-evaluator-01",
+        "v2-c5-todo-scope-export-vs-list-01",
+        "v2-c5-todo-scope-review-vs-normal-02"
+      ],
+      "authored_not_admitted_ids": [],
+      "construct": "C5",
+      "dry_valid": 6,
+      "dry_valid_ids": [
+        "v2-c5-config-scope-csv-vs-ini-01",
+        "v2-c5-config-scope-schema-vs-runtime-02",
+        "v2-c5-expr-scope-bitwise-vs-arithmetic-02",
+        "v2-c5-expr-scope-generated-help-vs-evaluator-01",
+        "v2-c5-todo-scope-export-vs-list-01",
+        "v2-c5-todo-scope-review-vs-normal-02"
+      ],
+      "live_valid": 6,
+      "live_valid_ids": [
+        "v2-c5-config-scope-csv-vs-ini-01",
+        "v2-c5-config-scope-schema-vs-runtime-02",
+        "v2-c5-expr-scope-bitwise-vs-arithmetic-02",
+        "v2-c5-expr-scope-generated-help-vs-evaluator-01",
+        "v2-c5-todo-scope-export-vs-list-01",
+        "v2-c5-todo-scope-review-vs-normal-02"
+      ],
+      "live_valid_status": "available"
+    },
+    {
+      "admitted": 4,
+      "admitted_ids": [
+        "v2-c6-config-authority-doc-vs-reviewer-01",
+        "v2-c6-expr-authority-registry-vs-doc-01",
+        "v2-c6-expr-authority-two-reviewers-02",
+        "v2-c6-todo-authority-conventions-vs-reviewer-01"
+      ],
+      "admitted_without_dry_valid_ids": [],
+      "authored": 4,
+      "authored_ids": [
+        "v2-c6-config-authority-doc-vs-reviewer-01",
+        "v2-c6-expr-authority-registry-vs-doc-01",
+        "v2-c6-expr-authority-two-reviewers-02",
+        "v2-c6-todo-authority-conventions-vs-reviewer-01"
+      ],
+      "authored_not_admitted_ids": [],
+      "construct": "C6",
+      "dry_valid": 4,
+      "dry_valid_ids": [
+        "v2-c6-config-authority-doc-vs-reviewer-01",
+        "v2-c6-expr-authority-registry-vs-doc-01",
+        "v2-c6-expr-authority-two-reviewers-02",
+        "v2-c6-todo-authority-conventions-vs-reviewer-01"
+      ],
+      "live_valid": 4,
+      "live_valid_ids": [
+        "v2-c6-config-authority-doc-vs-reviewer-01",
+        "v2-c6-expr-authority-registry-vs-doc-01",
+        "v2-c6-expr-authority-two-reviewers-02",
+        "v2-c6-todo-authority-conventions-vs-reviewer-01"
+      ],
+      "live_valid_status": "available"
+    },
+    {
+      "admitted": 3,
+      "admitted_ids": [
+        "v2-c7-config-compose-provenance-code-01",
+        "v2-c7-expr-compose-mask-window-01",
+        "v2-c7-todo-compose-priority-lane-01"
+      ],
+      "admitted_without_dry_valid_ids": [],
+      "authored": 3,
+      "authored_ids": [
+        "v2-c7-config-compose-provenance-code-01",
+        "v2-c7-expr-compose-mask-window-01",
+        "v2-c7-todo-compose-priority-lane-01"
+      ],
+      "authored_not_admitted_ids": [],
+      "construct": "C7",
+      "dry_valid": 3,
+      "dry_valid_ids": [
+        "v2-c7-config-compose-provenance-code-01",
+        "v2-c7-expr-compose-mask-window-01",
+        "v2-c7-todo-compose-priority-lane-01"
+      ],
+      "live_valid": 3,
+      "live_valid_ids": [
+        "v2-c7-config-compose-provenance-code-01",
+        "v2-c7-expr-compose-mask-window-01",
+        "v2-c7-todo-compose-priority-lane-01"
+      ],
+      "live_valid_status": "available"
+    },
+    {
+      "admitted": 4,
+      "admitted_ids": [
+        "v2-c9-config-spurious-parse-date-01",
+        "v2-c9-expr-spurious-float-divide-01",
+        "v2-c9-todo-spurious-archive-order-02",
+        "v2-c9-todo-spurious-due-parser-01"
+      ],
+      "admitted_without_dry_valid_ids": [],
+      "authored": 4,
+      "authored_ids": [
+        "v2-c9-config-spurious-parse-date-01",
+        "v2-c9-expr-spurious-float-divide-01",
+        "v2-c9-todo-spurious-archive-order-02",
+        "v2-c9-todo-spurious-due-parser-01"
+      ],
+      "authored_not_admitted_ids": [],
+      "construct": "C9",
+      "dry_valid": 4,
+      "dry_valid_ids": [
+        "v2-c9-config-spurious-parse-date-01",
+        "v2-c9-expr-spurious-float-divide-01",
+        "v2-c9-todo-spurious-archive-order-02",
+        "v2-c9-todo-spurious-due-parser-01"
+      ],
+      "live_valid": 4,
+      "live_valid_ids": [
+        "v2-c9-config-spurious-parse-date-01",
+        "v2-c9-expr-spurious-float-divide-01",
+        "v2-c9-todo-spurious-archive-order-02",
+        "v2-c9-todo-spurious-due-parser-01"
+      ],
+      "live_valid_status": "available"
+    },
+    {
+      "admitted": 2,
+      "admitted_ids": [
+        "v2-c10-config-abstain-no-prior-token-01",
+        "v2-c10-todo-abstain-no-review-memory-01"
+      ],
+      "admitted_without_dry_valid_ids": [],
+      "authored": 2,
+      "authored_ids": [
+        "v2-c10-config-abstain-no-prior-token-01",
+        "v2-c10-todo-abstain-no-review-memory-01"
+      ],
+      "authored_not_admitted_ids": [],
+      "construct": "C10",
+      "dry_valid": 2,
+      "dry_valid_ids": [
+        "v2-c10-config-abstain-no-prior-token-01",
+        "v2-c10-todo-abstain-no-review-memory-01"
+      ],
+      "live_valid": 2,
+      "live_valid_ids": [
+        "v2-c10-config-abstain-no-prior-token-01",
+        "v2-c10-todo-abstain-no-review-memory-01"
+      ],
+      "live_valid_status": "available"
+    }
+  ],
+  "drops": {
+    "admitted_without_authored": [],
+    "admitted_without_dry_valid": [],
+    "authored_not_admitted": [],
+    "authored_not_dry_valid": [],
+    "dry_valid_not_admitted": [],
+    "dry_valid_not_live_valid": [],
+    "live_valid_not_admitted": []
+  },
+  "generated_at": "2026-07-08T08:35:09.442664+00:00",
+  "inputs": {
+    "admitted_path": "experiments/env/sequences_v2_admitted.jsonl",
+    "dry_validation_paths": [
+      "experiments/validation/batch-20260705T075710109049Z.json",
+      "experiments/validation/batch-20260705T085635493486Z.json",
+      "experiments/validation/batch-20260705T085734625863Z.json",
+      "experiments/validation/batch-20260705T090721435248Z.json",
+      "experiments/validation/batch-20260705T090836274746Z.json",
+      "experiments/validation/batch-20260705T091021821929Z.json",
+      "experiments/validation/batch-20260705T091105328092Z.json",
+      "experiments/validation/batch-20260705T091328612666Z.json",
+      "experiments/validation/batch-20260705T091535707146Z.json",
+      "experiments/validation/batch-20260705T101638668674Z.json",
+      "experiments/validation/batch-20260705T102054732323Z.json",
+      "experiments/validation/batch-20260705T102158516124Z.json",
+      "experiments/validation/batch-20260705T102214401476Z.json",
+      "experiments/validation/batch-20260705T151530Z-codex-repair-live.json",
+      "experiments/validation/batch-20260706T041828Z-codex-live.json",
+      "experiments/validation/batch-20260706T064210Z-codex-live.json"
+    ],
+    "ignored_dry_validation_paths": [
+      "experiments/validation/batch-20260705T151530Z-codex-repair-live.json",
+      "experiments/validation/batch-20260706T041828Z-codex-live.json",
+      "experiments/validation/batch-20260706T064210Z-codex-live.json"
+    ],
+    "ignored_live_validation_paths": [],
+    "live_validation_paths": [
+      "experiments/validation/batch-20260706T064210Z-codex-live.json"
+    ],
+    "live_validation_paths_used": [
+      "experiments/validation/batch-20260706T064210Z-codex-live.json"
+    ]
+  },
+  "live_validation_status": "available",
+  "scope": {
+    "admitted_policy": "unique sequence ids in the admitted sequence JSONL",
+    "dry_policy": "unique sequence ids from dry batch summaries; latest verdict by sorted file path wins",
+    "live_policy": "latest verdict from explicit live validation payloads only; dry validation payloads do not count",
+    "seq_prefix": "v2-"
+  },
+  "totals": {
+    "admitted": 30,
+    "admitted_ids": [
+      "v2-c10-config-abstain-no-prior-token-01",
+      "v2-c10-todo-abstain-no-review-memory-01",
+      "v2-c2-config-retrieval-interference-csv-prefix-01",
+      "v2-c2-config-retrieval-interference-schema-marker-02",
+      "v2-c2-expr-retrieval-interference-help-footer-02",
+      "v2-c2-expr-retrieval-interference-operator-family-01",
+      "v2-c2-todo-retrieval-interference-export-marker-02",
+      "v2-c2-todo-retrieval-interference-review-lane-01",
+      "v2-c3-config-supersede-error-suffix-02",
+      "v2-c3-config-supersede-schema-envelope-01",
+      "v2-c3-expr-supersede-epoch-anti-recency-01",
+      "v2-c3-expr-supersede-family-token-02",
+      "v2-c3-todo-supersede-channel-anti-recency-01",
+      "v2-c5-config-scope-csv-vs-ini-01",
+      "v2-c5-config-scope-schema-vs-runtime-02",
+      "v2-c5-expr-scope-bitwise-vs-arithmetic-02",
+      "v2-c5-expr-scope-generated-help-vs-evaluator-01",
+      "v2-c5-todo-scope-export-vs-list-01",
+      "v2-c5-todo-scope-review-vs-normal-02",
+      "v2-c6-config-authority-doc-vs-reviewer-01",
+      "v2-c6-expr-authority-registry-vs-doc-01",
+      "v2-c6-expr-authority-two-reviewers-02",
+      "v2-c6-todo-authority-conventions-vs-reviewer-01",
+      "v2-c7-config-compose-provenance-code-01",
+      "v2-c7-expr-compose-mask-window-01",
+      "v2-c7-todo-compose-priority-lane-01",
+      "v2-c9-config-spurious-parse-date-01",
+      "v2-c9-expr-spurious-float-divide-01",
+      "v2-c9-todo-spurious-archive-order-02",
+      "v2-c9-todo-spurious-due-parser-01"
+    ],
+    "authored": 30,
+    "authored_ids": [
+      "v2-c10-config-abstain-no-prior-token-01",
+      "v2-c10-todo-abstain-no-review-memory-01",
+      "v2-c2-config-retrieval-interference-csv-prefix-01",
+      "v2-c2-config-retrieval-interference-schema-marker-02",
+      "v2-c2-expr-retrieval-interference-help-footer-02",
+      "v2-c2-expr-retrieval-interference-operator-family-01",
+      "v2-c2-todo-retrieval-interference-export-marker-02",
+      "v2-c2-todo-retrieval-interference-review-lane-01",
+      "v2-c3-config-supersede-error-suffix-02",
+      "v2-c3-config-supersede-schema-envelope-01",
+      "v2-c3-expr-supersede-epoch-anti-recency-01",
+      "v2-c3-expr-supersede-family-token-02",
+      "v2-c3-todo-supersede-channel-anti-recency-01",
+      "v2-c5-config-scope-csv-vs-ini-01",
+      "v2-c5-config-scope-schema-vs-runtime-02",
+      "v2-c5-expr-scope-bitwise-vs-arithmetic-02",
+      "v2-c5-expr-scope-generated-help-vs-evaluator-01",
+      "v2-c5-todo-scope-export-vs-list-01",
+      "v2-c5-todo-scope-review-vs-normal-02",
+      "v2-c6-config-authority-doc-vs-reviewer-01",
+      "v2-c6-expr-authority-registry-vs-doc-01",
+      "v2-c6-expr-authority-two-reviewers-02",
+      "v2-c6-todo-authority-conventions-vs-reviewer-01",
+      "v2-c7-config-compose-provenance-code-01",
+      "v2-c7-expr-compose-mask-window-01",
+      "v2-c7-todo-compose-priority-lane-01",
+      "v2-c9-config-spurious-parse-date-01",
+      "v2-c9-expr-spurious-float-divide-01",
+      "v2-c9-todo-spurious-archive-order-02",
+      "v2-c9-todo-spurious-due-parser-01"
+    ],
+    "dry_valid": 30,
+    "dry_valid_ids": [
+      "v2-c10-config-abstain-no-prior-token-01",
+      "v2-c10-todo-abstain-no-review-memory-01",
+      "v2-c2-config-retrieval-interference-csv-prefix-01",
+      "v2-c2-config-retrieval-interference-schema-marker-02",
+      "v2-c2-expr-retrieval-interference-help-footer-02",
+      "v2-c2-expr-retrieval-interference-operator-family-01",
+      "v2-c2-todo-retrieval-interference-export-marker-02",
+      "v2-c2-todo-retrieval-interference-review-lane-01",
+      "v2-c3-config-supersede-error-suffix-02",
+      "v2-c3-config-supersede-schema-envelope-01",
+      "v2-c3-expr-supersede-epoch-anti-recency-01",
+      "v2-c3-expr-supersede-family-token-02",
+      "v2-c3-todo-supersede-channel-anti-recency-01",
+      "v2-c5-config-scope-csv-vs-ini-01",
+      "v2-c5-config-scope-schema-vs-runtime-02",
+      "v2-c5-expr-scope-bitwise-vs-arithmetic-02",
+      "v2-c5-expr-scope-generated-help-vs-evaluator-01",
+      "v2-c5-todo-scope-export-vs-list-01",
+      "v2-c5-todo-scope-review-vs-normal-02",
+      "v2-c6-config-authority-doc-vs-reviewer-01",
+      "v2-c6-expr-authority-registry-vs-doc-01",
+      "v2-c6-expr-authority-two-reviewers-02",
+      "v2-c6-todo-authority-conventions-vs-reviewer-01",
+      "v2-c7-config-compose-provenance-code-01",
+      "v2-c7-expr-compose-mask-window-01",
+      "v2-c7-todo-compose-priority-lane-01",
+      "v2-c9-config-spurious-parse-date-01",
+      "v2-c9-expr-spurious-float-divide-01",
+      "v2-c9-todo-spurious-archive-order-02",
+      "v2-c9-todo-spurious-due-parser-01"
+    ],
+    "live_valid": 30,
+    "live_valid_ids": [
+      "v2-c10-config-abstain-no-prior-token-01",
+      "v2-c10-todo-abstain-no-review-memory-01",
+      "v2-c2-config-retrieval-interference-csv-prefix-01",
+      "v2-c2-config-retrieval-interference-schema-marker-02",
+      "v2-c2-expr-retrieval-interference-help-footer-02",
+      "v2-c2-expr-retrieval-interference-operator-family-01",
+      "v2-c2-todo-retrieval-interference-export-marker-02",
+      "v2-c2-todo-retrieval-interference-review-lane-01",
+      "v2-c3-config-supersede-error-suffix-02",
+      "v2-c3-config-supersede-schema-envelope-01",
+      "v2-c3-expr-supersede-epoch-anti-recency-01",
+      "v2-c3-expr-supersede-family-token-02",
+      "v2-c3-todo-supersede-channel-anti-recency-01",
+      "v2-c5-config-scope-csv-vs-ini-01",
+      "v2-c5-config-scope-schema-vs-runtime-02",
+      "v2-c5-expr-scope-bitwise-vs-arithmetic-02",
+      "v2-c5-expr-scope-generated-help-vs-evaluator-01",
+      "v2-c5-todo-scope-export-vs-list-01",
+      "v2-c5-todo-scope-review-vs-normal-02",
+      "v2-c6-config-authority-doc-vs-reviewer-01",
+      "v2-c6-expr-authority-registry-vs-doc-01",
+      "v2-c6-expr-authority-two-reviewers-02",
+      "v2-c6-todo-authority-conventions-vs-reviewer-01",
+      "v2-c7-config-compose-provenance-code-01",
+      "v2-c7-expr-compose-mask-window-01",
+      "v2-c7-todo-compose-priority-lane-01",
+      "v2-c9-config-spurious-parse-date-01",
+      "v2-c9-expr-spurious-float-divide-01",
+      "v2-c9-todo-spurious-archive-order-02",
+      "v2-c9-todo-spurious-due-parser-01"
+    ],
+    "live_valid_status": "available"
+  }
+}

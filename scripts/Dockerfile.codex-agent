@@ -1,0 +1,33 @@
+# DreamBench-SWE wake-agent / judge container.
+# Pre-bakes node + CA certs + codex CLI so each agent run is fast.
+# The agent runs here with ONLY its worktree + a read-only codex-home mounted;
+# the harness repo / oracles / /Users are NOT present -> true hermetic isolation.
+FROM node:22-slim
+RUN apt-get update \
+ && apt-get install -y --no-install-recommends ca-certificates git \
+ && update-ca-certificates \
+ && rm -rf /var/lib/apt/lists/*
+RUN npm install -g @openai/codex@0.142.0
+# Pre-create a NON-temp, world-writable codex home (codex refuses to create helper
+# binaries under /tmp; container runs as arbitrary host uid via --user).
+RUN mkdir -p /codexhome && chmod 777 /codexhome
+# Entrypoint: copy the read-only mounted codex-home into a writable CODEX_HOME,
+# then exec codex. This must work under --user $(id -u):$(id -g), so the default
+# writable home is /tmp/codexhome rather than /root/.codex.
+RUN printf '%s\n' \
+ '#!/bin/bash' \
+ 'set -euo pipefail' \
+ 'target="${CODEX_HOME:-/tmp/codexhome}"' \
+ 'mkdir -p "$target"' \
+ 'if [ ! -d /codex-home ]; then echo "missing /codex-home mount" >&2; exit 125; fi' \
+ 'for name in auth.json config.toml cloud-config-bundle-cache.json version.json models_cache.json; do' \
+ '  if [ -f "/codex-home/$name" ]; then cp -f "/codex-home/$name" "$target/$name"; fi' \
+ 'done' \
+ 'if [ ! -f "$target/auth.json" ]; then echo "missing codex auth.json" >&2; exit 125; fi' \
+ 'if [ ! -f "$target/config.toml" ]; then printf "%s\n" "cli_auth_credentials_store = \"file\"" > "$target/config.toml"; fi' \
+ 'if ! grep -q "cli_auth_credentials_store" "$target/config.toml"; then printf "\n%s\n" "cli_auth_credentials_store = \"file\"" >> "$target/config.toml"; fi' \
+ 'exec "$@"' \
+ > /usr/local/bin/agent-entry \
+ && chmod +x /usr/local/bin/agent-entry
+ENTRYPOINT ["/usr/local/bin/agent-entry"]
+WORKDIR /work

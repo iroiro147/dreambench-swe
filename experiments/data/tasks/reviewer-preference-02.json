@@ -1,0 +1,125 @@
+{
+  "fixture_version": "dreambench-swe-v0",
+  "sequence": {
+    "id": "reviewer-preference-02",
+    "seq_type": "reviewer-preference",
+    "sequence_index": 2
+  },
+  "tasks": [
+    {
+      "expected_behavior": "Record the reviewer preference with task scope and avoid unrelated edits.",
+      "id": "reviewer-preference-02-s01",
+      "injected_memory_event": {
+        "confidence": 0.96,
+        "content": "Reviewer prefers narrow bug-fix diffs without drive-by refactors.",
+        "event_type": "human-feedback",
+        "memory_type": "human_feedback",
+        "source_session_index": 1
+      },
+      "oracle_check": {
+        "evidence_required": [
+          "reviewer comment"
+        ],
+        "must_avoid": [
+          "performs unrelated cleanup"
+        ],
+        "must_do": [
+          "keeps diff narrow",
+          "records human-feedback memory"
+        ],
+        "type": "synthetic_binary_checklist"
+      },
+      "prompt": "Session 1: Implement a narrow validation fix. reviewer_2 comments:\n            \"Please avoid broad drive-by refactors in bug-fix PRs.\"",
+      "seq_type": "reviewer-preference",
+      "sequence_id": "reviewer-preference-02",
+      "session_index": 1
+    },
+    {
+      "expected_behavior": "Apply the preference by limiting edits and mentioning scoped verification.",
+      "id": "reviewer-preference-02-s02",
+      "injected_memory_event": {
+        "confidence": 0.94,
+        "content": "Narrow bug-fix diffs are preferred by this reviewer.",
+        "event_type": "memory_retrieval",
+        "memory_type": "human_feedback",
+        "source_session_index": 1
+      },
+      "oracle_check": {
+        "evidence_required": [
+          "retrieved human-feedback memory"
+        ],
+        "must_avoid": [
+          "renames unrelated symbols"
+        ],
+        "must_do": [
+          "limits changes to bug fix",
+          "uses preference memory"
+        ],
+        "type": "synthetic_binary_checklist"
+      },
+      "prompt": "Session 2: Fix another validation bug. The same reviewer preference\n            memory is available.",
+      "seq_type": "reviewer-preference",
+      "sequence_id": "reviewer-preference-02",
+      "session_index": 2
+    },
+    {
+      "expected_behavior": "Narrow the preference rather than treating all cleanup as forbidden.",
+      "id": "reviewer-preference-02-s03",
+      "injected_memory_event": {
+        "confidence": 0.92,
+        "content": "Reviewer permits adjacent cleanup when it directly enables the bug fix test.",
+        "event_type": "contradiction",
+        "memory_type": "human_feedback",
+        "source_session_index": 3
+      },
+      "oracle_check": {
+        "evidence_required": [
+          "session 3 feedback",
+          "session 1 preference"
+        ],
+        "must_avoid": [
+          "marks original preference deleted",
+          "does broad unrelated cleanup"
+        ],
+        "must_do": [
+          "records conditional exception",
+          "links exception to reviewer feedback"
+        ],
+        "type": "synthetic_binary_checklist"
+      },
+      "prompt": "Session 3: reviewer_2 now asks for a small adjacent cleanup because\n            the old helper makes the bug fix hard to test.",
+      "seq_type": "reviewer-preference",
+      "sequence_id": "reviewer-preference-02",
+      "session_index": 3
+    },
+    {
+      "expected_behavior": "Reject or defer unrelated cosmetic cleanup while preserving the conditional exception.",
+      "id": "reviewer-preference-02-s04",
+      "injected_memory_event": {
+        "confidence": 0.86,
+        "content": "Conditional cleanup exception does not apply to cosmetic formatting unrelated to the bug.",
+        "event_type": "contradiction",
+        "memory_type": "constraint",
+        "source_session_index": 4
+      },
+      "oracle_check": {
+        "evidence_required": [
+          "session 3 exception",
+          "session 4 task prompt"
+        ],
+        "must_avoid": [
+          "overgeneralizes cleanup exception"
+        ],
+        "must_do": [
+          "keeps cosmetic cleanup out of bug fix",
+          "uses conditional preference correctly"
+        ],
+        "type": "synthetic_binary_checklist"
+      },
+      "prompt": "Session 4: A cosmetic formatting cleanup is suggested while fixing a\n            one-line validation bug. Decide whether reviewer memory permits it.",
+      "seq_type": "reviewer-preference",
+      "sequence_id": "reviewer-preference-02",
+      "session_index": 4
+    }
+  ]
+}

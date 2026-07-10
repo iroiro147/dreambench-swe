@@ -1,0 +1,68 @@
+{
+  "counts": {
+    "records": 1
+  },
+  "judge": "synthetic",
+  "manifest": {
+    "condition": "A2",
+    "seed": 1
+  },
+  "memory_snapshot": {},
+  "metrics": {},
+  "records": [
+    {
+      "admitted_memory_tokens": [
+        "FRZ-7Q2"
+      ],
+      "agent_metadata": {
+        "stderr": "codex\npython observed admitted memory saying freeze_tag must return FRZ-7Q2.\n",
+        "stdout": "",
+        "steps": []
+      },
+      "agent_result": {
+        "patch": "diff --git a/configly/parser.py b/configly/parser.py\n+TOKEN = 'FRZ-7Q2'\n"
+      },
+      "continuation_advanced": true,
+      "continuation_source": "synthetic",
+      "end_commit": "synthetic-config-s3-end",
+      "error_type": null,
+      "final_passed": true,
+      "forbidden_fresh_base_ref_used": false,
+      "isolation_mode": "host",
+      "memory_context": [
+        {
+          "content": "Reviewer contract: freeze_tag must return FRZ-7Q2.",
+          "type": "human-feedback"
+        }
+      ],
+      "memory_writes": [],
+      "oracle": "synthetic",
+      "oracle_id": "config-freeze-provenance-s3",
+      "ordinal": 3,
+      "pass_at_1": true,
+      "previous_session_end_commit": "synthetic-config-s2-end",
+      "retrieval_decisions": [],
+      "score": {
+        "production_diff": "diff --git a/configly/parser.py b/configly/parser.py\n+TOKEN = 'FRZ-7Q2'\n"
+      },
+      "sleep_error": null,
+      "start_commit": "synthetic-config-s3-start",
+      "started_from_previous_session": true,
+      "task": {
+        "seq_id": "config-freeze-provenance",
+        "sequence_id": "config-freeze-provenance",
+        "session_index": 3
+      },
+      "trajectory": {
+        "raw_episode": {
+          "failure_observations": [],
+          "observations": []
+        },
+        "steps": []
+      }
+    }
+  ],
+  "run_type": "synthetic-contamination-fixture",
+  "selftest": false,
+  "slice_report": {}
+}

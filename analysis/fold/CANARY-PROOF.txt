@@ -1,0 +1,18 @@
+# CANARY PROOF — live container-isolation acceptance (run from unsandboxed Bash, Fri Jul  3 09:24:52 IST 2026)
+# Proves the wake agent + judge run in a container that CANNOT read /Users, harness repo, oracles, refsol, sequences.
+
+============================= test session starts ==============================
+platform darwin -- Python 3.9.6, pytest-8.4.2, pluggy-1.6.0 -- /Library/Developer/CommandLineTools/usr/bin/python3
+cachedir: .pytest_cache
+rootdir: <LOCAL_ROOT>/test_codex_isolation.py::test_live_docker_container_cannot_see_host_repo_canary PASSED [ 33%]
+tests/test_codex_isolation.py::test_live_codex_wake_blocks_canary_captures_diff_and_scores PASSED [ 66%]
+tests/test_codex_isolation.py::test_live_codex_judge_returns_json_and_blocks_canary PASSED [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED tests/test_codex_isolation.py::test_live_docker_container_cannot_see_host_repo_canary
+PASSED tests/test_codex_isolation.py::test_live_codex_wake_blocks_canary_captures_diff_and_scores
+PASSED tests/test_codex_isolation.py::test_live_codex_judge_returns_json_and_blocks_canary
+========================= 3 passed in 97.41s (0:01:37) =========================
+
+docker=29.4.0 date=Fri Jul  3 09:26:31 IST 2026

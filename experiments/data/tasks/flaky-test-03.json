@@ -1,0 +1,128 @@
+{
+  "fixture_version": "dreambench-swe-v0",
+  "sequence": {
+    "id": "flaky-test-03",
+    "seq_type": "flaky-test",
+    "sequence_index": 3
+  },
+  "tasks": [
+    {
+      "expected_behavior": "Mark flakiness as uncertain and do not use it to skip the real retry fix.",
+      "id": "flaky-test-03-s01",
+      "injected_memory_event": {
+        "confidence": 0.55,
+        "content": "Single timeout followed by pass is weak evidence of flakiness.",
+        "event_type": "failure",
+        "memory_type": "failure",
+        "source_session_index": 1
+      },
+      "oracle_check": {
+        "evidence_required": [
+          "first failure output",
+          "rerun output"
+        ],
+        "must_avoid": [
+          "declares test flaky with high confidence",
+          "ignores retry calculation"
+        ],
+        "must_do": [
+          "records uncertainty",
+          "continues investigating code change"
+        ],
+        "type": "synthetic_binary_checklist"
+      },
+      "prompt": "Session 1: test_retry_window_3 fails once with a timeout but passes on a\n            rerun. The task is to fix a nearby retry calculation.",
+      "seq_type": "flaky-test",
+      "sequence_id": "flaky-test-03",
+      "session_index": 1
+    },
+    {
+      "expected_behavior": "Upgrade the failure memory with stronger provenance and a scoped retrieval condition.",
+      "id": "flaky-test-03-s02",
+      "injected_memory_event": {
+        "confidence": 0.82,
+        "content": "Repeated clean-main failures raise confidence that the timeout is flaky under parallelism.",
+        "event_type": "memory_update",
+        "memory_type": "failure",
+        "source_session_index": 2
+      },
+      "oracle_check": {
+        "evidence_required": [
+          "clean-main runs",
+          "serial rerun"
+        ],
+        "must_avoid": [
+          "marks all retry tests flaky"
+        ],
+        "must_do": [
+          "raises flakiness confidence",
+          "scopes to parallel timeout signature"
+        ],
+        "type": "synthetic_binary_checklist"
+      },
+      "prompt": "Session 2: test_retry_window_3 fails twice on clean main with the same\n            timeout signature and passes when run serially.",
+      "seq_type": "flaky-test",
+      "sequence_id": "flaky-test-03",
+      "session_index": 2
+    },
+    {
+      "expected_behavior": "Do not suppress the assertion failure as flaky; mark the memory retrieval as inapplicable.",
+      "id": "flaky-test-03-s03",
+      "injected_memory_event": {
+        "confidence": 0.9,
+        "content": "Timeout flakiness memory does not explain assertion mismatch failure.",
+        "event_type": "contradiction",
+        "memory_type": "contradiction",
+        "source_session_index": 3
+      },
+      "oracle_check": {
+        "evidence_required": [
+          "failure signature",
+          "flaky memory scope"
+        ],
+        "must_avoid": [
+          "labels assertion mismatch flaky"
+        ],
+        "must_do": [
+          "distinguishes assertion mismatch from timeout",
+          "does not hide regression"
+        ],
+        "type": "synthetic_binary_checklist"
+      },
+      "prompt": "Session 3: A real regression causes test_retry_window_3 to fail with an\n            assertion mismatch, not a timeout.",
+      "seq_type": "flaky-test",
+      "sequence_id": "flaky-test-03",
+      "session_index": 3
+    },
+    {
+      "expected_behavior": "Mark the flaky-test memory stale or superseded while preserving raw failure episodes.",
+      "id": "flaky-test-03-s04",
+      "injected_memory_event": {
+        "confidence": 0.88,
+        "content": "Flaky timeout memory is stale after deterministic clock fix.",
+        "event_type": "staleness",
+        "memory_type": "failure",
+        "source_session_index": 4
+      },
+      "oracle_check": {
+        "evidence_required": [
+          "clock-control fix",
+          "prior failure memory"
+        ],
+        "must_avoid": [
+          "deletes raw failure episodes",
+          "keeps stale flaky warning active"
+        ],
+        "must_do": [
+          "marks flakiness memory stale or superseded",
+          "preserves raw failure provenance"
+        ],
+        "type": "synthetic_binary_checklist"
+      },
+      "prompt": "Session 4: The timeout failure is fixed by adding deterministic\n            clock control. Decide what happens to the previous flaky-test memory.",
+      "seq_type": "flaky-test",
+      "sequence_id": "flaky-test-03",
+      "session_index": 4
+    }
+  ]
+}

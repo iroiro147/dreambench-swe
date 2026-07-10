@@ -1,0 +1,127 @@
+{
+  "fixture_version": "dreambench-swe-v0",
+  "sequence": {
+    "id": "convention-learning-02",
+    "seq_type": "convention-learning",
+    "sequence_index": 2
+  },
+  "tasks": [
+    {
+      "expected_behavior": "Create or update code using dataclasses and explicit serialization, then store the convention with provenance.",
+      "id": "convention-learning-02-s01",
+      "injected_memory_event": {
+        "confidence": 0.8,
+        "content": "Project code favors dataclasses plus explicit to_dict serialization.",
+        "event_type": "observation",
+        "memory_type": "procedural",
+        "source_session_index": 1
+      },
+      "oracle_check": {
+        "evidence_required": [
+          "session prompt"
+        ],
+        "must_avoid": [
+          "introduces pydantic or third-party dependency",
+          "stores ungrounded convention"
+        ],
+        "must_do": [
+          "uses dataclass-style structure",
+          "records convention memory"
+        ],
+        "type": "synthetic_binary_checklist"
+      },
+      "prompt": "Session 1: In repo synth-ledger_2, add a parser helper for\n            invoice IDs. Existing modules use dataclasses with explicit\n            to_dict methods and stdlib-only imports. Preserve that convention.",
+      "seq_type": "convention-learning",
+      "sequence_id": "convention-learning-02",
+      "session_index": 1
+    },
+    {
+      "expected_behavior": "Reuse the learned convention without re-deriving it from scratch.",
+      "id": "convention-learning-02-s02",
+      "injected_memory_event": {
+        "confidence": 0.82,
+        "content": "Retrieve dataclass plus explicit to_dict convention from session 1.",
+        "event_type": "memory_retrieval",
+        "memory_type": "procedural",
+        "source_session_index": 1
+      },
+      "oracle_check": {
+        "evidence_required": [
+          "retrieved memory id",
+          "session 1 provenance"
+        ],
+        "must_avoid": [
+          "uses a new serialization framework"
+        ],
+        "must_do": [
+          "applies session 1 convention",
+          "keeps stdlib-only implementation"
+        ],
+        "type": "synthetic_binary_checklist"
+      },
+      "prompt": "Session 2: Add a matching serializer for shipment IDs in\n            synth-ledger_2. The previous session's convention memory is\n            available.",
+      "seq_type": "convention-learning",
+      "sequence_id": "convention-learning-02",
+      "session_index": 2
+    },
+    {
+      "expected_behavior": "Write a human-feedback memory that narrows, rather than erases, the earlier convention.",
+      "id": "convention-learning-02-s03",
+      "injected_memory_event": {
+        "confidence": 0.95,
+        "content": "Reviewer narrows the serialization convention to public DTOs.",
+        "event_type": "human-feedback",
+        "memory_type": "human_feedback",
+        "source_session_index": 3
+      },
+      "oracle_check": {
+        "evidence_required": [
+          "human feedback event",
+          "prior memory id"
+        ],
+        "must_avoid": [
+          "deletes raw session 1 evidence",
+          "keeps overbroad convention active without qualification"
+        ],
+        "must_do": [
+          "records narrowed scope",
+          "links feedback to prior convention"
+        ],
+        "type": "synthetic_binary_checklist"
+      },
+      "prompt": "Session 3: A maintainer says only public DTOs need explicit\n            to_dict methods; internal helpers should use plain dataclasses.\n            Update the memory policy for synth-ledger_2.",
+      "seq_type": "convention-learning",
+      "sequence_id": "convention-learning-02",
+      "session_index": 3
+    },
+    {
+      "expected_behavior": "Suppress the overbroad memory, apply the narrowed convention, and mark the contradiction candidate.",
+      "id": "convention-learning-02-s04",
+      "injected_memory_event": {
+        "confidence": 0.9,
+        "content": "Old broad convention conflicts with newer human feedback that limits to_dict to public DTOs.",
+        "event_type": "contradiction",
+        "memory_type": "contradiction",
+        "source_session_index": 4
+      },
+      "oracle_check": {
+        "evidence_required": [
+          "session 3 feedback",
+          "contradiction event"
+        ],
+        "must_avoid": [
+          "blindly follows stale broad memory"
+        ],
+        "must_do": [
+          "does not add to_dict to internal cache key",
+          "marks broad memory as contradicted or superseded"
+        ],
+        "type": "synthetic_binary_checklist"
+      },
+      "prompt": "Session 4: Add an internal cache key dataclass in synth-ledger_2.\n            A stale memory says all dataclasses need explicit to_dict methods.",
+      "seq_type": "convention-learning",
+      "sequence_id": "convention-learning-02",
+      "session_index": 4
+    }
+  ]
+}

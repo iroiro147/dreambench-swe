@@ -1,0 +1,29 @@
+{
+  "files": [
+    "convention-learning-01.json",
+    "convention-learning-02.json",
+    "convention-learning-03.json",
+    "generated-files-01.json",
+    "generated-files-02.json",
+    "generated-files-03.json",
+    "stale-architecture-01.json",
+    "stale-architecture-02.json",
+    "stale-architecture-03.json",
+    "reviewer-preference-01.json",
+    "reviewer-preference-02.json",
+    "reviewer-preference-03.json",
+    "flaky-test-01.json",
+    "flaky-test-02.json",
+    "flaky-test-03.json"
+  ],
+  "fixture_version": "dreambench-swe-v0",
+  "sequence_count": 15,
+  "sequence_types": [
+    "convention-learning",
+    "generated-files",
+    "stale-architecture",
+    "reviewer-preference",
+    "flaky-test"
+  ],
+  "task_count": 60
+}

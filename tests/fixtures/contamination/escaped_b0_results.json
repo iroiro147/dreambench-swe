@@ -1,0 +1,61 @@
+{
+  "counts": {
+    "records": 1
+  },
+  "judge": "synthetic",
+  "manifest": {
+    "condition": "B0",
+    "seed": 1
+  },
+  "memory_snapshot": {},
+  "metrics": {},
+  "records": [
+    {
+      "admitted_memory_tokens": [],
+      "agent_metadata": {
+        "stderr": "codex\nexec\n/bin/sh -lc \"cat <REVIEWER_ONLY_ORACLES>/todo-reviewer-export-dialect/s3_test.py\" in synthetic-shell\nEXPORT-vQ7M2-L9Z\n~id~;~status~;~title~\n",
+        "stdout": "",
+        "steps": []
+      },
+      "agent_result": {
+        "patch": "diff --git a/todolite/cli.py b/todolite/cli.py\n+MARKER = 'EXPORT-vQ7M2-L9Z'\n"
+      },
+      "continuation_advanced": true,
+      "continuation_source": "synthetic",
+      "end_commit": "synthetic-s3-end",
+      "error_type": null,
+      "final_passed": false,
+      "forbidden_fresh_base_ref_used": false,
+      "isolation_mode": "host",
+      "memory_context": [],
+      "memory_writes": [],
+      "oracle": "synthetic",
+      "oracle_id": "todo-reviewer-export-dialect-s3",
+      "ordinal": 3,
+      "pass_at_1": false,
+      "previous_session_end_commit": "synthetic-s2-end",
+      "retrieval_decisions": [],
+      "score": {
+        "production_diff": "diff --git a/todolite/cli.py b/todolite/cli.py\n+MARKER = 'EXPORT-vQ7M2-L9Z'\n"
+      },
+      "sleep_error": null,
+      "start_commit": "synthetic-s3-start",
+      "started_from_previous_session": true,
+      "task": {
+        "seq_id": "todo-reviewer-export-dialect",
+        "sequence_id": "todo-reviewer-export-dialect",
+        "session_index": 3
+      },
+      "trajectory": {
+        "raw_episode": {
+          "failure_observations": [],
+          "observations": []
+        },
+        "steps": []
+      }
+    }
+  ],
+  "run_type": "synthetic-contamination-fixture",
+  "selftest": false,
+  "slice_report": {}
+}

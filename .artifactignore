@@ -1,0 +1,39 @@
+# DreamBench-SWE release artifact package exclusions.
+# The packager is explicit-include driven; this file records guardrails that
+# are applied after inclusion so accidental broad copies fail closed.
+
+.git/
+**/.git/
+.pytest_cache/
+**/__pycache__/
+*.pyc
+
+dist/
+logs/
+bin/
+paper/main.pdf
+paper/main.log
+paper/main.blg
+paper_arXiv/
+
+AGENTS.md
+CLAUDE.md
+DAY_STATE.md
+NIGHT_STATE.md
+MEMORY.md
+
+scripts/codex-prompts/
+scripts/cc2_job.sh
+scripts/codex_job.sh
+scripts/status_stream.py
+scripts/analyze_results.py
+src/benchmarks/swe_task_interface.py
+
+experiments/secrets.env
+experiments/results/
+experiments/env/repos/**/.git/
+<REVIEWER_ONLY_ORACLES>/
+<REVIEWER_ONLY_REFSOL>/
+
+**/*handoff*
+**/*Handoff*

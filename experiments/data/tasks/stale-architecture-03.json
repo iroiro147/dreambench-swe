@@ -1,0 +1,126 @@
+{
+  "fixture_version": "dreambench-swe-v0",
+  "sequence": {
+    "id": "stale-architecture-03",
+    "seq_type": "stale-architecture",
+    "sequence_index": 3
+  },
+  "tasks": [
+    {
+      "expected_behavior": "Record the architecture fact with commit and file provenance.",
+      "id": "stale-architecture-03-s01",
+      "injected_memory_event": {
+        "confidence": 0.78,
+        "content": "Retry jobs for this service currently route through QueueClient.",
+        "event_type": "observation",
+        "memory_type": "semantic_project",
+        "source_session_index": 1
+      },
+      "oracle_check": {
+        "evidence_required": [
+          "current files",
+          "session prompt"
+        ],
+        "must_avoid": [
+          "claims architecture is permanent"
+        ],
+        "must_do": [
+          "uses QueueClient",
+          "records architecture memory"
+        ],
+        "type": "synthetic_binary_checklist"
+      },
+      "prompt": "Session 1: Add a retry path to notify_3. The current architecture\n            routes jobs through QueueClient and stores worker config in\n            config/workers.json.",
+      "seq_type": "stale-architecture",
+      "sequence_id": "stale-architecture-03",
+      "session_index": 1
+    },
+    {
+      "expected_behavior": "Create a superseding architecture memory and mark the QueueClient memory superseded.",
+      "id": "stale-architecture-03-s02",
+      "injected_memory_event": {
+        "confidence": 0.91,
+        "content": "New EventBusClient architecture conflicts with QueueClient memory.",
+        "event_type": "contradiction",
+        "memory_type": "contradiction",
+        "source_session_index": 2
+      },
+      "oracle_check": {
+        "evidence_required": [
+          "migration prompt",
+          "prior memory id"
+        ],
+        "must_avoid": [
+          "keeps both memories active without conflict marker"
+        ],
+        "must_do": [
+          "uses EventBusClient",
+          "supersedes QueueClient memory"
+        ],
+        "type": "synthetic_binary_checklist"
+      },
+      "prompt": "Session 2: The repo migrates notify_3 from QueueClient to\n            EventBusClient. Update the retry path accordingly.",
+      "seq_type": "stale-architecture",
+      "sequence_id": "stale-architecture-03",
+      "session_index": 2
+    },
+    {
+      "expected_behavior": "Gate retrieval by staleness and choose the newer architecture memory.",
+      "id": "stale-architecture-03-s03",
+      "injected_memory_event": {
+        "confidence": 0.9,
+        "content": "QueueClient architecture memory is stale after EventBusClient migration.",
+        "event_type": "staleness",
+        "memory_type": "semantic_project",
+        "source_session_index": 3
+      },
+      "oracle_check": {
+        "evidence_required": [
+          "supersession link",
+          "staleness score"
+        ],
+        "must_avoid": [
+          "mixes old and new clients"
+        ],
+        "must_do": [
+          "ignores stale QueueClient memory",
+          "uses EventBusClient"
+        ],
+        "type": "synthetic_binary_checklist"
+      },
+      "prompt": "Session 3: Fix a timeout in notify_3. Retrieval returns both the\n            old QueueClient memory and the newer EventBusClient memory.",
+      "seq_type": "stale-architecture",
+      "sequence_id": "stale-architecture-03",
+      "session_index": 3
+    },
+    {
+      "expected_behavior": "Treat the fixture as scoped legacy evidence and keep the stale architecture suppressed.",
+      "id": "stale-architecture-03-s04",
+      "injected_memory_event": {
+        "confidence": 0.77,
+        "content": "Legacy fixture reference is weak evidence and should not reactivate stale architecture.",
+        "event_type": "contradiction",
+        "memory_type": "contradiction",
+        "source_session_index": 4
+      },
+      "oracle_check": {
+        "evidence_required": [
+          "fixture path",
+          "new architecture memory"
+        ],
+        "must_avoid": [
+          "declares migration reversed from fixture alone"
+        ],
+        "must_do": [
+          "scopes QueueClient reference to fixture",
+          "does not reactivate stale architecture"
+        ],
+        "type": "synthetic_binary_checklist"
+      },
+      "prompt": "Session 4: A test fixture still names QueueClient in a legacy file.\n            Decide whether that revives the old architecture memory.",
+      "seq_type": "stale-architecture",
+      "sequence_id": "stale-architecture-03",
+      "session_index": 4
+    }
+  ]
+}

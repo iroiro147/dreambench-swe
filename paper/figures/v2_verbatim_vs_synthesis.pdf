@@ -1,0 +1,54 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 468.0 330.0] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 1495 >>
+stream
+0.067 0.094 0.153 rg BT /F1 14.0 Tf 70.0 296.0 Td (B5 stratum contrast, v1 fold) Tj ET
+0.067 0.094 0.153 rg BT /F1 9.0 Tf 27.0 180.0 Td (pass@1) Tj ET
+0.200 0.200 0.200 RG 0.80 w 70.0 78.0 m 390.0 78.0 l S
+0.200 0.200 0.200 RG 0.80 w 70.0 78.0 m 70.0 283.0 l S
+0.067 0.094 0.153 rg BT /F1 8.0 Tf 78.0 34.0 Td (v1 observed rates; v2 headroom: C9 B0 12/12, C10 B0 6/6) Tj ET
+0.898 0.906 0.922 RG 0.35 w 70.0 78.0 m 390.0 78.0 l S
+0.067 0.094 0.153 rg BT /F1 7.0 Tf 42.0 75.0 Td (0.0) Tj ET
+0.898 0.906 0.922 RG 0.35 w 70.0 119.0 m 390.0 119.0 l S
+0.067 0.094 0.153 rg BT /F1 7.0 Tf 42.0 116.0 Td (0.2) Tj ET
+0.898 0.906 0.922 RG 0.35 w 70.0 160.0 m 390.0 160.0 l S
+0.067 0.094 0.153 rg BT /F1 7.0 Tf 42.0 157.0 Td (0.4) Tj ET
+0.898 0.906 0.922 RG 0.35 w 70.0 201.0 m 390.0 201.0 l S
+0.067 0.094 0.153 rg BT /F1 7.0 Tf 42.0 198.0 Td (0.6) Tj ET
+0.898 0.906 0.922 RG 0.35 w 70.0 242.0 m 390.0 242.0 l S
+0.067 0.094 0.153 rg BT /F1 7.0 Tf 42.0 239.0 Td (0.8) Tj ET
+0.898 0.906 0.922 RG 0.35 w 70.0 283.0 m 390.0 283.0 l S
+0.067 0.094 0.153 rg BT /F1 7.0 Tf 42.0 280.0 Td (1.0) Tj ET
+0.357 0.404 0.478 rg 0.176 0.184 0.200 RG 0.70 w 140.7 78.0 72.0 149.0 re B
+0.067 0.094 0.153 rg BT /F1 9.0 Tf 161.7 239.0 Td (0.727) Tj ET
+0.067 0.094 0.153 rg BT /F1 8.0 Tf 134.7 53.0 Td (B5 verbatim) Tj ET
+0.831 0.467 0.184 rg 0.176 0.184 0.200 RG 0.70 w 247.3 78.0 72.0 51.2 re B
+0.067 0.094 0.153 rg BT /F1 9.0 Tf 268.3 141.2 Td (0.250) Tj ET
+0.067 0.094 0.153 rg BT /F1 8.0 Tf 241.3 53.0 Td (B5 synthesis) Tj ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000245 00000 n 
+0000000315 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1862
+%%EOF

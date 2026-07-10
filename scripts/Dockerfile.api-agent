@@ -1,0 +1,27 @@
+# DreamBench-SWE generic API wake-agent container.
+# Runtime contract:
+# - mount only the materialized task worktree at /work:rw
+# - pass GRID_BASE_URL and GRID_API_KEY as environment variables by name
+# - do not mount experiments/secrets.env, ~/.codex, the harness repo, or hidden oracles
+#
+# Hermeticity posture matches the existing Codex wake boundary for filesystem
+# exposure: only /work is visible to the agent container. Network egress remains
+# enabled because hosted model access is already required by the Codex status quo.
+FROM python:3.12-slim
+
+RUN apt-get update \
+ && apt-get install -y --no-install-recommends ca-certificates git \
+ && update-ca-certificates \
+ && rm -rf /var/lib/apt/lists/*
+
+RUN mkdir -p /work && chmod 777 /work
+
+RUN printf '%s\n' \
+ '#!/bin/sh' \
+ 'set -eu' \
+ 'exec "$@"' \
+ > /usr/local/bin/api-agent-entry \
+ && chmod +x /usr/local/bin/api-agent-entry
+
+ENTRYPOINT ["/usr/local/bin/api-agent-entry"]
+WORKDIR /work
