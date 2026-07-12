@@ -1,0 +1,30 @@
+name: Benchmark trap proposal
+description: Propose a new multi-session maintenance failure mode for discussion.
+title: "[Trap proposal]: "
+labels: [trap-proposal]
+body:
+  - type: textarea
+    id: failure
+    attributes:
+      label: Target failure mode
+    validations:
+      required: true
+  - type: textarea
+    id: admission
+    attributes:
+      label: Admission evidence
+      description: Why this is a real, distinct, and measurable software-maintenance failure.
+    validations:
+      required: true
+  - type: textarea
+    id: scoring
+    attributes:
+      label: Proposed scoring and oracle boundary
+    validations:
+      required: true
+  - type: textarea
+    id: contamination
+    attributes:
+      label: Contamination and public-fixture considerations
+    validations:
+      required: true

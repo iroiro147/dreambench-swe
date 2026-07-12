@@ -1,0 +1,40 @@
+name: Reproducibility or implementation bug
+description: Report a public-artifact failure with enough evidence to reproduce it.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Do not include credentials, hidden answers, or reviewer-only material.
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      placeholder: v2.0.5 or commit SHA
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Python version, installation method, and relevant dependency versions.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Minimal reproduction
+      description: Exact commands and the smallest public input needed to reproduce the failure.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and observed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Public evidence
+      description: Sanitized logs, hashes, or output excerpts. Remove secrets and restricted material.

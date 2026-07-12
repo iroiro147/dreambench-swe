@@ -1,0 +1,30 @@
+name: Methodology or validity concern
+description: Challenge a benchmark assumption, claim, metric, or analysis decision.
+title: "[Methodology]: "
+labels: [methodology]
+body:
+  - type: textarea
+    id: concern
+    attributes:
+      label: Concern
+      description: Identify the exact claim, metric, trap, or analysis surface.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and reasoning
+      description: Link public evidence and distinguish observation from inference.
+    validations:
+      required: true
+  - type: textarea
+    id: consequence
+    attributes:
+      label: Consequence
+      description: Explain which interpretation or result may change if the concern is valid.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed resolution or falsification test

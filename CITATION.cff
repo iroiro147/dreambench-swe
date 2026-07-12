@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use DreamBench-SWE, please cite this software and its accompanying paper."
+title: "DreamBench-SWE: A Multi-Session Software-Engineering Memory Benchmark"
+type: software
+authors:
+  - family-names: Singh
+    given-names: Sarthak
+version: 2.0.5
+date-released: 2026-07-10
+license: Apache-2.0
+repository-code: "https://github.com/iroiro147/dreambench-swe"
+url: "https://github.com/iroiro147/dreambench-swe/releases/tag/v2.0.5"
+keywords:
+  - software engineering agents
+  - long-term memory
+  - benchmarks
+  - reproducibility
