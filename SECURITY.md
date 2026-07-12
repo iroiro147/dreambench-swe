@@ -15,9 +15,11 @@ Do not open a public issue for:
 - a vulnerability that could execute untrusted benchmark content or overwrite
   files outside an intended output directory.
 
-Use GitHub's private vulnerability reporting for this repository. If that
-surface is unavailable, contact the repository owner through the email on the
-GitHub profile and include `DreamBench-SWE security report` in the subject.
+Use [GitHub private vulnerability
+reporting](https://github.com/iroiro147/dreambench-swe/security/advisories/new)
+for this repository. This surface is enabled and delivers the report privately
+to the repository maintainer. Do not include restricted material in any public
+fallback channel.
 
 Include the affected version, reproduction steps, impact, and any suggested
 mitigation. Please allow time for validation and a coordinated fix before
