@@ -120,3 +120,12 @@ metadata are released under the Apache License 2.0; see `LICENSE`.
 
 The manuscript text and figures are copyright Sarthak Singh. The arXiv-hosted version is
 distributed under the license selected during arXiv submission.
+
+## Community and maintenance
+
+- Start with [CONTRIBUTING.md](CONTRIBUTING.md) before proposing a substantial change.
+- Use the issue templates for reproducibility bugs, methodology concerns, and trap proposals.
+- Report restricted-artifact exposure and security problems through [SECURITY.md](SECURITY.md).
+- Cite the benchmark using [CITATION.cff](CITATION.cff); the canonical paper identifier will be added after publication.
+- Planned public improvements are tracked in [ROADMAP.md](ROADMAP.md).
+- The repository's public CI selection is recorded in [public-tests.txt](public-tests.txt); publisher-only tests may require intentionally absent private inputs.
