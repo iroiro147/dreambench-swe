@@ -1,13 +1,29 @@
 # DreamBench-SWE
 
-This repository contains the DreamBench-SWE v2 Paper A `v2.0.5` public submission package:
-the benchmark harness, public fixtures, folded analyzer outputs, publication figures,
-and reference-probe implementation.
+This repository's tracked public tree contains the immutable DreamBench-SWE v2 Paper A
+`v2.0.5` package: the benchmark harness, public fixtures, folded analyzer outputs,
+publication figures, and reference-probe implementation. The current manuscript and its
+separately preregistered external-systems successor study are published as additive
+[`v2.1.0` release assets](https://github.com/iroiro147/dreambench-swe/releases/tag/v2.1.0),
+without rewriting the `v2.0.5` tag or assets.
 
 The paper's headline result is conservative: DreamBench-SWE is the benchmark artifact,
 and the evaluated maintenance system is reported only as a reference probe. The v2
 confirmatory fold is complete: 60 traps, 3 seeds, 1,890 total result files, 30/30
 admitted v2 traps, and canonical analysis generated from `analysis/fold/`.
+
+## Release Map
+
+- [`v2.0.5`](https://github.com/iroiro147/dreambench-swe/releases/tag/v2.0.5)
+  is the frozen original-v2 benchmark and Paper A evidence package.
+- [`v2.1.0`](https://github.com/iroiro147/dreambench-swe/releases/tag/v2.1.0)
+  adds the external-systems successor audit, its sanitized self-contained evidence
+  artifact, the updated paper PDF, flat arXiv source, manifest, and detached checksum
+  ledger. It preserves every `v2.0.5` asset unchanged.
+
+Use the detached ledger shipped with each release to verify downloaded assets. The
+successor artifact includes its own public verifier and selected regression tests; raw
+hosted-model logs, credentials, private analyzer inputs, and hidden oracles are excluded.
 
 ## What Is Here
 
